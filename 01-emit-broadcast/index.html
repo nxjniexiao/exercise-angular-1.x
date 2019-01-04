@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Emit Broadcast</title>
+    <script src="../angular.min.js"></script>
+    <script src="script.js"></script>
+    <style>
+      .box {
+        border: 1px solid #000;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body ng-app="eventExample">
+    <div class="box" ng-controller="EventController">
+      <span>root scope: </span> <span>{{ count }}</span>
+      <div class="box"  ng-controller="EventController">
+        <span>scope: </span> <span>{{ count }}</span>
+        <button ng-click="$emit('myEvent')">emit</button>
+        <button ng-click="$broadcast('myEvent')">broadcast</button>
+        <div class="box"  ng-controller="EventController">
+          <span>scope: </span> <span>{{ count }}</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

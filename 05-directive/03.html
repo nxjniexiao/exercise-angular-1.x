@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>A Directive That Wraps Other Elements</title>
+  </head>
+  <body ng-app="myApp">
+    <div ng-controller="MyController">
+      <div ng-hide="!isMessageHidden">{{message}}</div>
+      <!-- 注: hideMyDialog(message) 中的 message 不能省略，被用于通过 in 操作符号查找 message 的值 -->
+      <my-dialog ng-hide="isMessageHidden" on-close="hideMyDialog(message)">name from out scope: {{ name }}</my-dialog>
+    </div>
+    <script src="../angular.min.js"></script>
+    <script src="03-wrap-element-directive.js"></script>
+    <script>
+      (function(angular) {
+        angular.module('myApp', ['elementDirective']);
+      })(window.angular);
+    </script>
+  </body>
+</html>

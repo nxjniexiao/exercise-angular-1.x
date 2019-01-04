@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Directive</title>
+  </head>
+  <body ng-app="myApp">
+    <div ng-controller="MyController">
+      <my-customer info="customerA"></my-customer>
+      <my-customer info="customerB"></my-customer>
+    </div>
+    <script src="../angular.min.js"></script>
+    <script src="01-isolation-directive.js"></script>
+    <script>
+      (function(angular) {
+        angular.module('myApp', ['isolateModule']);
+      })(window.angular);
+    </script>
+  </body>
+</html>

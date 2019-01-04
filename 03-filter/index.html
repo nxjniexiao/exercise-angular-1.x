@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Filter</title>
+  <script src="../angular.min.js"></script>
+  <script src="core.js"></script>
+  <script src="my-controller.js"></script>
+</head>
+<body ng-app="myApp">
+<div ng-controller="MyController as ctrl">
+  <input type="text" ng-model="ctrl.myInput">
+  <div>
+    <div>reverse => <span>{{ctrl.myInput | reverse}}</span></div>
+    <div>reverse : true => <span>{{ctrl.myInput | reverse : true}}</span></div>
+    <!-- 只计算一次，不会随着 myInput 的值变化而变化 -->
+    <div>reversed within controller => <span>{{ctrl.filteredInput}}</span></div>
+  </div>
+</div>
+<script>
+  (function (angular) {
+    'use strict';
+    angular.module('myApp', ['core', 'myController']);
+  })(window.angular)
+</script>
+</body>
+</html>

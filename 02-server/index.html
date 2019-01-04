@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Service</title>
+  <script src="../angular.min.js"></script>
+  <script src="finance.js"></script>
+  <script src="money.js"></script>
+</head>
+<body ng-app="myApp">
+  <!-- 注意： Money as money -->
+  <div ng-controller="Money as money">
+    <div class="input">
+      <span>输入金额: </span>
+      <input type="number" ng-model="money.moneyInput" />
+      <select ng-model="money.fromType">
+        <option value="CNY">人民币</option>
+        <option value="USD">美元</option>
+        <option value="EUS">欧元</option>
+      </select>
+    </div>
+    <div class="output">
+      <ul>
+        <li ng-repeat="type in money.types">
+          <span>{{type | checkMoneyName}}: </span>
+          <span>{{money.calcMoney(type)}}</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <script>
+    (function(angular) {
+      'use strict';
+      angular.module('myApp', ['core', 'money']);
+    })(window.angular);
+  </script>
+</body>
+</html>

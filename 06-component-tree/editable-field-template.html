@@ -1,0 +1,9 @@
+<div class="editable-field">
+  test
+  <span ng-switch="$ctrl.isEditMode">
+    <input type="text" ng-switch-when="true" ng-model="$ctrl.fieldValue">
+    <span ng-switch-default>{{$ctrl.fieldValue}}</span>
+  </span>
+  <button>{{$ctrl.isEditMode ? '保存' : '修改'}}</button>
+  <button ng-if="$ctrl.isEditMode">重置</button>
+</div>

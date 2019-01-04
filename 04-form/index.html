@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Form</title>
+    <style>
+      /* .ng-touched: 失去焦点时 */
+      /* .ng-invalid: 无效 */
+      .css-form input.ng-invalid.ng-touched {
+        background-color: #fa787e;
+      }
+      /* .ng-valid: 有效 */
+      .css-form input.ng-valid.ng-touched {
+        background-color: #78fa89;
+      }
+    </style>
+  </head>
+  <body ng-app="myApp">
+    <div ng-controller="MyForm">
+      <!-- 注: novalidate 让浏览器不要验证表单 -->
+      <!-- 注: 给 form 元素以及 input 元素添加 name 属性，用于指定表单实例上的属性名称 -->
+      <form class="css-form" name="form" novalidate>
+        <label
+          >姓名: <input name="uName" type="text" ng-model="user.name" required
+        /></label>
+        <br />
+        <!-- 注: form.$submitted 表单提交后为 true -->
+        <!-- 注: form.uName.$touched 交互过后为 true -->
+        <div
+          ng-show="(form.$submitted || form.uName.$touched ) && form.uName.$error.required "
+        >
+          请输入姓名
+        </div>
+        <label
+          >邮箱:
+          <input name="uEmail" type="email" ng-model="user.email" required
+        /></label>
+        <div
+          ng-show="(form.$submitted || form.uEmail.$touched) && form.uEmail.$error.required"
+        >
+          请输入邮箱
+        </div>
+        <div
+          ng-show="(form.$submitted || form.uEmail.$touched) && form.uEmail.$error.email"
+        >
+          邮箱格式有误
+        </div>
+        <div>
+          性别:
+          <label
+            >男<input type="radio" ng-model="user.gender" value="male"
+          /></label>
+          <label
+            >女<input type="radio" ng-model="user.gender" value="female"
+          /></label>
+        </div>
+        <label
+          ><input
+            name="uAgree"
+            type="checkbox"
+            ng-model="user.agree"
+            required
+          />我同意</label
+        >
+        <div ng-show="user.agree">
+          签名: <input name="uSign" type="text" ng-model="user.sign" required />
+        </div>
+        <div
+          ng-show="(form.$submitted || form.uAgree.$touched) && (form.uAgree.$error.required || form.uSign.$error.required)"
+        >
+          请勾选同意并签名
+        </div>
+        <div>
+          <input type="button" value="重置" ng-click="reset(form)" />
+          <input type="submit" value="保存" ng-click="save(user)" />
+        </div>
+      </form>
+      <div>
+        <div>master =</div>
+        <div>{{ master | json }}</div>
+        <div>
+          <div>user =</div>
+          <div>{{ user | json }}</div>
+        </div>
+      </div>
+    </div>
+    <script src="../angular.min.js"></script>
+    <script src="my-forms.js"></script>
+    <script>
+      (function(angular) {
+        angular.module('myApp', ['myForm']);
+      })(window.angular);
+    </script>
+  </body>
+</html>
