@@ -45,7 +45,7 @@
     controller: MyTPlanesController
   });
   function MyTPlanesController() {
-    this.i=10;// 不影响
+    this.i=10;// 测试，不影响 span 中的{{i || 0}}
     // require: '^myTabs' 能够让本组件的 controller 使用 myTabs 组件
     this.$onInit = function() {
       // 初始化时把controller自身 push 进 myTabs 组件的 planes 属性中
