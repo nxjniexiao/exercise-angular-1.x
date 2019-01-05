@@ -24,7 +24,7 @@
       function() {
         return {
           district: 'E',
-          // 创建包含任意内容的指令(指令内部使用 ng-transclude)
+          // 创建包含任意内容的指令(HTML 标签中使用 ng-transclude，任意内容将会插入到此标签内)
           transclude: true,
           scope: {
             // =: 绑定指令内部属性;

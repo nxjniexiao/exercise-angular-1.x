@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Intercomponent communication</title>
+</head>
+<body ng-app="myApp">
+<my-tabs>
+  <my-planes title="Tab 1">
+    <h4>tab 1</h4>
+    <p>content of tab 1</p>
+    <p><a href="" ng-click="i=i+1">点击</a><span>{{i || 0}}</span></p>
+  </my-planes>
+  <my-planes title="Tab 2">
+    <h4>tab 2</h4>
+    <p>content of tab 2</p>
+    <p><a href="" ng-click="i=i+1">点击</a><span>{{i || 0}}</span></p>
+  </my-planes>
+  <my-planes title="Tab 3">
+    <h4>tab 3</h4>
+    <p>content of tab 3</p>
+  </my-planes>
+</my-tabs>
+<script src="../angular.min.js"></script>
+<script src="index.js"></script>
+<script src="tabs-planes-components.js"></script>
+</body>
+</html>

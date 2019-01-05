@@ -1,0 +1,6 @@
+<ul>
+  <li ng-repeat="plane in $ctrl.planes">
+    <a href="" ng-click="$ctrl.selectPlane(plane)">{{plane.title}}</a>
+  </li>
+</ul>
+<div class="tab-content" ng-transclude></div>
