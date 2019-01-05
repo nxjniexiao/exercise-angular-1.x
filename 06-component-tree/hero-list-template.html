@@ -1,5 +1,9 @@
 <div class="hero-list">
-  <div ng-repeat="hero in $ctrl.list">
-    <hero-detail hero="hero"></hero-detail>
+  <div ng-repeat="hero in $ctrl.heroList">
+    <hero-detail index="$index" hero="hero" update-hero="$ctrl.updateHero(index, newHero)"
+                 delete-hero="$ctrl.deleteHero(index)"></hero-detail>
+  </div>
+  <div>
+    <button ng-click="$ctrl.addHero()">增加</button>
   </div>
 </div>

@@ -1,11 +1,18 @@
-<div class="hero-detail" style="border-bottom: 1px solid #ccc; margin-bottom: 10px;">
-  <div>
+<div class="hero-detail" style="border-bottom: 1px solid #ccc; margin-bottom: 10px;padding-bottom:10px;">
+  <div class="hero-name">
     <span>Name: </span>
-    <span>{{$ctrl.hero.name}}</span>
+    <editable-field ng-show="$ctrl.isEditMode" field-value="$ctrl.heroCopy.name" field-type="text"></editable-field>
+    <span ng-show="!$ctrl.isEditMode">{{$ctrl.hero.name}}</span>
+  </div>
+  <div class="hero-location">
+    <span>Location: </span>
+    <editable-field ng-show="$ctrl.isEditMode" field-value="$ctrl.heroCopy.location" field-type="text"></editable-field>
+    <span ng-show="!$ctrl.isEditMode">{{$ctrl.hero.location}}</span>
   </div>
   <div>
-    <span>Location: </span>
-    <editable-field field-value="$ctrl.hero.location"></editable-field>
+    <button ng-click="$ctrl.toggleEditMode()">{{$ctrl.isEditMode ? '保存' : '修改'}}</button>
+    <button ng-if="$ctrl.isEditMode" ng-click="$ctrl.resetHero()">重置</button>
+    <button ng-click="$ctrl.deleteHero({index: $ctrl.index})">删除</button>
   </div>
 </div>
 
