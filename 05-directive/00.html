@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Template-expanding directive</title>
+  </head>
+  <body ng-app="myApp">
+    <div ng-controller="MyController">
+      <!-- 模板A -->
+      <div my-customer-a></div>
+      <my-customer-a></my-customer-a>
+      <!-- 模板B --><hr>
+      <div my-customer-b></div>
+      <my-customer-b></my-customer-b>
+    </div>
+    <script src="../angular.min.js"></script>
+    <script src="00-template-expanding-directive.js"></script>
+    <script>
+      (function(angular) {
+        angular.module("myApp", ["templateModule"]);
+      })(window.angular);
+    </script>
+  </body>
+</html>

@@ -17,8 +17,8 @@
       restrict: 'E',
       // 指定隔离域中的属性;
       scope: {
-        // =: 绑定指令内部属性;把指令内部属性 customer-info 绑定至外部的 info
-        customerInfo: '=info'
+        // = 为双向绑定;把指令内部属性 customerInfo 绑定至外部的 customer-info
+        customerInfo: '=customerInfo'
       },
       templateUrl: '01-template.html'// 可以使用 customerInfo
     }
