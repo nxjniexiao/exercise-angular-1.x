@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Controller</title>
+    <style>
+      .block {
+        border: 1px solid #ccc;
+        padding: 5px;
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body ng-app="myApp">
+    <div ng-controller="MainController" class="block">
+      <p>Good {{timeOfDay}}, {{name}}!</p>
+      <div ng-controller="ChildController" class="block">
+        <p>Good {{timeOfDay}}, {{name}}!</p>
+        <div ng-controller="GrandChildController" class="block">
+          <p>Good {{timeOfDay}}, {{name}}!</p>
+        </div>
+      </div>
+    </div>
+    <!-- 官方解释 -->
+    <hr>
+    <div class="controller-desc">
+      <p>
+        在 AngularJS 中，Controller 由 JavaScript 构造函数定义，该函数用于扩充
+        AngularJS Scope。
+      </p>
+      <p>
+        控制器(controller)可以以不同方式附加到 DOM 上。对于每种方式，AngularJS
+        将使用指定的 Controller 构造函数实例化一个新的 Controller 对象：
+      </p>
+      <ul>
+        <li>ngController 指令，会新建一个子域，并在构造函数中以 $scope 传入</li>
+        <li>路由定义中的路由控制器</li>
+        <li>常规指令或组件指令中的控制器</li>
+      </ul>
+      <p>
+        每个 Controller 接收的 $scope
+        将有权访问层次结构上方的控制器定义的属性和方法。
+      </p>
+    </div>
+    <script src="../angular.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
