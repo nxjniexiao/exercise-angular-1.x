@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>A Directive That Communicate</title>
+  </head>
+  <body ng-app="myApp">
+    <div>
+      <my-tabs>
+        <my-plane title="tab 1">
+          <p>Content of tab 1</p>
+          <div ng-click="i=i+1">
+            <a href="">点击 {{i || 0}}</a>
+          </div>
+        </my-plane>
+        <my-plane title="tab 2">
+          <p>Content of tab 2</p>
+          <div ng-click="i=i+1">
+            <a href="">点击 {{i || 0}}</a>
+          </div>
+        </my-plane>
+      </my-tabs>
+    </div>
+    <script src="../angular.min.js"></script>
+    <script src="04-tabs-planes-directive.js"></script>
+    <script>
+      (function(angular) {
+        angular.module('myApp', ['tabsAndPlanes']);
+      })(window.angular);
+    </script>
+  </body>
+</html>
