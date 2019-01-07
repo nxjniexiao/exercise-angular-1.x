@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Difference between this and $scope</title>
+  </head>
+  <body ng-app="myApp">
+    <div ng-controller="MyController as myCtrl">
+      <div>{{ name }}</div>
+      <div>{{ myCtrl.name }}</div>
+    </div>
+    <script src="../angular.min.js"></script>
+    <script>
+      (function(angular) {
+        angular.module('myApp', []).controller('MyController', [
+          '$scope',
+          function($scope) {
+            // this 为控制器 MyController
+            // $scope 为控制器扩充的域($scope)
+            this.name = 'name(this.name)';
+            $scope.name = 'name($scope.name)';
+          }
+        ]);
+      })(window.angular);
+    </script>
+  </body>
+</html>
