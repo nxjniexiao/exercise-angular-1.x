@@ -15,13 +15,13 @@
         // 1. this 为 MyTabsController
         // 2. $scope 为控制器控制的域(scope)
         this.addPlane = function(plane) {
-          if ($scope.planes.length === 0) {
+          if (planes.length === 0) {
             plane.selected = true;
           }
           $scope.planes.push(plane);
         };
         $scope.selectPlane = function(plane) {
-          $scope.planes.forEach(plane => (plane.selected = false));
+          planes.forEach(plane => (plane.selected = false));
           plane.selected = true;
         };
       }
