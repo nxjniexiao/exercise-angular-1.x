@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Modal</title>
+  <!-- 引入 bootstrap 样式文件 -->
+  <link rel="stylesheet" href="../lib/bootstrap.css">
+</head>
+<body ng-app="myApp">
+<div>
+  <div meeting-info>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" show-meeting-info="01">
+      会议 01
+    </button>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" show-meeting-info="02">
+      会议 02
+    </button>
+  </div>
+</div>
+
+<!-- JavaScript 库 -->
+<script src="../lib/jquery.js"></script>
+<script src="../lib/bootstrap.js"></script>
+<script src="../lib/angular.js"></script>
+<!-- angular 相关 -->
+<script src="my-app.js"></script>
+<script src="meeting-info.directive.js"></script>
+<script src="show-meeting-info.directive.js"></script>
+</body>
+</html>

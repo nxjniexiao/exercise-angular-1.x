@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Day Pilot</title>
+</head>
+<body>
+<div ng-app="main" ng-controller="DemoCtrl">
+  <daypilot-scheduler id="dp" config="config" events="events"></daypilot-scheduler>
+  <div class="space">
+    New event:
+    <button ng-click="add()">Add</button>
+    <span>{{currentSelectedEvent.resource}}</span>
+    <span>{{currentSelectedEvent.start}}</span>
+    <span>{{currentSelectedEvent.end}}</span>
+  </div>
+  <div class="space">
+    First event:
+    <button ng-click="move()">Move</button>
+    <button ng-click="rename()">Rename</button>
+    <button ng-click="changeResource()">changeResource</button>
+  </div>
+  <div class="space">
+    <span class="bold">Scale:</span>
+    <a ng-click="scale('Day')" href="javascript:void(0)">Days</a>
+    <a ng-click="scale('Week')" href="javascript:void(0)">Weeks</a>
+  </div>
+  <div class="space">
+    <div class="bold">Selected events (click or Ctrl+click to select):</div>
+    <div ng-repeat="item in selectedEvents">
+      {{item.text()}}:  start:{{item.start()}},  end:{{item.end()}},  resource:{{item.resource()}},  id:{{item.id()}}
+    </div>
+  </div>
+</div>
+<script src="../lib/angular.min.js"></script>
+<script src="../lib/daypilot-all.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
