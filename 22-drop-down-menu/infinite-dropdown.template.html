@@ -1,0 +1,7 @@
+<ul class="dropdown-menu">
+  <li ng-repeat="list in listArray" ng-class="{'dropdown-submenu': list.children}" data-data-company-id="{{list.value}}">
+    <a href="#">{{list.label}}</a>
+    <infinite-dropdown list-array="list.children"></infinite-dropdown>
+  </li>
+</ul>
+
