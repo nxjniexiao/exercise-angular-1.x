@@ -3,53 +3,85 @@
   <component name="ChangeListManager">
     <list default="true" id="bbe6b199-0bef-486c-9a57-42ad99e2a99f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/22-drop-down-menu/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/22-drop-down-menu/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/22-drop-down-menu/infinite-dropdown.directive.js" beforeDir="false" afterPath="$PROJECT_DIR$/22-drop-down-menu/infinite-dropdown-submenu.directive.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/22-drop-down-menu/infinite-dropdown.template.html" beforeDir="false" afterPath="$PROJECT_DIR$/22-drop-down-menu/infinite-dropdown-submenu.template.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/22-drop-down-menu/my-app.js" beforeDir="false" afterPath="$PROJECT_DIR$/22-drop-down-menu/my-app.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/22-drop-down-menu/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+            <state relative-caret-position="81">
+              <caret line="3" column="24" lean-forward="true" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/22-drop-down-menu/infinite-dropdown.template.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="70" lean-forward="true" selection-start-line="3" selection-start-column="70" selection-end-line="3" selection-end-column="70" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/22-drop-down-menu/my-app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="25" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="25" />
-              <folding>
-                <element signature="e#172#1445#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="infinite-dropdown.directive.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/22-drop-down-menu/infinite-dropdown.directive.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+            <state relative-caret-position="378">
+              <caret line="14" column="59" lean-forward="true" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="infinite-dropdown.template.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/22-drop-down-menu/infinite-dropdown.template.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="7" column="85" lean-forward="true" selection-start-line="7" selection-start-column="85" selection-end-line="7" selection-end-column="85" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="infinite-dropdown.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/22-drop-down-menu/infinite-dropdown.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="891">
+              <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="infinite-dropdown-submenu.directive.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/22-drop-down-menu/infinite-dropdown-submenu.directive.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="infinite-dropdown-submenu.template.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/22-drop-down-menu/infinite-dropdown-submenu.template.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="27">
+              <caret line="1" column="82" selection-start-line="1" selection-start-column="82" selection-end-line="1" selection-end-column="82" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="my-app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/22-drop-down-menu/my-app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="318" column="12" selection-start-line="318" selection-start-column="12" selection-end-line="318" selection-end-column="12" />
+              <folding>
+                <element signature="e#199#9882#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -61,6 +93,7 @@
       <list>
         <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -81,9 +114,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/05-directive/02-time-directive.js" />
-        <option value="$PROJECT_DIR$/05-directive/02.html" />
-        <option value="$PROJECT_DIR$/05-directive/02-manipulate-dom-directive.js" />
         <option value="$PROJECT_DIR$/05-directive/03-my-dialog.html" />
         <option value="$PROJECT_DIR$/05-directive/03.html" />
         <option value="$PROJECT_DIR$/06-component-tree/index.js" />
@@ -125,18 +155,31 @@
         <option value="$PROJECT_DIR$/01-emit-broadcast/index.html" />
         <option value="$PROJECT_DIR$/20-plugin-day-pilot/main.js" />
         <option value="$PROJECT_DIR$/22-drop-down-menu/inddex.html" />
-        <option value="$PROJECT_DIR$/22-drop-down-menu/my-app.js" />
         <option value="$PROJECT_DIR$/22-drop-down-menu/infinite-drop-down.directive.js" />
         <option value="$PROJECT_DIR$/22-drop-down-menu/infinite-drop-down.template.html" />
         <option value="$PROJECT_DIR$/22-drop-down-menu/example-01.html" />
+        <option value="$PROJECT_DIR$/22-drop-down-menu/my-app.js" />
         <option value="$PROJECT_DIR$/22-drop-down-menu/index.html" />
-        <option value="$PROJECT_DIR$/22-drop-down-menu/infinite-dropdown.directive.js" />
+        <option value="$PROJECT_DIR$/22-drop-down-menu/infinite-dropdown.css" />
+        <option value="$PROJECT_DIR$/22-drop-down-menu/infinite-dropdown-submenu.directive.js" />
+        <option value="$PROJECT_DIR$/22-drop-down-menu/infinite-dropdown-submenu.template.html" />
         <option value="$PROJECT_DIR$/22-drop-down-menu/infinite-dropdown.template.html" />
+        <option value="$PROJECT_DIR$/22-drop-down-menu/infinite-dropdown.directive.js" />
       </list>
     </option>
   </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
+    <option name="x" value="630" />
+    <option name="y" value="245" />
     <option name="width" value="1932" />
     <option name="height" value="1056" />
   </component>
@@ -153,27 +196,12 @@
         <subPane>
           <expand>
             <path>
-              <item name="exercise-angular" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exercise-angular" type="462c0819:PsiDirectoryNode" />
+              <item name="exercise-angular-1.x" type="b2602c69:ProjectViewProjectNode" />
+              <item name="exercise-angular-1.x" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="exercise-angular" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exercise-angular" type="462c0819:PsiDirectoryNode" />
-              <item name="01-emit-broadcast" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exercise-angular" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exercise-angular" type="462c0819:PsiDirectoryNode" />
-              <item name="05-directive" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exercise-angular" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exercise-angular" type="462c0819:PsiDirectoryNode" />
-              <item name="21-bootstrap-modal" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exercise-angular" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exercise-angular" type="462c0819:PsiDirectoryNode" />
+              <item name="exercise-angular-1.x" type="b2602c69:ProjectViewProjectNode" />
+              <item name="exercise-angular-1.x" type="462c0819:PsiDirectoryNode" />
               <item name="22-drop-down-menu" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -185,7 +213,8 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/sys-project/umeet-web" />
+    <property name="last_opened_file_path" value="F:/git/braft-editor" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -238,60 +267,44 @@
       <workItem from="1547081152098" duration="2793000" />
       <workItem from="1547084696732" duration="6708000" />
       <workItem from="1547167000363" duration="14330000" />
+      <workItem from="1547262620699" duration="973000" />
+      <workItem from="1547300013693" duration="620000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123021000" />
+    <option name="totallyTimeSpent" value="128556000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14488935" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32827735" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32827735" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/07-intercomponent-communication/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" column="44" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/07-intercomponent-communication/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/08-module/my-app.filter.module.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/08-module/my-app.directive.module.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -583,44 +596,62 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/22-drop-down-menu/example-01.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="43" lean-forward="true" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/22-drop-down-menu/my-app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="25" />
+        <state relative-caret-position="189">
+          <caret line="318" column="12" selection-start-line="318" selection-start-column="12" selection-end-line="318" selection-end-column="12" />
           <folding>
-            <element signature="e#172#1445#0" />
+            <element signature="e#199#9882#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/22-drop-down-menu/infinite-dropdown.directive.js">
+    <entry file="file://$PROJECT_DIR$/22-drop-down-menu/infinite-dropdown.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+        <state relative-caret-position="891">
+          <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/22-drop-down-menu/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        <state relative-caret-position="81">
+          <caret line="3" column="24" lean-forward="true" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/22-drop-down-menu/example-01.html">
+    <entry file="file://$PROJECT_DIR$/22-drop-down-menu/infinite-dropdown-submenu.directive.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="43" lean-forward="true" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
-          <folding>
-            <element signature="n#style#0;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="189">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/22-drop-down-menu/infinite-dropdown-submenu.template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="82" selection-start-line="1" selection-start-column="82" selection-end-line="1" selection-end-column="82" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/22-drop-down-menu/infinite-dropdown.template.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="70" lean-forward="true" selection-start-line="3" selection-start-column="70" selection-end-line="3" selection-end-column="70" />
+        <state relative-caret-position="189">
+          <caret line="7" column="85" lean-forward="true" selection-start-line="7" selection-start-column="85" selection-end-line="7" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/22-drop-down-menu/infinite-dropdown.directive.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" column="59" lean-forward="true" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
         </state>
       </provider>
     </entry>
