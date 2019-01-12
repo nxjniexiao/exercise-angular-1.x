@@ -9,10 +9,17 @@ angular.module('myApp').directive('infiniteDropdown', [function() {
     link
   };
   function link(scope, element, attrs) {
-    element.on('click', function($event) {
-      console.log($event);
-      console.log($event.target);
-      console.log($event.target.getAttribute("companyId"));
+    element.on('click', function(event) {
+      let label = event.toElement.dataset.companyName;
+      let id = event.toElement.dataset.companyId;
+      if(!id) {
+        return;
+      }
+      scope.selectedItem = {
+        label,
+        id
+      };
+      scope.$apply();
     });
   }
 }]);
