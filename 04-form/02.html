@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Example - example-forms-modify-validators-production</title>
+  <style>
+    /* .ng-touched: 失去焦点时 */
+    /* .ng-invalid: 无效 */
+    .css-form input.ng-invalid.ng-touched {
+      background-color: #fa787e;
+    }
+
+    /* .ng-valid: 有效 */
+    .css-form input.ng-valid.ng-touched {
+      background-color: #78fa89;
+    }
+  </style>
+</head>
+<body ng-app="myApp">
+<div>
+  <form class="css-form" name="form" novalidate>
+    <label for="email">
+      邮箱: <input type="email" id="email" name="myEmail" ng-model="userEmail" my-email-validator />
+    </label>
+    <span ng-show="form.myEmail.$error.email">格式不正确</span>
+    <div>
+      <span>{{userEmail}}</span>
+    </div>
+  </form>
+</div>
+<script src="../lib/angular.js"></script>
+<script src="02-modify-built-in-validator.js"></script>
+<script>
+  (function (angular) {
+    angular.module('myApp', ['myForm']);
+  })(window.angular);
+</script>
+</body>
+</html>
