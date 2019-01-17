@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Custom Form Controls (using ngModel)</title>
+  <style>
+    .content-editable {
+      cursor: pointer;
+      background-color: #ccc;
+    }
+  </style>
+</head>
+<body ng-app="myApp">
+<div>
+  <!-- HTML 中 contenteditable 为 true 表示元素可编辑 -->
+  <div class="content-editable" contenteditable="true" ng-model="content" title="点击编辑" editable>test</div>
+  <div>{{content}}</div>
+</div>
+<script src="../lib/angular.js"></script>
+<script src="04-custom-form-control.js"></script>
+<script>
+  (function (angular) {
+    angular.module('myApp', ['myForm']);
+  })(window.angular);
+</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Custom Validation</title>
+  <style>
+    .css-form input.ng-invalid.ng-touched, input.ng-invalie.ng-dirty {
+      background-color: #fa787e;
+    }
+    .css-form input.ng-valid.ng-touched {
+      background-color: #78fa89;
+    }
+  </style>
+</head>
+<body ng-app="myApp">
+<div>
+  <form class="css-form" name="form" novalidate>
+    <div>
+      <!-- 自定义同步验证 -->
+      <label for="integerInput">整数:
+        <input type="number" id="integerInput" name="intInput" ng-model="int" min="-10" max="10" integer>
+        {{int}}
+      </label>
+      <span ng-show="form.intInput.$error.integer">请输入整数</span>
+      <span ng-show="form.intInput.$error.integer && form.intInput.$error.min || form.intInput.$error.max">请输入范围为-10~10的整数</span>
+    </div>
+    <div>
+      <!-- 自定义异步验证 -->
+      <label for="nameInput">用户名:
+        <input id="nameInput" name="nInput" type="text" ng-model="userName" valid-name>
+        {{userName}}
+        <!-- 正在进行的异步验证按键存储在 ngModelController.$pending 中 -->
+        <span ng-show="form.nInput.$pending.validName">正在检查用户名是否可用...</span>
+        <span ng-show="form.nInput.$error.validName">用户名已存在</span>
+      </label>
+    </div>
+  </form>
+</div>
+<script src="../lib/angular.js"></script>
+<script src="03-custom-validation.js"></script>
+<script>
+  (function (angular) {
+    angular.module('myApp', ['myForm']);
+  })(window.angular);
+</script>
+</body>
+</html>
