@@ -46,6 +46,7 @@ var app = angular.module('main', ['daypilot']).controller('DemoCtrl', function (
     onTimeRangeSelected: function(args) {
       let {start, end, resource} = args;
       $scope.currentSelectedEvent = {start, end, resource};
+      $scope.add();
       $scope.$apply();
     }
   };

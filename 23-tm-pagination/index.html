@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="UTF-8">
+  <title>tm pagination</title>
+  <!-- 引入 bootstrap 样式文件 -->
+  <link rel="stylesheet" href="../lib/bootstrap.css">
+  <!-- 引入插件样式 -->
+  <link rel="stylesheet" href="tm.pagination.css">
+  <style>
+    label {
+      display: block;
+    }
+  </style>
+</head>
+<body ng-controller="myController">
+<div>
+  <label for="currentPage">当前页：<input id="currentPage" type="number" ng-model="paginationConfig.currentPage"></label>
+  <label for="itemsPerPage">每页显示条数：<input id="itemsPerPage" type="number" ng-model="paginationConfig.itemsPerPage"></label>
+  <label for="totalItems">总条数：<input id="totalItems" type="number" ng-model="paginationConfig.totalItems"></label>
+</div>
+<hr>
+<tm-pagination config="paginationConfig" callback="test()"></tm-pagination>
+<!-- 库 -->
+<script src="../lib/jquery.js"></script>
+<script src="../lib/bootstrap.js"></script>
+<script src="../lib/angular.min.js"></script>
+<!-- 自定义文件 -->
+<script src="my-app.js"></script>
+<script src="tm.pagination.js"></script>
+</body>
+</html>
