@@ -6,7 +6,54 @@ var app = angular.module('main', ['daypilot']).controller('DemoCtrl', function (
       {name: "Room B", id: "B"},
       {name: "Room C", id: "C"},
       {name: "Room D", id: "D"},
-      {name: "Room E", id: "E"}
+      {name: "Room E", id: "E"},
+      {name: "Room F", id: "F"},
+      {name: "Room G", id: "G"},
+      {name: "Room H", id: "H"},
+      {name: "Room I", id: "I"},
+      {name: "Room J", id: "J"},
+      {name: "Room K", id: "K"},
+      {name: "Room L", id: "L"},
+      {name: "Room M", id: "M"},
+      {name: "Room N", id: "N"},
+      {name: "Room O", id: "O"},
+      {name: "Room P", id: "P"},
+      {name: "Room Q", id: "Q"},
+      {name: "Room R", id: "R"},
+      {name: "Room S", id: "S"},
+      {name: "Room T", id: "T"},
+      {name: "Room U", id: "U"},
+      {name: "Room V", id: "V"},
+      {name: "Room W", id: "W"},
+      {name: "Room X", id: "X"},
+      {name: "Room Y", id: "Y"},
+      {name: "Room Z", id: "Z"},
+      {name: "Room a", id: "a"},
+      {name: "Room b", id: "b"},
+      {name: "Room c", id: "c"},
+      {name: "Room d", id: "d"},
+      {name: "Room e", id: "e"},
+      {name: "Room f", id: "f"},
+      {name: "Room g", id: "g"},
+      {name: "Room h", id: "h"},
+      {name: "Room i", id: "i"},
+      {name: "Room j", id: "j"},
+      {name: "Room k", id: "k"},
+      {name: "Room l", id: "l"},
+      {name: "Room m", id: "m"},
+      {name: "Room n", id: "n"},
+      {name: "Room o", id: "o"},
+      {name: "Room p", id: "p"},
+      {name: "Room q", id: "q"},
+      {name: "Room r", id: "r"},
+      {name: "Room s", id: "s"},
+      {name: "Room t", id: "t"},
+      {name: "Room u", id: "u"},
+      {name: "Room v", id: "v"},
+      {name: "Room w", id: "w"},
+      {name: "Room x", id: "x"},
+      {name: "Room y", id: "y"},
+      {name: "Room z", id: "z"},
     ],
     [
       {name: "Room 1", id: "1"},
@@ -16,12 +63,13 @@ var app = angular.module('main', ['daypilot']).controller('DemoCtrl', function (
   ];
   $scope.config = {
     scale: "Day",
-    days: 365,
+    days: 66,
     startDate: "2014-09-01",
     timeHeaders: [
       {groupBy: "Month"},
       {groupBy: "Cell", format: "d"}
     ],
+    allowEventOverlap: false,
     resources: $scope.resourceList[$scope.resourceIndex],
     eventClickHandling: "Select",
     // 鼠标右键菜单
@@ -46,8 +94,8 @@ var app = angular.module('main', ['daypilot']).controller('DemoCtrl', function (
     onTimeRangeSelected: function(args) {
       let {start, end, resource} = args;
       $scope.currentSelectedEvent = {start, end, resource};
-      $scope.add();
-      $scope.$apply();
+      // $scope.add();
+      // $scope.$apply();
     }
   };
 
