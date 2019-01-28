@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Difference between ngChecked and ngModel</title>
+</head>
+<body ng-app="myApp">
+<div ng-controller="MyController as myCtrl">
+  <label>点击(ng-model): <input type="checkbox" ng-model="leader"></label><br/>
+  <label>点击(ng-checked): <input type="checkbox" ng-checked="leader"></label>
+  <div>{{leader}}</div>
+</div>
+<script src="../lib/angular.min.js"></script>
+<script>
+  (function (angular) {
+    angular.module('myApp', []).controller('MyController', [
+      '$scope',
+      function ($scope) {
+        $scope.leader = true;
+        // ngChecked 单向，点击不影响 model 中的值
+        // ngModel 双向，点击影响 model 中的值
+      }
+    ]);
+  })(window.angular);
+</script>
+</body>
+</html>
