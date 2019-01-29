@@ -1,44 +1,118 @@
 <div ng-transclude></div>
 <!-- Modal -->
-<div class="modal fade" id="meetingInfoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-     aria-hidden="true">
+<div class="modal fade" id="meetingInfoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-        <!--<h5 class="modal-title" id="exampleModalLabel">会议室ID: {{meetingId}}</h5>-->
+      <div class="modal-header" style="border-bottom: none;">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
         <div class="tabbable-line resource_title">
           <ul class="nav nav-tabs">
             <li class="active">
-              <a ng-click="tab='meetingDetail'" href="" data-toggle="tab" aria-expanded="true">会议详情</a>
+              <a ng-click="changeTab('meetingDetail')" href="" data-toggle="tab" aria-expanded="true">会议详情</a>
             </li>
             <li class="">
-              <a ng-click="tab='approvalProcess'" href="" data-toggle="tab" aria-expanded="false">审批流程</a>
+              <a ng-click="changeTab('approvalProcess')" href="" data-toggle="tab" aria-expanded="false">审批流程</a>
             </li>
           </ul>
           <hr>
         </div>
       </div>
-      <div class="modal-body">
+      <!-- tab 1 会议详情 -->
+      <div class="modal-body" ng-show="tab === 'meetingDetail'" style="padding: 0 25px 25px;">
+        <!--会议信息-->
         <div>
-          <h5>会议信息</h5>
-          <hr>
-          <form class="form-horizontal">
-          <div class="form-group" ng-repeat="(key, value) in titlesInMeetingInfo">
-            <label class="col-md-3 control-label">{{value}}:</label>
-            <div class="col-md-3">
-              <p class="form-control-static">{{meetingDetail.meetingInfo[key] | date: 'yyyy-MM-dd HH:mm'}}</p>
+          <h5 style="font-weight: bold">会议信息</h5>
+          <hr style="margin: 0 0 10px 0;">
+          <div class="container-fluid">
+            <div class="col-md-6" ng-repeat="(key, value) in titlesInMeetingInfo">
+              <div class="row" style="padding-bottom: 10px;">
+                <span class="col-md-5 row" style="text-align: right; padding-right: 20px;">{{value}}:</span>
+                <span class="col-md-7 row">{{meetingDetail.meetingInfo[key] | date: 'yyyy-MM-dd HH:mm'}}</span>
+              </div>
             </div>
           </div>
-          </form>
+        </div>
+        <!--会议室信息-->
+        <div>
+          <h5 style="font-weight: bold">会议室信息</h5>
+          <hr style="margin: 0;">
+          <table class="table table-light table-hover">
+            <thead class="bg-light-grey">
+              <tr>
+                <td>会议室</td>
+                <td>开会地点</td>
+                <td>类型</td>
+                <td>参会人数</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr ng-repeat="meetingRoom in meetingDetail.meetingRoomDetail">
+                <td ng-repeat="value in meetingRoom">{{value}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--参会人信息-->
+        <div>
+          <h5 style="font-weight: bold">参会人信息</h5>
+          <hr style="margin: 0;">
+          <table class="table table-light table-hover">
+            <thead class="bg-light-grey">
+            <tr>
+              <td>名称</td>
+              <td>所属部门</td>
+              <td>联系电话</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="meetingRoom in meetingDetail.participantsInfo">
+              <td ng-repeat="value in meetingRoom">{{value}}</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--会议联系人-->
+        <div>
+          <h5 style="font-weight: bold">参会人信息</h5>
+          <hr style="margin: 0;">
+          <table class="table table-light table-hover">
+            <thead class="bg-light-grey">
+            <tr>
+              <td>名称</td>
+              <td>所属部门</td>
+              <td>联系电话</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="meetingRoom in meetingDetail.meetingContacts">
+              <td ng-repeat="value in meetingRoom">{{value}}</td>
+            </tr>
+            </tbody>
+          </table>
         </div>
       </div>
-      <!--<div class="modal-footer">-->
-        <!--<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
-        <!--<button type="button" class="btn btn-primary">Save changes</button>-->
-      <!--</div>-->
+      <!-- tab 2 审批流程 -->
+      <div class="modal-body" ng-show="tab == 'approvalProcess'" style="padding: 0 25px 25px;">
+        <!--会议联系人-->
+        <div>
+          <h5 style="font-weight: bold">参会人信息</h5>
+          <hr style="margin: 0;">
+          <table class="table table-light table-hover">
+            <thead class="bg-light-grey">
+            <tr>
+              <td>审批人</td>
+              <td>状态</td>
+              <td>描述</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="process in meetingDetail.approvalProcess">
+              <td ng-repeat="value in process">{{value}}</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
   </div>
 </div>

@@ -59,7 +59,19 @@ angular.module('myApp')
               department: '德阳/实施部',
               phone: '12388888888'
             }
-          ]
+          ],
+          approvalProcess: {
+            '01': {
+              name: '小明',
+              status: '通过',
+              desc: ''
+            },
+            '02': {
+              name: '小红',
+              status: '待定',
+              desc: ''
+            }
+          }
         },
         '2': {
           meetingInfo: {
@@ -111,7 +123,19 @@ angular.module('myApp')
               department: '自贡/实施部',
               phone: '12388888888'
             }
-          ]
+          ],
+          approvalProcess: {
+            '01': {
+              name: '小明明',
+              status: '待定',
+              desc: ''
+            },
+            '02': {
+              name: '小红红',
+              status: '通过',
+              desc: ''
+            }
+          }
         },
       };
       $scope.titlesInMeetingInfo = {
@@ -124,7 +148,11 @@ angular.module('myApp')
         meetingRoom: '会议室',
         meetingRequirements: '会议要求'
       };
-      $scope.meetingId = 'initialId';
+      $scope.meetingId = '';
+      $scope.tab = 'meetingDetail'; // 'meetingDetail' 或 'approvalProcess'
+      $scope.changeTab = function(tabName) {
+        $scope.tab = tabName;
+      };
       // 暴露供外部使用的API
       this.changeId = function (newId) {
         console.log(newId + ' test');
