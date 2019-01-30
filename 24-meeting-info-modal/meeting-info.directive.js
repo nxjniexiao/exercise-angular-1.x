@@ -8,6 +8,33 @@ angular.module('myApp')
     };
 
     function MeetingInfoController($scope) {
+      $scope.meetingInfoTitlesArr = [
+        {name: '会议名称', keyName: 'name'},
+        {name: '所属部门', keyName: 'department'},
+        {name: '会议性质', keyName: 'type'},
+        {name: '会议级别', keyName: 'level'},
+        {name: '开会时间', keyName: 'startTime'},
+        {name: '会议时长', keyName: 'duration'},
+        {name: '会议室', keyName: 'meetingRoom'},
+        // {name: '会议要求', keyName: 'meetingRequirements'},
+        // {name: '提示', keyName: 'tips'},
+      ];
+      $scope.roomInfoTitlesArr = [
+        {name: '会议室', keyName: 'name'},
+        {name: '开会地点', keyName: 'location'},
+        {name: '类型', keyName: 'type'},
+        {name: '参会人数', keyName: 'participantsNum'},
+      ];
+      $scope.personInfoTitlesArr = [
+        {name: '姓名', keyName: 'name'},
+        {name: '所属部门', keyName: 'department'},
+        {name: '联系电话', keyName: 'phone'},
+      ];
+      $scope.approvalTitlesArr = [
+        {name: '审批人', keyName: 'name'},
+        {name: '状态', keyName: 'status'},
+        {name: '描述', keyName: 'desc'},
+      ];
       $scope.meetingDetailArr = {
         '1': {
           meetingInfo: {
@@ -16,7 +43,7 @@ angular.module('myApp')
             type: '本地会议',
             level: 'C',
             startTime: new Date(),
-            endTime: new Date(),
+            duration: '2小时30分钟',
             meetingRoom: '德阳会议室1',
             meetingRequirements: '综合样本、笔、纸、矿泉水',
             tips: '有领导参加，需要提前调试'
@@ -138,16 +165,6 @@ angular.module('myApp')
           }
         },
       };
-      $scope.titlesInMeetingInfo = {
-        name: '会议名称',
-        department: '所属部门',
-        type: '会议性质',
-        level: '会议级别',
-        startTime: '开会时间',
-        endTime: '会议时长',
-        meetingRoom: '会议室',
-        meetingRequirements: '会议要求'
-      };
       $scope.meetingId = '';
       $scope.tab = 'meetingDetail'; // 'meetingDetail' 或 'approvalProcess'
       $scope.changeTab = function(tabName) {
@@ -155,10 +172,10 @@ angular.module('myApp')
       };
       // 暴露供外部使用的API
       this.changeId = function (newId) {
-        console.log(newId + ' test');
         $scope.meetingId = newId;
         $scope.meetingDetail = $scope.meetingDetailArr[newId];
         $scope.$apply();
+        $('#meetingInfoModal').modal(); // 打开弹窗
       };
     }
   }]);

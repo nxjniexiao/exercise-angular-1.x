@@ -10,7 +10,6 @@ angular.module('myApp')
       // 监听点击事件
       element.on('click', function () {
         console.log(attrs.showMeetingInfo + ' clicked');
-        $('#meetingInfoModal').modal();
         let newId = attrs.showMeetingInfo;
         // 调用 meetingInfo 指令中暴露出来的API
         meetingInfoCtrl.changeId(newId);// controller 之外修改了 scope
