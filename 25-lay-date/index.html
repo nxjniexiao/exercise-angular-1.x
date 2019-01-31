@@ -3,30 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <title>Lay Date</title>
+  <!-- 引入 bootstrap 样式文件 -->
+  <link rel="stylesheet" href="../lib/bootstrap.css">
 </head>
 <body ng-app="myApp" ng-controller="MyController">
-<input type="text" id="test1" ng-model="date">
-<!--<input type="text" id="test2" ng-model="time" ng-change="changeTime()">-->
-<div>{{date}}</div>
+<div class="row">
+  <div class="col-xs-5 col-sm-5 col-md-5">
+    <date-time-selector date="startDate" time="startTime"></date-time-selector>
+  </div>
+  <div class="col-xs-5 col-sm-5 col-md-5">
+    <date-time-selector date="endDate" time="endTime" min-date="startDate" min-time="startTime"></date-time-selector>
+  </div>
+</div>
+<!-- JavaScript 库 -->
+<script src="../lib/jquery.js"></script>
+<script src="../lib/bootstrap.js"></script>
 <script src="../lib/angular.js"></script>
 <script src="../lib/laydate/laydate.js"></script>
 <script>
-
-  (function (angular) {
-    'use strict';
-    angular.module('myApp', []);
-    angular.module('myApp').controller('MyController', ['$scope', function ($scope) {
-      $scope.date = '2019-02-02';
-      //执行一个laydate实例
-      laydate.render({
-        elem: '#test1', //指定元素
-        done: function(value, date, endDate) {
-          $scope.date = value;
-          $scope.$apply();
-        }
-      });
-    }])
-  })(window.angular)
+(function (angular) {
+  'use strict';
+  angular.module('myApp', []);
+  angular.module('myApp').controller('MyController', ['$scope', function ($scope) {
+    $scope.startDate = '2019-02-02';
+    $scope.startTime = '11:20';
+    $scope.endDate = '2019-02-02';
+    $scope.endTime = '11:20';
+  }]);
+})(window.angular)
 </script>
+<!-- 自定义 JS -->
+<script src="./date-time-selector.js"></script>
 </body>
 </html>
