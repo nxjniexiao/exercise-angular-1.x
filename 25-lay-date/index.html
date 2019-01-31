@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lay Date</title>
+</head>
+<body ng-app="myApp" ng-controller="MyController">
+<input type="text" id="test1" ng-model="date">
+<!--<input type="text" id="test2" ng-model="time" ng-change="changeTime()">-->
+<div>{{date}}</div>
+<script src="../lib/angular.js"></script>
+<script src="../lib/laydate/laydate.js"></script>
+<script>
+
+  (function (angular) {
+    'use strict';
+    angular.module('myApp', []);
+    angular.module('myApp').controller('MyController', ['$scope', function ($scope) {
+      $scope.date = '2019-02-02';
+      //执行一个laydate实例
+      laydate.render({
+        elem: '#test1', //指定元素
+        done: function(value, date, endDate) {
+          $scope.date = value;
+          $scope.$apply();
+        }
+      });
+    }])
+  })(window.angular)
+</script>
+</body>
+</html>

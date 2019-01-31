@@ -16,8 +16,6 @@ angular.module('myApp')
         {name: '开会时间', keyName: 'startTime'},
         {name: '会议时长', keyName: 'duration'},
         {name: '会议室', keyName: 'meetingRoom'},
-        // {name: '会议要求', keyName: 'meetingRequirements'},
-        // {name: '提示', keyName: 'tips'},
       ];
       $scope.roomInfoTitlesArr = [
         {name: '会议室', keyName: 'name'},
