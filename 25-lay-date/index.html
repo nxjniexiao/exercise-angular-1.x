@@ -5,16 +5,24 @@
   <title>Lay Date</title>
   <!-- 引入 bootstrap 样式文件 -->
   <link rel="stylesheet" href="../lib/bootstrap.css">
+  <!-- 图标字体 -->
+  <link rel="stylesheet" href="../lib/icon-fonts/icon-fonts.css">
 </head>
 <body ng-app="myApp" ng-controller="MyController">
-<div class="row">
-  <div class="col-xs-5 col-sm-5 col-md-5">
-    <date-time-selector date="startDate" time="startTime"></date-time-selector>
+<form class="form-horizontal">
+  <div class="form-group form-group-10" style="margin-bottom: 10px">
+    <label class="control-label col-md-2">开会时间</label>
+    <div class="col-md-6">
+      <date-time-selector date="startDate" time="startTime"></date-time-selector>
+    </div>
   </div>
-  <div class="col-xs-5 col-sm-5 col-md-5">
-    <date-time-selector date="endDate" time="endTime" min-date="startDate" min-time="startTime"></date-time-selector>
+  <div class="form-group form-group-10">
+    <label class="control-label col-md-2">结束时间</label>
+    <div class="col-md-6">
+      <date-time-selector date="endDate" time="endTime" min-date="startDate" min-time="startTime"></date-time-selector>
+    </div>
   </div>
-</div>
+</form>
 <!-- JavaScript 库 -->
 <script src="../lib/jquery.js"></script>
 <script src="../lib/bootstrap.js"></script>
@@ -25,9 +33,9 @@
   'use strict';
   angular.module('myApp', []);
   angular.module('myApp').controller('MyController', ['$scope', function ($scope) {
-    $scope.startDate = '2019-02-02';
+    $scope.startDate = '2019-02-20';
     $scope.startTime = '11:20';
-    $scope.endDate = '2019-02-02';
+    $scope.endDate = '2019-02-20';
     $scope.endTime = '11:20';
   }]);
 })(window.angular)
