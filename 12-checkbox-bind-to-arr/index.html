@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Checkbox Bind to Array</title>
+</head>
+<body ng-app="myApp">
+<div ng-controller="MyController as myCtrl">
+  <check-box options-obj="allRequirements" selected-obj="selectedRequirements"></check-box>
+</div>
+<script src="../lib/angular.min.js"></script>
+<script>
+  (function (angular) {
+    angular.module('myApp', []).controller('MyController', [
+      '$scope',
+      function ($scope) {
+        $scope.allRequirements = {
+          '1': {id: 1, name: '《今日东方锅炉》中文'},
+          '2': {id: 2, name: '《今日东方锅炉》英文'},
+          '3': {id: 3, name: '综合样本'},
+          '4': {id: 4, name: '纸、笔'},
+          '5': {id: 5, name: '矿泉水'},
+          '6': {id: 6, name: '咖啡'},
+          '7': {id: 7, name: '茶水'},
+          '8': {id: 8, name: '电脑'},
+          '9': {id: 9, name: '打印座位牌'},
+          '10': {id: 10, name: '投影仪'},
+        };
+        $scope.selectedRequirements = {'1': {id: 1}, '2': {id: 2}};
+      }
+    ]);
+  })(window.angular);
+</script>
+<!-- 自定义 JS -->
+<script src="./check-box.directive.js"></script>
+</body>
+</html>

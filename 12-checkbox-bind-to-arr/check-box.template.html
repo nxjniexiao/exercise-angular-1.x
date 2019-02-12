@@ -1,0 +1,6 @@
+<div>
+  <div ng-repeat="(key, value) in optionsObj" style="margin-right: 20px;">
+    <input type="checkbox" ng-attr-id="{{randomStr + key}}" ng-model="selectedObjForCheckbox[key]">
+    <label ng-attr-for="{{randomStr + key}}">{{value.name}}</label>
+  </div>
+</div>
