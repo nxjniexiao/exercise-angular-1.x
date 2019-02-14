@@ -1,0 +1,27 @@
+<div ng-transclude></div>
+<!-- Modal -->
+<div class="modal fade" id="message-confirm-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-sm" role="document" style="margin-top: 300px;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" style="text-align:center;font-weight:bold">{{modalOpts.title}}</h4>
+      </div>
+      <div class="modal-body" style="text-align:center;">
+        {{modalOpts.content}}
+      </div>
+      <div class="modal-footer" style="text-align:center;">
+        <button class="btn" ng-click="confirm()" ng-class="modalOpts.isConfirmBtnDanger?'btn-danger':'blue'"
+                data-dismiss="modal" style="width:70px;">
+          确定
+        </button>
+        <button class="btn btn-secondary" ng-click="cancel()" ng-show="modalOpts.mode==='confirm'"
+                data-dismiss="modal" style="width:70px;margin-left:30px;">
+          取消
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

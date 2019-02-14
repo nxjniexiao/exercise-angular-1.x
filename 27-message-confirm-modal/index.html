@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Message Confirm Modal</title>
+  <!-- 引入 bootstrap 样式文件 -->
+  <link rel="stylesheet" href="../lib/bootstrap.css">
+  <style>
+    .blue {
+      color: #FFFFFF;
+      background-color: #09f;
+    }
+  </style>
+</head>
+<body ng-app="myApp" ng-controller="MyController">
+<div message-confirm-modal>
+  <button ng-click="show('info1')">{{modalAllInfos.info1.title}}</button>
+  <button ng-click="show('info2')">{{modalAllInfos.info2.title}}</button>
+  <br>
+  <button ng-click="show('info3')">确认弹窗</button>
+  <div>
+    <!-- 不会继承 message-modal 组件中的 messageObj -->
+    <!-- 而是继承 MyController 中的 messageObj -->
+    <span>messageObj: </span>
+    <span>{{messageObj | json}}</span>
+    <!-- messageObj: { "title": "MyController中的标题", "content": "MyController中的内容" } -->
+  </div>
+</div>
+<!-- JavaScript 库 -->
+<script src="../lib/jquery.js"></script>
+<script src="../lib/bootstrap.js"></script>
+<script src="../lib/angular.js"></script>
+<script>
+  (function (angular) {
+    'use strict';
+    angular.module('myApp', []);
+    angular.module('myApp').controller('MyController', ['$rootScope', '$scope', function ($rootScope, $scope) {
+      // 用于测试scope的继承关系
+      $scope.messageObj = {
+        title: 'MyController中的标题',
+        content: 'MyController中的内容'
+      };
+      $scope.modalAllInfos = {
+        info1: {
+          title: '提示',
+          content: '会议室匹配失败'
+        },
+        info2: {
+          mode: 'message',
+          title: '警告',
+          content: '请输入会议名称'
+        },
+        info3: {
+          mode: 'confirm',
+          title: '确认删除以下会议要求吗？',
+          content: '综合样本、纸、笔',
+          isConfirmBtnDanger: true,
+          confirmCallback: function() {console.log('删除成功！')},
+          cancelCallback: function() {console.log('取消删除！')}
+        }
+      };
+      $scope.show = function(info) {
+        $rootScope.showMessageConfirmModal($scope.modalAllInfos[info]);
+      }
+    }]);
+  })(window.angular)
+</script>
+<!-- 自定义 JS -->
+<script src="message-confirm-modal.directive.js"></script>
+</body>
+</html>

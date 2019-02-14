@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Message Modal</title>
+  <!-- 引入 bootstrap 样式文件 -->
+  <link rel="stylesheet" href="../lib/bootstrap.css">
+</head>
+<body ng-app="myApp" ng-controller="MyController">
+<div message-modal>
+  <button ng-click="show('info1')">{{modalAllInfos.info1.title}}</button>
+  <button ng-click="show('info2')">{{modalAllInfos.info2.title}}</button>
+  <div>
+    <!-- 不会继承 message-modal 组件中的 messageObj -->
+    <!-- 而是继承 MyController 中的 messageObj -->
+    <span>messageObj: </span>
+    <span>{{messageObj | json}}</span>
+    <!-- messageObj: { "title": "MyController中的标题", "content": "MyController中的内容" } -->
+  </div>
+</div>
+<!-- JavaScript 库 -->
+<script src="../lib/jquery.js"></script>
+<script src="../lib/bootstrap.js"></script>
+<script src="../lib/angular.js"></script>
+<script>
+  (function (angular) {
+    'use strict';
+    angular.module('myApp', []);
+    angular.module('myApp').controller('MyController', ['$rootScope', '$scope', function ($rootScope, $scope) {
+      // 用于测试scope的继承关系
+      $scope.messageObj = {
+        title: 'MyController中的标题',
+        content: 'MyController中的内容'
+      };
+      $scope.modalAllInfos = {
+        info1: {
+          title: '提示1',
+          content: '会议室匹配失败'
+        },
+        info2: {
+          title: '提示2',
+          content: '请输入XXX'
+        }
+      };
+      $scope.show = function(info) {
+        $rootScope.showMessageModal($scope.modalAllInfos[info]);
+      }
+    }]);
+  })(window.angular)
+</script>
+<!-- 自定义 JS -->
+<script src="message-modal.directive.js"></script>
+</body>
+</html>
