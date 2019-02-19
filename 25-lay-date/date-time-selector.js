@@ -5,7 +5,8 @@ angular.module('myApp').directive('dateTimeSelector',[function() {
       date: '=',
       time: '=',
       minDate: '<?',
-      minTime: '<?'
+      minTime: '<?',
+      minutesGradient: '<?'
     },
     controller: ['$scope', '$timeout', '$filter', controller]
   };
@@ -131,12 +132,39 @@ angular.module('myApp').directive('dateTimeSelector',[function() {
       var now = new Date();
       var nowDate = $filter('date')(now, 'yyyy-MM-dd');
       var nowTime = $filter('date')(now, 'HH:mm');
+      if ($scope.minutesGradient) {
+        nowTime = fixTime(nowTime, $scope.minutesGradient);
+      }
       if(!$scope.date) {
         $scope.date = nowDate;
       }
       if(!$scope.time) {
         $scope.time = nowTime;
       }
+    }
+    // 使用分钟梯度向后修正时间
+    function fixTime(timeStr, minutesGradient) {
+      var maxDivideRes = 60 / minutesGradient - 1;
+      var arr = timeStr.split(':');
+      var hours = Number(arr[0]);
+      var minutes = Number(arr[1]);
+      var divideRes = minutes / minutesGradient;
+      if (divideRes < maxDivideRes) {
+        // 向上一个梯度不会超过 60 分
+        minutes = (Math.floor(divideRes) + 1 ) * minutesGradient;
+      }
+      if (divideRes >= maxDivideRes) {
+        // 向上一个梯度会超过 60 分
+        if (hours >= 23) {
+          minutes = 59;
+        } else {
+          hours++;
+          minutes = 0;
+        }
+      }
+      return (('' + minutes).length === 1) ?
+        hours + ':0' + minutes : // 分钟前面补零
+        hours + ':' + minutes;
     }
   }
 }]);

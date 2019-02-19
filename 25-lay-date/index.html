@@ -13,13 +13,27 @@
   <div class="form-group form-group-10" style="margin-bottom: 10px">
     <label class="control-label col-md-2">开会时间</label>
     <div class="col-md-6">
-      <date-time-selector date="startDate" time="startTime"></date-time-selector>
+      <date-time-selector date="startDate1" time="startTime1"></date-time-selector>
     </div>
   </div>
   <div class="form-group form-group-10">
     <label class="control-label col-md-2">结束时间</label>
     <div class="col-md-6">
-      <date-time-selector date="endDate" time="endTime" min-date="startDate" min-time="startTime"></date-time-selector>
+      <date-time-selector date="endDate1" time="endTime1" min-date="startDate1" min-time="startTime1"></date-time-selector>
+    </div>
+  </div>
+</form>
+<form class="form-horizontal">
+  <div class="form-group form-group-10" style="margin-bottom: 10px">
+    <label class="control-label col-md-2">开会时间</label>
+    <div class="col-md-6">
+      <date-time-selector date="startDate2" time="startTime2" minutes-gradient="gradient"></date-time-selector>
+    </div>
+  </div>
+  <div class="form-group form-group-10">
+    <label class="control-label col-md-2">结束时间</label>
+    <div class="col-md-6">
+      <date-time-selector date="endDate2" time="endTime2" min-date="startDate2" min-time="startTime2" minutes-gradient="gradient"></date-time-selector>
     </div>
   </div>
 </form>
@@ -37,6 +51,7 @@
     // $scope.startTime = '11:20';
     // $scope.endDate = '2019-02-20';
     // $scope.endTime = '11:20';
+    $scope.gradient = 5;
   }]);
 })(window.angular)
 </script>
