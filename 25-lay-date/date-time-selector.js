@@ -21,6 +21,8 @@ angular.module('myApp').directive('dateTimeSelector',[function() {
       // 日期弹窗
       $scope.datePicker = laydate.render({
         elem: '#' + $scope.dateId, // 指定元素
+        eventElem: '#' + $scope.dateId + '-event',
+        trigger: 'click',
         min: 'nowTime',
         type: 'date',
         done: function (value, date, endDate) {
@@ -31,6 +33,8 @@ angular.module('myApp').directive('dateTimeSelector',[function() {
       // 时间弹窗
       $scope.timePicker = laydate.render({
         elem: '#' + $scope.timeId, // 指定元素
+        eventElem: '#' + $scope.timeId + '-event',
+        trigger: 'click',
         type: 'time',
         format: 'HH:mm',
         ready: function(date) {
@@ -162,9 +166,9 @@ angular.module('myApp').directive('dateTimeSelector',[function() {
           minutes = 0;
         }
       }
-      return (('' + minutes).length === 1) ?
-        hours + ':0' + minutes : // 分钟前面补零
-        hours + ':' + minutes;
+      var hoursStr = ('00' + hours).slice(-2);
+      var minutesStr = ('00' + minutes).slice(-2);
+      return hoursStr + ':' + minutesStr;
     }
   }
 }]);

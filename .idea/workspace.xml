@@ -4,7 +4,7 @@
     <list default="true" id="bbe6b199-0bef-486c-9a57-42ad99e2a99f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/25-lay-date/date-time-selector.js" beforeDir="false" afterPath="$PROJECT_DIR$/25-lay-date/date-time-selector.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25-lay-date/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/25-lay-date/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25-lay-date/date-time-selector.template.html" beforeDir="false" afterPath="$PROJECT_DIR$/25-lay-date/date-time-selector.template.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,12 +16,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/25-lay-date/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="569">
-              <caret line="35" column="100" selection-start-line="35" selection-start-column="100" selection-end-line="35" selection-end-column="100" />
+            <state relative-caret-position="266">
+              <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#form#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -30,11 +30,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/25-lay-date/date-time-selector.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="138" column="30" lean-forward="true" selection-start-line="138" selection-start-column="30" selection-end-line="138" selection-end-column="30" />
+            <state relative-caret-position="589">
+              <caret line="37" selection-start-line="35" selection-end-line="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/25-lay-date/date-time-selector.template.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" selection-start-line="11" selection-end-line="16" />
             </state>
           </provider>
         </entry>
@@ -52,7 +61,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.conf.</find>
       <find>conf.</find>
       <find>conf</find>
       <find>onChange</find>
@@ -82,6 +90,7 @@
       <find>timer</find>
       <find>messageObj</find>
       <find>$scope.nowTime</find>
+      <find>eventElem</find>
     </findStrings>
     <replaceStrings>
       <replace>form</replace>
@@ -139,7 +148,6 @@
         <option value="$PROJECT_DIR$/12-checkbox-bind-to-arr/check-box.html" />
         <option value="$PROJECT_DIR$/12-checkbox-bind-to-arr/index.html" />
         <option value="$PROJECT_DIR$/12-checkbox-bind-to-arr/check-box.directive.js" />
-        <option value="$PROJECT_DIR$/25-lay-date/date-time-selector.template.html" />
         <option value="$PROJECT_DIR$/12-checkbox-bind-to-arr/check-box.template.html" />
         <option value="$PROJECT_DIR$/22-drop-down-menu/index.html" />
         <option value="$PROJECT_DIR$/26-message-modal/message-modal.template.html" />
@@ -149,8 +157,9 @@
         <option value="$PROJECT_DIR$/27-message-confirm-modal/message-confirm-modal.directive.js" />
         <option value="$PROJECT_DIR$/27-message-confirm-modal/message-confirm-modal.template.html" />
         <option value="$PROJECT_DIR$/27-message-confirm-modal/index.html" />
-        <option value="$PROJECT_DIR$/25-lay-date/index.html" />
         <option value="$PROJECT_DIR$/25-lay-date/date-time-selector.js" />
+        <option value="$PROJECT_DIR$/25-lay-date/index.html" />
+        <option value="$PROJECT_DIR$/25-lay-date/date-time-selector.template.html" />
       </list>
     </option>
   </component>
@@ -175,6 +184,11 @@
             <path>
               <item name="exercise-angular-1.x" type="b2602c69:ProjectViewProjectNode" />
               <item name="exercise-angular-1.x" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="exercise-angular-1.x" type="b2602c69:ProjectViewProjectNode" />
+              <item name="exercise-angular-1.x" type="462c0819:PsiDirectoryNode" />
+              <item name="23-tm-pagination" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="exercise-angular-1.x" type="b2602c69:ProjectViewProjectNode" />
@@ -264,12 +278,13 @@
       <workItem from="1548728298695" duration="41491000" />
       <workItem from="1549870326616" duration="9337000" />
       <workItem from="1550318831565" duration="611000" />
-      <workItem from="1550542831104" duration="6857000" />
+      <workItem from="1550542831104" duration="7222000" />
+      <workItem from="1550621885591" duration="8899000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="340303000" />
+    <option name="totallyTimeSpent" value="349567000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -482,29 +497,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/23-tm-pagination/tm.pagination.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="76" column="17" selection-start-line="76" selection-start-column="12" selection-end-line="76" selection-end-column="17" />
-          <folding>
-            <element signature="e#157#164#1" expanded="true" />
-            <element signature="e#452#459#1" expanded="true" />
-            <element signature="e#533#539#0" expanded="true" />
-            <element signature="e#539#545#0" expanded="true" />
-            <element signature="e#626#632#0" expanded="true" />
-            <element signature="e#632#638#0" expanded="true" />
-            <element signature="e#640#646#0" expanded="true" />
-            <element signature="e#646#652#0" expanded="true" />
-            <element signature="e#654#660#0" expanded="true" />
-            <element signature="e#660#666#0" expanded="true" />
-            <element signature="e#772#778#0" expanded="true" />
-            <element signature="e#778#784#0" expanded="true" />
-            <element signature="e#785#791#0" expanded="true" />
-            <element signature="e#831#837#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/11-ngCheck-ngModel/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -523,17 +515,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="13" column="33" lean-forward="true" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/25-lay-date/date-time-selector.template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="17" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-          <folding>
-            <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -654,21 +635,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/25-lay-date/index.html">
+    <entry file="file://$PROJECT_DIR$/23-tm-pagination/tm.pagination.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="569">
-          <caret line="35" column="100" selection-start-line="35" selection-start-column="100" selection-end-line="35" selection-end-column="100" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#form#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="-689">
+          <caret line="76" column="17" selection-start-line="76" selection-start-column="12" selection-end-line="76" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/25-lay-date/date-time-selector.template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" selection-start-line="11" selection-end-line="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/25-lay-date/date-time-selector.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="138" column="30" lean-forward="true" selection-start-line="138" selection-start-column="30" selection-end-line="138" selection-end-column="30" />
+        <state relative-caret-position="589">
+          <caret line="37" selection-start-line="35" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/25-lay-date/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#form#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
