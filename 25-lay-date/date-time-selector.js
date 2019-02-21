@@ -62,10 +62,7 @@ angular.module('myApp').directive('dateTimeSelector',[function() {
     $scope.isDateTimeAvailable = function() {
       var newDateTime = $scope.convertStringToDate($scope.date, $scope.time);
       var minDateTime = $scope.convertStringToDate($scope.minDate, $scope.minTime);
-      if(newDateTime < minDateTime) {
-        return false;
-      }
-      return true;
+      return newDateTime >= minDateTime;
     };
     // 当前日期是否为今天
     $scope.isToday = function() {
@@ -105,13 +102,20 @@ angular.module('myApp').directive('dateTimeSelector',[function() {
       var now = new Date();
       var dateStr = $scope.date.replace(/-/g, '/');
       var timeStr = $scope.time;
-      var date = new Date(dateStr + ' ' + timeStr);
+      // 有分钟梯度时，选择框中的时间秒数为 '00'
+      // 无分钟梯度时，选择框中的时间秒数为 '59'(即当前时间的分钟数大于选择框中的分钟数才刷新)
+      var secondsStr = $scope.minutesGradient ? '00' : '59';
+      var date = new Date(dateStr + ' ' + timeStr + ':' + secondsStr);
       if (date > now) {
         return;
       }
+      console.log('fixing...');
       $scope.date = $filter('date')(now, 'yyyy-MM-dd');
       var newTimeStr = $filter('date')(now, 'HH:mm');
-      $scope.time = fixTime(newTimeStr, $scope.minutesGradient);
+      if($scope.minutesGradient) {
+        newTimeStr = fixTime(newTimeStr, $scope.minutesGradient);
+      }
+      $scope.time = newTimeStr;
     };
     // 观测 scope.minDate 和 $scope.minTime
     $scope.$watchGroup(['minDate', 'minTime'], function(newValue, oldValue) {
