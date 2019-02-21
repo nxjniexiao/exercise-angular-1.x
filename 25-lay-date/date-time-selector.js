@@ -6,11 +6,13 @@ angular.module('myApp').directive('dateTimeSelector',[function() {
       time: '=',
       minDate: '<?',
       minTime: '<?',
-      minutesGradient: '<?'
+      minutesGradient: '<?',
+      increasedMinutes: '<?'
     },
-    controller: ['$scope', '$timeout', '$filter', controller]
+    controller: ['$scope', '$timeout', '$filter', '$interval', controller]
   };
-  function controller($scope, $timeout, $filter) {
+  function controller($scope, $timeout, $filter, $interval) {
+    var intervalTimer = null;
     initDateTime();
     var timer = null; // 防抖用定时器
     $scope.dateId = 'date-' + Math.random().toString(36).substr(2);
@@ -98,6 +100,19 @@ angular.module('myApp').directive('dateTimeSelector',[function() {
         seconds: 0
       };
     };
+    // 修正选择框中的值不小于当前时间
+    $scope.fixDateTime = function() {
+      var now = new Date();
+      var dateStr = $scope.date.replace(/-/g, '/');
+      var timeStr = $scope.time;
+      var date = new Date(dateStr + ' ' + timeStr);
+      if (date > now) {
+        return;
+      }
+      $scope.date = $filter('date')(now, 'yyyy-MM-dd');
+      var newTimeStr = $filter('date')(now, 'HH:mm');
+      $scope.time = fixTime(newTimeStr, $scope.minutesGradient);
+    };
     // 观测 scope.minDate 和 $scope.minTime
     $scope.$watchGroup(['minDate', 'minTime'], function(newValue, oldValue) {
       if(newValue === oldValue) {
@@ -133,18 +148,44 @@ angular.module('myApp').directive('dateTimeSelector',[function() {
     });
     // 初始化日期和时间
     function initDateTime() {
+      if ($scope.date && $scope.time) {
+        return;
+      }
+      var now = calcCurrDateTime();
+      if(!$scope.date) {
+        $scope.date = now.nowDate;
+      }
+      if(!$scope.time) {
+        $scope.time = now.nowTime;
+      }
+    }
+    // 计算当前时间
+    function calcCurrDateTime() {
       var now = new Date();
+      // 按分钟数增加时间
+      if ($scope.increasedMinutes) {
+        now = addMinutes(now, $scope.increasedMinutes);
+      }
       var nowDate = $filter('date')(now, 'yyyy-MM-dd');
       var nowTime = $filter('date')(now, 'HH:mm');
+      // 根据分钟梯度修正时间
       if ($scope.minutesGradient) {
         nowTime = fixTime(nowTime, $scope.minutesGradient);
       }
-      if(!$scope.date) {
-        $scope.date = nowDate;
+      return {
+        nowDate: nowDate,
+        nowTime: nowTime
       }
-      if(!$scope.time) {
-        $scope.time = nowTime;
+    }
+    // 增加时间
+    function addMinutes(date, increasedMinutes) {
+      var retDate = new Date (date.getTime() + increasedMinutes*60*1000);
+      var dateStr = $filter('date')(date, 'yyyy/MM/dd');
+      var retDateStr = $filter('date')(retDate, 'yyyy/MM/dd');
+      if (dateStr !== retDateStr) {
+        return new Date(dateStr + ' 23:59'); // 防止时间增加后，变为第二天
       }
+      return retDate;
     }
     // 使用分钟梯度向后修正时间
     function fixTime(timeStr, minutesGradient) {
@@ -170,5 +211,11 @@ angular.module('myApp').directive('dateTimeSelector',[function() {
       var minutesStr = ('00' + minutes).slice(-2);
       return hoursStr + ':' + minutesStr;
     }
+    // 定时器，修正时间使其不小于当前时间
+    intervalTimer = $interval($scope.fixDateTime, 1000);
+    // 取消定时器
+    $scope.$on('$destroy', function() {
+      $interval.cancel(intervalTimer);
+    });
   }
 }]);
