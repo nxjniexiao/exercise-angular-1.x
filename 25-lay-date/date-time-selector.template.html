@@ -2,7 +2,7 @@
   <div class="col-md-4 col-xs-4 col-sm-4 padding-left">
     <div class="input-group date">
       <input class="form-control" type="text" name="startDate" ng-attr-id="{{dateId}}" ng-model="date" ng-disabled="minDate" readonly>
-      <i class="input-group-addon btn default iconfont calendar" ng-attr-id="{{dateId + '-event'}}"></i>
+      <i class="input-group-addon btn default iconfont calendar" ng-attr-id="{{minDate?'':dateId + '-event'}}" ng-disabled="minDate"></i>
     </div>
   </div>
   <div class="col-md-4 col-xs-4 col-sm-4 padding-left">

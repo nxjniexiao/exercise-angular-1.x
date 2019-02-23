@@ -6,7 +6,8 @@
 </head>
 <body ng-app="myApp">
 <div ng-controller="MyController as myCtrl">
-  <check-box options-obj="allRequirements" selected-obj="selectedRequirements"></check-box>
+  <!--<check-box options-obj="allRequirements" selected-obj="selectedRequirements"></check-box>-->
+  <check-box options-obj="allRequirements" selected-obj="selectedRequirements" is-radio="true"></check-box>
 </div>
 <script src="../lib/angular.min.js"></script>
 <script>
@@ -26,7 +27,8 @@
           '9': {id: 9, name: '打印座位牌'},
           '10': {id: 10, name: '投影仪'},
         };
-        $scope.selectedRequirements = {'1': {id: 1}, '2': {id: 2}};
+        // $scope.selectedRequirements = {'1': {id: 1}, '2': {id: 2}};
+        $scope.selectedRequirements = {'1': {id: 1}};
       }
     ]);
   })(window.angular);

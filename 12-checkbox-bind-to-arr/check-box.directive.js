@@ -4,43 +4,33 @@ angular.module('myApp').directive('checkBox', [function () {
     scope: {
       optionsObj: '=',
       selectedObj: '=',
+      isRadio: '=?'
     },
     controller: ['$scope', controller]
   };
 
   function controller($scope) {
-    $scope.randomStr = Math.random().toString(36).substr(2);
-    $scope.selectedObjForCheckbox = null;
-    // 监测 $scope.selectedObjForCheckbox
-    $scope.$watch('selectedObjForCheckbox', function (newValue, oldValue) {
-      if (newValue === oldValue) {
+    // 点击
+    $scope.click = function(key, value) {
+      var selectedObj = $scope.selectedObj;
+      var isRadio = $scope.isRadio;
+      // 单选模式
+      if (isRadio) {
+        if ($scope.selectedObj[key]) {
+          $scope.selectedObj = {};
+          return;
+        }
+        $scope.selectedObj = {
+          [key]: value
+        };
         return;
       }
-      var selectedObjForCheckbox = $scope.selectedObjForCheckbox;
-      for (var key in selectedObjForCheckbox) {
-        if (selectedObjForCheckbox[key]) {
-          // true
-          if (!(key in $scope.selectedObj)) {
-            $scope.selectedObj[key] = {
-              id: $scope.optionsObj[key].id
-            };
-          }
-        } else {
-          // false
-          if (key in $scope.selectedObj) {
-            delete $scope.selectedObj[key];
-          }
-        }
+      // 多选模式(默认)
+      if (selectedObj[key]) {
+        delete $scope.selectedObj[key];
+      } else {
+        $scope.selectedObj[key] = value;
       }
-    }, true);
-    // controller 初始化
-    this.$onInit = function () {
-      var obj = {};
-      var selectedObj = $scope.selectedObj;
-      for (var key in selectedObj) {
-        obj[key] = true;
-      }
-      $scope.selectedObjForCheckbox = obj;
-    }
+    };
   }
 }]);
