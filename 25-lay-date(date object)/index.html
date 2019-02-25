@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lay Date</title>
+  <!-- 引入 bootstrap 样式文件 -->
+  <link rel="stylesheet" href="../lib/bootstrap.css">
+  <!-- 图标字体 -->
+  <link rel="stylesheet" href="../lib/icon-fonts/icon-fonts.css">
+</head>
+<body ng-app="myApp" ng-controller="MyController">
+<form class="form-horizontal">
+  <div class="form-group form-group-10" style="margin-bottom: 10px">
+    <label class="control-label col-md-2">调试时间</label>
+    <div class="col-md-6">
+      <date-time-selector time="debugTime" max-time="startTime1" mode="date"></date-time-selector>
+    </div>
+  </div>
+</form>
+<form class="form-horizontal">
+  <div class="form-group form-group-10" style="margin-bottom: 10px">
+    <label class="control-label col-md-2">开会时间</label>
+    <div class="col-md-6">
+      <date-time-selector time="startTime1"></date-time-selector>
+    </div>
+  </div>
+  <div class="form-group form-group-10">
+    <label class="control-label col-md-2">结束时间</label>
+    <div class="col-md-6">
+      <date-time-selector time="finishTime1" min-time="startTime1" is-same-day="true"></date-time-selector>
+      <!--<date-time-selector time="finishTime1" min-time="startTime1"></date-time-selector>-->
+    </div>
+  </div>
+</form>
+<form class="form-horizontal">
+  <div class="form-group form-group-10" style="margin-bottom: 10px">
+    <label class="control-label col-md-2">开会时间</label>
+    <div class="col-md-6">
+      <date-time-selector time="startTime2" minutes-gradient="gradient"></date-time-selector>
+    </div>
+  </div>
+  <div class="form-group form-group-10">
+    <label class="control-label col-md-2">结束时间</label>
+    <div class="col-md-6">
+      <date-time-selector time="endTime2" min-time="startTime2"
+                          minutes-gradient="gradient" increased-minutes="60">
+      </date-time-selector>
+    </div>
+  </div>
+</form>
+<!-- JavaScript 库 -->
+<script src="../lib/jquery.js"></script>
+<script src="../lib/bootstrap.js"></script>
+<script src="../lib/angular.js"></script>
+<script src="../lib/laydate/laydate.js"></script>
+<script>
+(function (angular) {
+  'use strict';
+  angular.module('myApp', []);
+  angular.module('myApp').controller('MyController', ['$scope', function ($scope) {
+    // $scope.startDate = '2019-02-20';
+    // $scope.startTime = '11:20';
+    // $scope.endDate = '2019-02-20';
+    // $scope.endTime = '11:20';
+    // $scope.startTime1 = new Date( new Date().getTime()+60*60*1000);
+    // $scope.finishTime1 = new Date( new Date().getTime()+2*60*60*1000);
+    $scope.gradient = 5;
+  }]);
+})(window.angular)
+</script>
+<!-- 自定义 JS -->
+<script src="./date-time-selector.js"></script>
+</body>
+</html>
