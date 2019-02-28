@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbe6b199-0bef-486c-9a57-42ad99e2a99f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/25-lay-date(date object)/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25-lay-date/date-time-selector.js" beforeDir="false" afterPath="$PROJECT_DIR$/25-lay-date(date object)/date-time-selector.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25-lay-date/date-time-selector.template.html" beforeDir="false" afterPath="$PROJECT_DIR$/25-lay-date(date object)/date-time-selector.template.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25-lay-date/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/25-lay-date(date object)/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/25-lay-date(date object)/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,35 +15,16 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/25-lay-date(date object)/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="34" selection-start-line="34" selection-end-line="49" selection-end-column="7" />
+            <state relative-caret-position="190">
+              <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#form#2;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/25-lay-date(date object)/date-time-selector.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3230">
-              <caret line="170" column="42" lean-forward="true" selection-start-line="170" selection-start-column="42" selection-end-line="170" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/25-lay-date(date object)/date-time-selector.template.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="77" selection-start-line="4" selection-start-column="77" selection-end-line="4" selection-end-column="77" />
             </state>
           </provider>
         </entry>
@@ -64,7 +42,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>currentPage</find>
       <find>numberOfPages</find>
       <find>newVal</find>
       <find>oldVal</find>
@@ -94,6 +71,7 @@
       <find>minTimeObj</find>
       <find>maxTime</find>
       <find>initDateTime</find>
+      <find>\</find>
     </findStrings>
     <replaceStrings>
       <replace>form</replace>
@@ -116,8 +94,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/01-emit-broadcast/index.html" />
-        <option value="$PROJECT_DIR$/22-drop-down-menu/inddex.html" />
         <option value="$PROJECT_DIR$/22-drop-down-menu/infinite-drop-down.directive.js" />
         <option value="$PROJECT_DIR$/22-drop-down-menu/infinite-drop-down.template.html" />
         <option value="$PROJECT_DIR$/22-drop-down-menu/example-01.html" />
@@ -165,8 +141,10 @@
         <option value="$PROJECT_DIR$/25-lay-date/date-time-selector.js" />
         <option value="$PROJECT_DIR$/25-lay-date/index.html" />
         <option value="$PROJECT_DIR$/25-lay-date(date object)/date-time-selector.template.html" />
-        <option value="$PROJECT_DIR$/25-lay-date(date object)/index.html" />
         <option value="$PROJECT_DIR$/25-lay-date(date object)/date-time-selector.js" />
+        <option value="$PROJECT_DIR$/13-$q/index.html" />
+        <option value="$PROJECT_DIR$/13-$q/test.html" />
+        <option value="$PROJECT_DIR$/25-lay-date(date object)/index.html" />
       </list>
     </option>
   </component>
@@ -194,17 +172,7 @@
             <path>
               <item name="exercise-angular-1.x" type="b2602c69:ProjectViewProjectNode" />
               <item name="exercise-angular-1.x" type="462c0819:PsiDirectoryNode" />
-              <item name="12-checkbox-bind-to-arr" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exercise-angular-1.x" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exercise-angular-1.x" type="462c0819:PsiDirectoryNode" />
-              <item name="24-meeting-info-modal" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exercise-angular-1.x" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exercise-angular-1.x" type="462c0819:PsiDirectoryNode" />
-              <item name="25-lay-date" type="462c0819:PsiDirectoryNode" />
+              <item name="13-$q" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="exercise-angular-1.x" type="b2602c69:ProjectViewProjectNode" />
@@ -225,7 +193,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/sys-project/umeet-web" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -236,11 +204,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\test\exercise-angular-1.x\13-$q" />
       <recent name="D:\test\exercise-angular-1.x" />
       <recent name="D:\test\exercise-angular-1.x\26-message-modal" />
       <recent name="D:\test\exercise-angular-1.x\12-checkbox-bind-to-arr" />
       <recent name="D:\test\exercise-angular-1.x\lib\fonts" />
-      <recent name="D:\test\exercise-angular-1.x\lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\test\exercise-angular\lib" />
@@ -297,12 +265,13 @@
       <workItem from="1550542831104" duration="7222000" />
       <workItem from="1550621885591" duration="26784000" />
       <workItem from="1550882980555" duration="12416000" />
-      <workItem from="1551054380352" duration="20959000" />
+      <workItem from="1551054380352" duration="27376000" />
+      <workItem from="1551321619643" duration="2649000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="400827000" />
+    <option name="totallyTimeSpent" value="409893000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -331,20 +300,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/04-form/04-custom-form-control.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="10" lean-forward="true" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/daypilot-all.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555655">
-          <caret line="29245" selection-start-line="29245" selection-end-line="29245" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/23-tm-pagination/my-app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -659,22 +614,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/25-lay-date(date object)/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="34" selection-start-line="34" selection-end-line="49" selection-end-column="7" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#form#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/25-lay-date(date object)/date-time-selector.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3230">
           <caret line="170" column="42" lean-forward="true" selection-start-line="170" selection-start-column="42" selection-end-line="170" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/13-$q/test.html" />
+    <entry file="file://$PROJECT_DIR$/13-$q/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/25-lay-date(date object)/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#form#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -7,6 +7,18 @@
   <link rel="stylesheet" href="../lib/bootstrap.css">
   <!-- 图标字体 -->
   <link rel="stylesheet" href="../lib/icon-fonts/icon-fonts.css">
+  <style>
+    /* 隐藏 laydate 中的秒选项 */
+    .laydate-time-list > li {
+      width: 50% !important;
+    }
+    .laydate-time-list > li:last-child {
+      display: none;
+    }
+    .laydate-time-list > li > ol > li {
+      padding-left: 54px;
+    }
+  </style>
 </head>
 <body ng-app="myApp" ng-controller="MyController">
 <form class="form-horizontal">

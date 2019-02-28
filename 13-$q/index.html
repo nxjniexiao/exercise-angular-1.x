@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Checkbox Bind to Array</title>
+</head>
+<body ng-app="myApp">
+<div ng-controller="MyController as myCtrl">
+</div>
+<script src="../lib/angular.min.js"></script>
+<script>
+  (function (angular) {
+    angular.module('myApp', []).controller('MyController', [
+      '$scope', '$q','$timeout',
+      function ($scope, $q, $timeout) {
+        function test () {
+          return $q(function(resolve, reject) {
+            $timeout(function() {
+              return resolve('Hello world!');
+            })
+          })
+        }
+        test().then(function(res) {
+          console.log(res);
+          return res;
+        }).then(function(res) {
+          console.log(res);
+          return res;
+        }).then(function(res) {
+          console.log(res);
+        })
+      }
+    ]);
+  })(window.angular);
+</script>
+<!-- 自定义 JS -->
+</body>
+</html>
