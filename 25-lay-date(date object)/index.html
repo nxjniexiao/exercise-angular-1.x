@@ -60,6 +60,46 @@
     </div>
   </div>
 </form>
+<hr>
+<form class="form-horizontal">
+  <div class="form-group form-group-10" style="margin-bottom: 10px">
+    <label class="control-label col-md-2">调试时间</label>
+    <div class="col-md-6">
+      <date-time-selector time="debugTime" max-time="startTime1" mode="date" is-disabled="true"></date-time-selector>
+    </div>
+  </div>
+</form>
+<form class="form-horizontal">
+  <div class="form-group form-group-10" style="margin-bottom: 10px">
+    <label class="control-label col-md-2">开会时间</label>
+    <div class="col-md-6">
+      <date-time-selector time="startTime1" is-disabled="true"></date-time-selector>
+    </div>
+  </div>
+  <div class="form-group form-group-10">
+    <label class="control-label col-md-2">结束时间</label>
+    <div class="col-md-6">
+      <date-time-selector time="finishTime1" min-time="startTime1" is-same-day="true" is-disabled="true"></date-time-selector>
+      <!--<date-time-selector time="finishTime1" min-time="startTime1"></date-time-selector>-->
+    </div>
+  </div>
+</form>
+<form class="form-horizontal">
+  <div class="form-group form-group-10" style="margin-bottom: 10px">
+    <label class="control-label col-md-2">开会时间</label>
+    <div class="col-md-6">
+      <date-time-selector time="startTime2" minutes-gradient="gradient" is-disabled="true"></date-time-selector>
+    </div>
+  </div>
+  <div class="form-group form-group-10">
+    <label class="control-label col-md-2">结束时间</label>
+    <div class="col-md-6">
+      <date-time-selector time="endTime2" min-time="startTime2" is-disabled="true"
+                          minutes-gradient="gradient" increased-minutes="60">
+      </date-time-selector>
+    </div>
+  </div>
+</form>
 <!-- JavaScript 库 -->
 <script src="../lib/jquery.js"></script>
 <script src="../lib/bootstrap.js"></script>

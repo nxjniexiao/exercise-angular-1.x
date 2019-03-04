@@ -8,7 +8,8 @@ angular.module('myApp').directive('dateTimeSelector', [function () {
       mode: '@?',
       isSameDay: '<?',
       minutesGradient: '<?',
-      increasedMinutes: '<?'
+      increasedMinutes: '<?',
+      isDisabled: '<?'
     },
     controller: ['$scope', '$timeout', '$filter', '$interval', controller]
   };

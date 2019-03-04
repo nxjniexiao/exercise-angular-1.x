@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="bbe6b199-0bef-486c-9a57-42ad99e2a99f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25-lay-date(date object)/date-time-selector.js" beforeDir="false" afterPath="$PROJECT_DIR$/25-lay-date(date object)/date-time-selector.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25-lay-date(date object)/date-time-selector.template.html" beforeDir="false" afterPath="$PROJECT_DIR$/25-lay-date(date object)/date-time-selector.template.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/25-lay-date(date object)/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/25-lay-date(date object)/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -15,16 +17,36 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/25-lay-date(date object)/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+            <state relative-caret-position="341">
+              <caret line="62" column="4" selection-start-line="62" selection-start-column="4" selection-end-line="62" selection-end-column="4" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#form#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#form#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#form#5;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/25-lay-date(date object)/date-time-selector.template.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" column="146" selection-start-line="9" selection-start-column="122" selection-end-line="9" selection-end-column="146" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/25-lay-date(date object)/date-time-selector.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" column="16" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -140,11 +162,11 @@
         <option value="$PROJECT_DIR$/25-lay-date/date-time-selector.template.html" />
         <option value="$PROJECT_DIR$/25-lay-date/date-time-selector.js" />
         <option value="$PROJECT_DIR$/25-lay-date/index.html" />
-        <option value="$PROJECT_DIR$/25-lay-date(date object)/date-time-selector.template.html" />
-        <option value="$PROJECT_DIR$/25-lay-date(date object)/date-time-selector.js" />
         <option value="$PROJECT_DIR$/13-$q/index.html" />
         <option value="$PROJECT_DIR$/13-$q/test.html" />
+        <option value="$PROJECT_DIR$/25-lay-date(date object)/date-time-selector.js" />
         <option value="$PROJECT_DIR$/25-lay-date(date object)/index.html" />
+        <option value="$PROJECT_DIR$/25-lay-date(date object)/date-time-selector.template.html" />
       </list>
     </option>
   </component>
@@ -173,6 +195,11 @@
               <item name="exercise-angular-1.x" type="b2602c69:ProjectViewProjectNode" />
               <item name="exercise-angular-1.x" type="462c0819:PsiDirectoryNode" />
               <item name="13-$q" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="exercise-angular-1.x" type="b2602c69:ProjectViewProjectNode" />
+              <item name="exercise-angular-1.x" type="462c0819:PsiDirectoryNode" />
+              <item name="20-plugin-day-pilot" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="exercise-angular-1.x" type="b2602c69:ProjectViewProjectNode" />
@@ -266,12 +293,14 @@
       <workItem from="1550621885591" duration="26784000" />
       <workItem from="1550882980555" duration="12416000" />
       <workItem from="1551054380352" duration="27376000" />
-      <workItem from="1551321619643" duration="2649000" />
+      <workItem from="1551321619643" duration="2719000" />
+      <workItem from="1551435531379" duration="714000" />
+      <workItem from="1551687856191" duration="3177000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="409893000" />
+    <option name="totallyTimeSpent" value="413854000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -311,13 +340,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
           <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/20-plugin-day-pilot/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-57">
-          <caret line="71" column="28" selection-start-line="71" selection-start-column="23" selection-end-line="71" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -556,13 +578,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/20-plugin-day-pilot/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/23-tm-pagination/tm.pagination.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-689">
@@ -607,20 +622,6 @@
     <entry file="file://$PROJECT_DIR$/25-lay-date/index.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/25-lay-date(date object)/date-time-selector.template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="77" selection-start-line="4" selection-start-column="77" selection-end-line="4" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/25-lay-date(date object)/date-time-selector.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3230">
-          <caret line="170" column="42" lean-forward="true" selection-start-line="170" selection-start-column="42" selection-end-line="170" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/13-$q/test.html" />
     <entry file="file://$PROJECT_DIR$/13-$q/index.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -629,14 +630,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/20-plugin-day-pilot/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="71" column="28" selection-start-line="71" selection-start-column="23" selection-end-line="71" selection-end-column="28" />
+          <folding>
+            <element signature="e#148#1871#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20-plugin-day-pilot/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/25-lay-date(date object)/date-time-selector.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/25-lay-date(date object)/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        <state relative-caret-position="341">
+          <caret line="62" column="4" selection-start-line="62" selection-start-column="4" selection-end-line="62" selection-end-column="4" />
           <folding>
             <element signature="n#style#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#form#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#form#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#form#5;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/25-lay-date(date object)/date-time-selector.template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="146" selection-start-line="9" selection-start-column="122" selection-end-line="9" selection-end-column="146" />
         </state>
       </provider>
     </entry>
