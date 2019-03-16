@@ -149,6 +149,9 @@ angular.module('myApp').directive('dateTimeSelector', [function () {
     });
     // 监听 minTime
     $scope.$watch('minTime', function () {
+      if (!$scope.minTime) {
+        return;
+      }
       if (timer) {
         $timeout.cancel(timer);
       }
@@ -170,6 +173,9 @@ angular.module('myApp').directive('dateTimeSelector', [function () {
     });
     // 监听 maxTime
     $scope.$watch('maxTime', function () {
+      if (!$scope.maxTime) {
+        return;
+      }
       if (timer) {
         $timeout.cancel(timer);
       }
@@ -179,6 +185,22 @@ angular.module('myApp').directive('dateTimeSelector', [function () {
       if (time > maxTime) {
         $scope.dateStr = $filter('date')(maxTime, 'yyyy-MM-dd');
         $scope.timeStr = $filter('date')(maxTime, 'HH:mm');
+      }
+    });
+    // 监听 time
+    $scope.$watch('time', function() {
+      var time = $scope.time;
+      if (!time) {
+        return;
+      }
+      console.log(time);
+      var newDateStr = $filter('date')(time, 'yyyy-MM-dd');
+      var newTimeStr = $filter('date')(time, 'HH:mm');
+      if ($scope.dateStr !== newDateStr) {
+        $scope.dateStr = newDateStr;
+      }
+      if ($scope.timeStr !== newTimeStr) {
+        $scope.timeStr = newTimeStr;
       }
     });
     // 初始化日期和时间
