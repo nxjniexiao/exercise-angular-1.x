@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scroll Tbody in Bootstrap</title>
+  <!-- 引入 bootstrap 样式文件 -->
+  <link rel="stylesheet" href="../lib/bootstrap.css">
+  <style>
+    table {
+      width: 100%;
+    }
+
+    thead, tbody, tr, td, th {
+      display: block;
+    }
+
+    tr:after {
+      content: ' ';
+      display: block;
+      visibility: hidden;
+      clear: both;
+    }
+
+    thead th {
+      height: 30px;
+      /*text-align: left;*/
+    }
+
+    tbody {
+      height: 120px;
+      overflow-y: auto;
+    }
+
+    thead {
+      /* fallback */
+    }
+
+    tbody td, thead th {
+      width: 25%;
+      float: left;
+    }
+  </style>
+</head>
+<body>
+<div style="width:500px;">
+  <table class="table table-light table-hover">
+    <thead>
+    <tr>
+      <th>Make</th>
+      <th>Model</th>
+      <th>Color</th>
+      <th>Year</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td class="filterable-cell">Ford</td>
+      <td class="filterable-cell">Escort</td>
+      <td class="filterable-cell">Blue</td>
+      <td class="filterable-cell">2000</td>
+    </tr>
+    <tr>
+      <td class="filterable-cell">Ford</td>
+      <td class="filterable-cell">Escort</td>
+      <td class="filterable-cell">Blue</td>
+      <td class="filterable-cell">2000</td>
+    </tr>
+    <tr>
+      <td class="filterable-cell">Ford</td>
+      <td class="filterable-cell">Escort</td>
+      <td class="filterable-cell">Blue</td>
+      <td class="filterable-cell">2000</td>
+    </tr>
+    <tr>
+      <td class="filterable-cell">Ford</td>
+      <td class="filterable-cell">Escort</td>
+      <td class="filterable-cell">Blue</td>
+      <td class="filterable-cell">2000</td>
+    </tr>
+    <tr>
+      <td class="filterable-cell">Ford</td>
+      <td class="filterable-cell">Escort</td>
+      <td class="filterable-cell">Blue</td>
+      <td class="filterable-cell">2000</td>
+    </tr>
+    <tr>
+      <td class="filterable-cell">Ford</td>
+      <td class="filterable-cell">Escort</td>
+      <td class="filterable-cell">Blue</td>
+      <td class="filterable-cell">2000</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>
