@@ -16,22 +16,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/14-integer-directive/index.html">
+        <entry file="file://$PROJECT_DIR$/25-lay-date(date object)-past-time/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+            <state relative-caret-position="399">
+              <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/15-scroll-tbody-in-bootstrap/index.html">
+        <entry file="file://$PROJECT_DIR$/25-lay-date(date object)-past-time/date-time-selector.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="74" column="41" selection-start-line="74" selection-start-column="41" selection-end-line="74" selection-end-column="41" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="565">
+              <caret line="238" column="27" lean-forward="true" selection-start-line="238" selection-start-column="27" selection-end-line="238" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/25-lay-date(date object)-past-time/date-time-selector.template.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -49,20 +55,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>numberOfPages</find>
-      <find>newVal</find>
-      <find>oldVal</find>
-      <find>[0]</find>
-      <find>pagesLength</find>
-      <find>split</find>
-      <find>log</find>
-      <find>20px</find>
-      <find>tab</find>
-      <find>scope</find>
-      <find>$filter</find>
-      <find>timeLimit</find>
-      <find>timer</find>
-      <find>messageObj</find>
       <find>$scope.nowTime</find>
       <find>eventElem</find>
       <find>time</find>
@@ -72,13 +64,27 @@
       <find>$scope.time</find>
       <find>replace</find>
       <find>isDateTimeAvailable</find>
-      <find>isToday</find>
       <find>$scope.timeObj</find>
       <find>$scope.minTimeObj</find>
       <find>minTimeObj</find>
       <find>maxTime</find>
-      <find>initDateTime</find>
       <find>\</find>
+      <find>Object.assign</find>
+      <find>isToday</find>
+      <find>calcLimitForDatePicker</find>
+      <find>isPastTimeAvailable</find>
+      <find>isTody</find>
+      <find>calcLimitForTimePicker</find>
+      <find>timer</find>
+      <find>$scope.minimumPicker</find>
+      <find>minimumPicker</find>
+      <find>maximumPicker</find>
+      <find>convertStringToDate</find>
+      <find>initDateTime</find>
+      <find>fixDateTime</find>
+      <find>59</find>
+      <find>fixTime</find>
+      <find>calcNowDateTime</find>
     </findStrings>
     <replaceStrings>
       <replace>form</replace>
@@ -93,6 +99,7 @@
       <replace>$scope.timeStr</replace>
       <replace>$scope.minTime</replace>
       <replace>minTime</replace>
+      <replace>pastTimeDisabled</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -101,9 +108,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/22-drop-down-menu/example-01.html" />
-        <option value="$PROJECT_DIR$/22-drop-down-menu/my-app.js" />
-        <option value="$PROJECT_DIR$/22-drop-down-menu/infinite-dropdown.css" />
         <option value="$PROJECT_DIR$/22-drop-down-menu/infinite-dropdown-submenu.directive.js" />
         <option value="$PROJECT_DIR$/22-drop-down-menu/infinite-dropdown-submenu.template.html" />
         <option value="$PROJECT_DIR$/22-drop-down-menu/infinite-dropdown.template.html" />
@@ -152,6 +156,9 @@
         <option value="$PROJECT_DIR$/25-lay-date(date object)/date-time-selector.js" />
         <option value="$PROJECT_DIR$/15-scroll-tbody-in-bootstrap/index.html" />
         <option value="$PROJECT_DIR$/14-integer-directive/index.html" />
+        <option value="$PROJECT_DIR$/25-lay-date(date object)-past-time/date-time-selector.template.html" />
+        <option value="$PROJECT_DIR$/25-lay-date(date object)-past-time/index.html" />
+        <option value="$PROJECT_DIR$/25-lay-date(date object)-past-time/date-time-selector.js" />
       </list>
     </option>
   </component>
@@ -179,7 +186,12 @@
             <path>
               <item name="exercise-angular-1.x" type="b2602c69:ProjectViewProjectNode" />
               <item name="exercise-angular-1.x" type="462c0819:PsiDirectoryNode" />
-              <item name="24-meeting-info-modal" type="462c0819:PsiDirectoryNode" />
+              <item name="25-lay-date(date object)" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="exercise-angular-1.x" type="b2602c69:ProjectViewProjectNode" />
+              <item name="exercise-angular-1.x" type="462c0819:PsiDirectoryNode" />
+              <item name="25-lay-date(date object)-past-time" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="exercise-angular-1.x" type="b2602c69:ProjectViewProjectNode" />
@@ -205,15 +217,15 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\test\exercise-angular\lib" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\test\exercise-angular-1.x\13-$q" />
       <recent name="D:\test\exercise-angular-1.x" />
+      <recent name="D:\test\exercise-angular-1.x\13-$q" />
       <recent name="D:\test\exercise-angular-1.x\26-message-modal" />
       <recent name="D:\test\exercise-angular-1.x\12-checkbox-bind-to-arr" />
       <recent name="D:\test\exercise-angular-1.x\lib\fonts" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\test\exercise-angular\lib" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -271,18 +283,19 @@
       <workItem from="1551321619643" duration="2719000" />
       <workItem from="1551435531379" duration="714000" />
       <workItem from="1551687856191" duration="3177000" />
-      <workItem from="1552964670358" duration="8182000" />
+      <workItem from="1552964670358" duration="10586000" />
+      <workItem from="1553150918775" duration="11807000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="422854000" />
+    <option name="totallyTimeSpent" value="437065000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12592202" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15226555" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -305,27 +318,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/01-emit-broadcast/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02-service/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="32" selection-start-line="32" selection-end-line="37" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/21-bootstrap-modal/show-meeting-info.directive.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="58" lean-forward="true" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/05-directive/01-isolation-directive.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -589,13 +581,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/25-lay-date(date object)/date-time-selector.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="204" column="7" selection-start-line="204" selection-start-column="7" selection-end-line="204" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/25-lay-date(date object)/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="246">
@@ -630,20 +615,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/14-integer-directive/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/15-scroll-tbody-in-bootstrap/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
+        <state relative-caret-position="1406">
           <caret line="74" column="41" selection-start-line="74" selection-start-column="41" selection-end-line="74" selection-end-column="41" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/14-integer-directive/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/25-lay-date(date object)/date-time-selector.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="144" selection-start-line="144" selection-end-line="148" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/25-lay-date(date object)-past-time/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/25-lay-date(date object)-past-time/date-time-selector.template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/25-lay-date(date object)-past-time/date-time-selector.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="565">
+          <caret line="238" column="27" lean-forward="true" selection-start-line="238" selection-start-column="27" selection-end-line="238" selection-end-column="27" />
         </state>
       </provider>
     </entry>
