@@ -56,13 +56,18 @@ angular.module('myApp').directive('dateTimeSelector', [function () {
           $scope.$apply();
         }
       });
-      limitPicker();
+      limitPicker(); // 设置弹窗的最大、最小值
     });
 
     // 设置弹窗的最大、最小值
     function limitPicker() {
-      minimumPicker(); // 设置最小值
-      maximumPicker(); // 设置最大值
+      if (timer) {
+        $timeout.cancel(timer);
+      }
+      timer = $timeout(function () {
+        minimumPicker(); // 设置最小值
+        maximumPicker(); // 设置最大值
+      }, 20);
     }
 
     // 设置弹窗的最小值
@@ -122,12 +127,7 @@ angular.module('myApp').directive('dateTimeSelector', [function () {
       if ($scope.minutesGradient) {
         date = fixTime(date, $scope.minutesGradient);
       }
-      var dateStr = $filter('date')(date, 'yyyy-MM-dd');
-      var timeStr = $filter('date')(date, 'HH:mm');
-      return {
-        dateStr: dateStr,
-        timeStr: timeStr
-      }
+      return date;
     }
 
     // 计算时间选择框的最小值
@@ -157,29 +157,6 @@ angular.module('myApp').directive('dateTimeSelector', [function () {
     }
 
     // 使用分钟梯度向后修正时间
-    // function fixTime(timeStr, minutesGradient) {
-    //   var maxDivideRes = 60 / minutesGradient - 1;
-    //   var arr = timeStr.split(':');
-    //   var hours = Number(arr[0]);
-    //   var minutes = Number(arr[1]);
-    //   var divideRes = minutes / minutesGradient;
-    //   if (divideRes < maxDivideRes) {
-    //     // 向上一个梯度不会超过 60 分
-    //     minutes = (Math.floor(divideRes) + 1) * minutesGradient;
-    //   }
-    //   if (divideRes >= maxDivideRes) {
-    //     // 向上一个梯度会超过 60 分
-    //     if (hours >= 23) {
-    //       minutes = 59;
-    //     } else {
-    //       hours++;
-    //       minutes = 0;
-    //     }
-    //   }
-    //   var hoursStr = ('00' + hours).slice(-2);
-    //   var minutesStr = ('00' + minutes).slice(-2);
-    //   return hoursStr + ':' + minutesStr;
-    // }
     function fixTime(date, minutesGradient) {
       var hours = date.getHours();
       var minutes = date.getMinutes();
@@ -187,7 +164,7 @@ angular.module('myApp').directive('dateTimeSelector', [function () {
       minutes = (Math.floor(divideRes) + 1) * minutesGradient;
       var isSameDay = $scope.isSameDay;
       // 防止时间变为第二天
-      if(isSameDay && hours === 23 && minutes > 59) {
+      if (isSameDay && hours === 23 && minutes > 59) {
         date.setMinutes(59);
       }
       date.setMinutes(minutes);
@@ -204,7 +181,7 @@ angular.module('myApp').directive('dateTimeSelector', [function () {
     // 过去的时间不可选时，自动修正时间
     if ($scope.pastTimeDisabled) {
       // 定时器，修正时间使其不小于当前时间
-      intervalTimer = $interval(fixDateTime, 1000);
+      intervalTimer = $interval(autoFix, 1000);
       // 取消定时器
       $scope.$on('$destroy', function () {
         $interval.cancel(intervalTimer);
@@ -212,31 +189,24 @@ angular.module('myApp').directive('dateTimeSelector', [function () {
     }
 
     // 修正选择框中的值不小于当前时间
-    function fixDateTime() {
+    function autoFix() {
       var now = new Date();
       var dateStr = $scope.dateStr.replace(/-/g, '/');
       var timeStr = $scope.timeStr;
       var minutesGradient = $scope.minutesGradient;
-      // 有分钟梯度时，选择框中的时间秒数为 '00'
-      // 无分钟梯度时，选择框中的时间秒数为 '59'(即当前时间的分钟数大于选择框中的分钟数才刷新)
-      var secondsStr = minutesGradient ? '00' : '59';
+      var secondsStr = '00';
       var date = new Date(dateStr + ' ' + timeStr + ':' + secondsStr);
       if (date > now) {
         return;
       }
       console.log('fixing...');
-      // $scope.dateStr = $filter('date')(now, 'yyyy-MM-dd');
-      // var newTimeStr = $filter('date')(now, 'HH:mm');
-      // if ($scope.minutesGradient) {
-      //   newTimeStr = fixTime(newTimeStr, $scope.minutesGradient);
-      // }
-      if(minutesGradient) {
-        now = fixTime(now, $scope.minutesGradient);
-      }
+      minutesGradient = minutesGradient || 1; // 无分钟梯度时，向后修正1分钟
+      now = fixTime(now, minutesGradient);
       $scope.dateStr = $filter('date')(now, 'yyyy-MM-dd');
       $scope.timeStr = $filter('date')(now, 'HH:mm');
-      // 坑：直接给 $scope.time 赋值会进入死循环。。
+      // 坑：直接给 $scope.time 赋值有时会让 angularJS 进入死循环。。
       // $scope.time = now;
+      limitPicker(); // 设置弹窗的最大、最小值
     }
 
     // 初始化日期和时间
@@ -244,8 +214,8 @@ angular.module('myApp').directive('dateTimeSelector', [function () {
       var time = $scope.time;
       if (!time) {
         var date = calcNowDateTime();
-        $scope.dateStr = date.dateStr;
-        $scope.timeStr = date.timeStr;
+        $scope.dateStr = $filter('date')(date, 'yyyy-MM-dd');
+        $scope.timeStr = $filter('date')(date, 'HH:mm');
         return;
       }
       $scope.dateStr = $filter('date')(time, 'yyyy-MM-dd');
@@ -257,11 +227,8 @@ angular.module('myApp').directive('dateTimeSelector', [function () {
       var dateStr = $scope.dateStr;
       var timeStr = $scope.timeStr;
       $scope.time = convertStringToDate(dateStr, timeStr);
-      // 修改了日期后，重新设定最大最小值限制
-      if (timer) {
-        $timeout.cancel(timer);
-      }
-      timer = $timeout(limitPicker, 20); // 修正选择框中的最大、最小值
+      // 修改了日期后，重新设定最大、最小值限制
+      limitPicker(); // 设置弹窗的最大、最小值
     });
 
     // 监听 timeStr
@@ -276,10 +243,7 @@ angular.module('myApp').directive('dateTimeSelector', [function () {
       if (!$scope.minTime) {
         return;
       }
-      if (timer) {
-        $timeout.cancel(timer);
-      }
-      timer = $timeout(limitPicker, 20); // 修正选择框中的最大、最小值
+      limitPicker(); // 设置弹窗的最大、最小值
       var time = $scope.time;
       var minTime = $scope.minTime;
       if (time < minTime) {
@@ -297,10 +261,7 @@ angular.module('myApp').directive('dateTimeSelector', [function () {
       if (!$scope.maxTime) {
         return;
       }
-      if (timer) {
-        $timeout.cancel(timer);
-      }
-      timer = $timeout(limitPicker, 20); // 修正选择框中的最大、最小值
+      limitPicker(); // 设置弹窗的最大、最小值
       var time = $scope.time;
       var maxTime = $scope.maxTime;
       if (time > maxTime) {
