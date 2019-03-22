@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="bbe6b199-0bef-486c-9a57-42ad99e2a99f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25-lay-date(date object)-past-time/date-time-selector.js" beforeDir="false" afterPath="$PROJECT_DIR$/25-lay-date(date object)-past-time/date-time-selector.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25-lay-date(date object)-past-time/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/25-lay-date(date object)-past-time/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,22 +18,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/25-lay-date(date object)-past-time/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
+            <state relative-caret-position="1159">
               <caret line="61" column="24" selection-start-line="61" selection-start-column="24" selection-end-line="61" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/25-lay-date(date object)-past-time/date-time-selector.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2793">
+            <state relative-caret-position="836">
               <caret line="147" column="13" selection-start-line="147" selection-start-column="13" selection-end-line="147" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/25-lay-date(date object)-past-time/date-time-selector.template.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="209">
@@ -179,6 +177,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -189,23 +188,12 @@
             <path>
               <item name="exercise-angular-1.x" type="b2602c69:ProjectViewProjectNode" />
               <item name="exercise-angular-1.x" type="462c0819:PsiDirectoryNode" />
-              <item name="25-lay-date(date object)" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exercise-angular-1.x" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exercise-angular-1.x" type="462c0819:PsiDirectoryNode" />
-              <item name="25-lay-date(date object)-past-time" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exercise-angular-1.x" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exercise-angular-1.x" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -289,18 +277,18 @@
       <workItem from="1551687856191" duration="3177000" />
       <workItem from="1552964670358" duration="10586000" />
       <workItem from="1553150918775" duration="14566000" />
-      <workItem from="1553218194438" duration="7065000" />
+      <workItem from="1553218194438" duration="8502000" />
+      <workItem from="1553249034910" duration="242000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="446889000" />
+    <option name="totallyTimeSpent" value="448568000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15226555" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15226555" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -312,7 +300,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.28245068" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.28169015" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -646,15 +634,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/25-lay-date(date object)-past-time/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
+        <state relative-caret-position="1159">
           <caret line="61" column="24" selection-start-line="61" selection-start-column="24" selection-end-line="61" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/25-lay-date(date object)-past-time/date-time-selector.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2793">
-          <caret line="147" column="13" selection-start-line="147" selection-start-column="13" selection-end-line="147" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -662,6 +643,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/25-lay-date(date object)-past-time/date-time-selector.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="836">
+          <caret line="147" column="13" selection-start-line="147" selection-start-column="13" selection-end-line="147" selection-end-column="13" />
         </state>
       </provider>
     </entry>
