@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS-Tree</title>
+  <!--<link rel="stylesheet" href="../lib/bootstrap.css">-->
+  <link rel="stylesheet" href="../lib/jstree/themes/default/style.min.css" />
+</head>
+<body ng-app="myApp" ng-controller="MyController">
+<div>
+  <button ng-click="changeData()">切换数据源</button>
+  <js-tree tree-data="treedata[treedataName]" selected-arr="selectedArr" on-change-fn="onChangeFn(data)"></js-tree>
+</div>
+<!-- JavaScript 库 -->
+<script src="../lib/jquery.js"></script>
+<!--<script src="../lib/bootstrap.js"></script>-->
+<script src="../lib/angular.js"></script>
+<script src="../lib/jstree/jstree.js"></script>
+<!-- 组件 -->
+<script src="./my-app.js"></script>
+<script src="./js-tree-directive.js"></script>
+</body>
+</html>
