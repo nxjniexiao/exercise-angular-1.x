@@ -10,7 +10,8 @@ angular.module('myApp').directive('dateTimeSelector', [function () {
       isSameDay: '<?',
       minutesGradient: '<?',
       increasedMinutes: '<?',
-      isDisabled: '<?'
+      isDisabled: '<?',
+      hasClearBtn: '<?'
     },
     controller: ['$scope', '$timeout', '$filter', '$interval', controller]
   };
@@ -24,6 +25,25 @@ angular.module('myApp').directive('dateTimeSelector', [function () {
     $scope.timeStr = null; // 时间字符串，如'11:30'
     $scope.datePicker = null;
     $scope.timePicker = null;
+    var btns = $scope.hasClearBtn ? ['clear', 'confirm'] : ['confirm'];
+    // 弹窗初始最小值
+    var INITIAL_MIN = {
+      year: 1900,
+      month: 0,
+      date: 1,
+      hours: 0,
+      minutes: 0,
+      seconds: 0
+    };
+    // 弹窗初始最大值
+    var INITIAL_MAX = {
+      year: 2099,
+      month: 11,
+      date: 31,
+      hours: 0,
+      minutes: 0,
+      seconds: 0
+    };
     $timeout(function () {
       // 日期弹窗
       $scope.datePicker = laydate.render({
@@ -31,7 +51,7 @@ angular.module('myApp').directive('dateTimeSelector', [function () {
         eventElem: '#' + $scope.dateId + '-event',
         trigger: 'click',
         type: 'date',
-        btns: ['confirm'],
+        btns: btns,
         done: function (value, date, endDate) {
           $scope.dateStr = value;
           $scope.$apply();
@@ -44,7 +64,7 @@ angular.module('myApp').directive('dateTimeSelector', [function () {
         trigger: 'click',
         type: 'time',
         format: 'HH:mm',
-        btns: ['confirm'],
+        btns: btns,
         ready: function (date) {
           // 控件在打开时触发(打开时修改config，弹窗在点击后才会刷新新的配置)
         },
@@ -58,6 +78,18 @@ angular.module('myApp').directive('dateTimeSelector', [function () {
       });
       limitPicker(); // 设置弹窗的最大、最小值
     });
+
+    $scope.styleWidth100 = {
+      float: 'left',
+      width: '100%',
+      'padding-right': '10px'
+    };
+
+    $scope.styleWidth50 = {
+      float: 'left',
+      width: '50%',
+      'padding-right': '10px'
+    };
 
     // 设置弹窗的最大、最小值
     function limitPicker() {
@@ -78,6 +110,8 @@ angular.module('myApp').directive('dateTimeSelector', [function () {
       var minTime = $scope.minTime;
       // 无最小限制
       if (!pastTimeDisabled && !minTime) {
+        $scope.datePicker.config.min = INITIAL_MIN;
+        $scope.timePicker.config.min = INITIAL_MIN;
         return;
       }
       var now = pastTimeDisabled ? new Date() : null;
@@ -96,6 +130,8 @@ angular.module('myApp').directive('dateTimeSelector', [function () {
     function maximumPicker() {
       var maxTime = $scope.maxTime;
       if (!maxTime) {
+        $scope.datePicker.config.max = INITIAL_MAX;
+        $scope.timePicker.config.max = INITIAL_MAX;
         return;
       }
       // 打开弹窗时，设置时间不大于 maxTime
@@ -212,6 +248,11 @@ angular.module('myApp').directive('dateTimeSelector', [function () {
     // 初始化日期和时间
     function initDateTime() {
       var time = $scope.time;
+      if (!time && !$scope.pastTimeDisabled) {
+        $scope.dateStr = '';
+        $scope.timeStr = '';
+        return;
+      }
       if (!time) {
         var date = calcNowDateTime();
         $scope.dateStr = $filter('date')(date, 'yyyy-MM-dd');
@@ -226,7 +267,11 @@ angular.module('myApp').directive('dateTimeSelector', [function () {
     $scope.$watch('dateStr', function () {
       var dateStr = $scope.dateStr;
       var timeStr = $scope.timeStr;
-      $scope.time = convertStringToDate(dateStr, timeStr);
+      if (!dateStr) {
+        $scope.time = null;
+      } else {
+        $scope.time = convertStringToDate(dateStr, timeStr);
+      }
       // 修改了日期后，重新设定最大、最小值限制
       limitPicker(); // 设置弹窗的最大、最小值
     });
@@ -235,15 +280,19 @@ angular.module('myApp').directive('dateTimeSelector', [function () {
     $scope.$watch('timeStr', function () {
       var dateStr = $scope.dateStr;
       var timeStr = $scope.timeStr;
-      $scope.time = convertStringToDate(dateStr, timeStr);
+      if (!dateStr) {
+        $scope.time = null;
+      } else {
+        $scope.time = convertStringToDate(dateStr, timeStr);
+      }
     });
 
     // 监听 minTime
     $scope.$watch('minTime', function () {
+      limitPicker(); // 设置弹窗的最大、最小值
       if (!$scope.minTime) {
         return;
       }
-      limitPicker(); // 设置弹窗的最大、最小值
       var time = $scope.time;
       var minTime = $scope.minTime;
       if (time < minTime) {
@@ -258,10 +307,10 @@ angular.module('myApp').directive('dateTimeSelector', [function () {
 
     // 监听 maxTime
     $scope.$watch('maxTime', function () {
+      limitPicker(); // 设置弹窗的最大、最小值
       if (!$scope.maxTime) {
         return;
       }
-      limitPicker(); // 设置弹窗的最大、最小值
       var time = $scope.time;
       var maxTime = $scope.maxTime;
       if (time > maxTime) {

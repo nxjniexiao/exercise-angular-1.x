@@ -16,6 +16,23 @@ angular.module('myApp')
             .on('open_node.jstree', function(event, data) {
               console.log(data);
             })
+            // 数据回显
+            .on('ready.jstree', function(event, data) {
+              console.log(event);
+              console.log(data);
+              var obj = data.instance._model.data;
+              var selectedArr = scope.selectedArr;
+              if (selectedArr instanceof Array) {
+                for(var i = 0, len = selectedArr.length; i < len; i++) {
+                  var item = selectedArr[i];
+                  var id = item.id;
+                  if(obj.hasOwnProperty(id)) {
+                    obj[id].state.selected = true;
+                  }
+                }
+                data.instance.refresh(true);
+              }
+            })
             .on('changed.jstree', function (event, data) {
               // console.log(data);
               var arr = [];

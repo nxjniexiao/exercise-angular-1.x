@@ -1,11 +1,11 @@
 <div>
-  <div class="col-md-4 col-xs-4 col-sm-4 padding-left">
+  <div ng-style="mode?styleWidth100:styleWidth50">
     <div class="input-group date">
       <input class="form-control" type="text" name="startDate" ng-attr-id="{{isDisabled?'':dateId}}" ng-model="dateStr" ng-disabled="isSameDay || isDisabled" readonly>
       <i class="input-group-addon btn default iconfont calendar" ng-attr-id="{{(isSameDay || isDisabled)?'':dateId + '-event'}}" ng-disabled="isSameDay || isDisabled"></i>
     </div>
   </div>
-  <div class="col-md-4 col-xs-4 col-sm-4 padding-left" ng-if="mode!=='date'">
+  <div ng-style="mode?styleWidth100:styleWidth50" ng-if="mode!=='date'">
     <div class="input-group date">
         <input class="form-control" type="text" name="startDate" ng-attr-id="{{isDisabled?'':timeId}}" ng-model="timeStr" ng-disabled="isDisabled" readonly>
       <i class="input-group-addon btn default iconfont clock" ng-attr-id="{{isDisabled?'':timeId + '-event'}}" ng-disabled="isDisabled"></i>

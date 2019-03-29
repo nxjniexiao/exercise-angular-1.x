@@ -10,6 +10,7 @@
 <div>
   <button ng-click="changeData()">切换数据源</button>
   <js-tree tree-data="treedata[treedataName]" selected-arr="selectedArr" on-change-fn="onChangeFn(data)"></js-tree>
+  <div>{{selectedArr | json}}</div>
 </div>
 <!-- JavaScript 库 -->
 <script src="../lib/jquery.js"></script>

@@ -364,7 +364,7 @@ angular.module('myApp').controller('MyController', ['$rootScope', '$scope', func
     ],
   };
   $scope.treedataName = 'treedata1';
-  $scope.selectedArr = [];
+  $scope.selectedArr = [ { "text": "Root node 2", "id": 2 }, { "text": "Child node 1-1", "id": 111 } ];
   $scope.onChangeFn = function(data) {
     // console.log($scope.selectedArr);
     // console.log(data)
