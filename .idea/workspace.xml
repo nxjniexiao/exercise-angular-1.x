@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bbe6b199-0bef-486c-9a57-42ad99e2a99f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/25-lay-date(date object)-past-time-duration/date-time-selector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/25-lay-date(date object)-past-time-duration/date-time-selector.template.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/25-lay-date(date object)-past-time-duration/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25-lay-date(date object)-past-time/date-time-selector.js" beforeDir="false" afterPath="$PROJECT_DIR$/25-lay-date(date object)-past-time/date-time-selector.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25-lay-date(date object)-past-time/date-time-selector.template.html" beforeDir="false" afterPath="$PROJECT_DIR$/25-lay-date(date object)-past-time/date-time-selector.template.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/25-lay-date(date object)-past-time/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/25-lay-date(date object)-past-time/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/29-angular-jstree-nav-tree/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/29-angular-jstree-nav-tree/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/29-angular-jstree-nav-tree/js-tree-directive.js" beforeDir="false" afterPath="$PROJECT_DIR$/29-angular-jstree-nav-tree/js-tree-directive.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/29-angular-jstree-nav-tree/my-app.js" beforeDir="false" afterPath="$PROJECT_DIR$/29-angular-jstree-nav-tree/my-app.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,29 +21,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/29-angular-jstree-nav-tree/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/29-angular-jstree-nav-tree/my-app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="589">
-              <caret line="366" column="20" selection-start-line="366" selection-start-column="9" selection-end-line="366" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/29-angular-jstree-nav-tree/js-tree-directive.js">
+        <entry file="file://$PROJECT_DIR$/25-lay-date(date object)-past-time-duration/date-time-selector.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+            <state relative-caret-position="332">
+              <caret line="362" column="55" selection-start-line="362" selection-start-column="48" selection-end-line="362" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/25-lay-date(date object)-past-time-duration/date-time-selector.template.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="4" lean-forward="true" selection-start-column="4" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/25-lay-date(date object)-past-time-duration/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="513">
+              <caret line="51" column="43" lean-forward="true" selection-start-line="51" selection-start-column="43" selection-end-line="51" selection-end-column="43" />
+              <folding>
+                <element signature="n#form#1;n#body#0;n#html#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -64,16 +64,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>children</find>
-      <find>my_tree</find>
-      <find>tree</find>
-      <find>row</find>
-      <find>treeData</find>
-      <find>iconLeaf</find>
-      <find>tree_icon</find>
-      <find>expanded</find>
-      <find>select_branch</find>
-      <find>icon-minus</find>
       <find>my_tree_handler</find>
       <find>$scope.checked</find>
       <find>$scope.output</find>
@@ -94,6 +84,16 @@
       <find>treedata</find>
       <find>autoFix</find>
       <find>yyyy-MM-dd</find>
+      <find>$scope.minDuration</find>
+      <find>pastTimeDisabled</find>
+      <find>addMinutes</find>
+      <find>addOrMinusMinutes</find>
+      <find>limitPicker</find>
+      <find>fixing...</find>
+      <find>$scope.minTime</find>
+      <find>$scope.time</find>
+      <find>convertStringToDate</find>
+      <find>isSameDay</find>
     </findStrings>
     <replaceStrings>
       <replace>form</replace>
@@ -114,6 +114,8 @@
       <replace>selected</replace>
       <replace>$scope.selected</replace>
       <replace>branch.selected</replace>
+      <replace>$scope.config.hasClearBtn</replace>
+      <replace>addOrMinusMinutes</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -122,9 +124,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/04-form/04.html" />
-        <option value="$PROJECT_DIR$/04-form/04-custom-form-control.js" />
-        <option value="$PROJECT_DIR$/23-tm-pagination/tm.pagination.css" />
         <option value="$PROJECT_DIR$/23-tm-pagination/index.html" />
         <option value="$PROJECT_DIR$/23-tm-pagination/my-app.js" />
         <option value="$PROJECT_DIR$/23-tm-pagination/tm.pagination.js" />
@@ -169,10 +168,13 @@
         <option value="$PROJECT_DIR$/29-angular-jstree-nav-tree/js-tree.template.html" />
         <option value="$PROJECT_DIR$/25-lay-date(date object)-past-time/date-time-selector.template.html" />
         <option value="$PROJECT_DIR$/25-lay-date(date object)-past-time/index.html" />
-        <option value="$PROJECT_DIR$/25-lay-date(date object)-past-time/date-time-selector.js" />
         <option value="$PROJECT_DIR$/29-angular-jstree-nav-tree/index.html" />
         <option value="$PROJECT_DIR$/29-angular-jstree-nav-tree/my-app.js" />
         <option value="$PROJECT_DIR$/29-angular-jstree-nav-tree/js-tree-directive.js" />
+        <option value="$PROJECT_DIR$/25-lay-date(date object)-past-time-duration/date-time-selector.template.html" />
+        <option value="$PROJECT_DIR$/25-lay-date(date object)-past-time/date-time-selector.js" />
+        <option value="$PROJECT_DIR$/25-lay-date(date object)-past-time-duration/date-time-selector.js" />
+        <option value="$PROJECT_DIR$/25-lay-date(date object)-past-time-duration/index.html" />
       </list>
     </option>
   </component>
@@ -205,6 +207,11 @@
             <path>
               <item name="exercise-angular-1.x" type="b2602c69:ProjectViewProjectNode" />
               <item name="exercise-angular-1.x" type="462c0819:PsiDirectoryNode" />
+              <item name="25-lay-date(date object)-past-time-duration" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="exercise-angular-1.x" type="b2602c69:ProjectViewProjectNode" />
+              <item name="exercise-angular-1.x" type="462c0819:PsiDirectoryNode" />
               <item name="29-angular-jstree-nav-tree" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -217,7 +224,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/25-lay-date(date object)-past-time/date-time-selector.js" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -225,17 +232,18 @@
     <property name="prettierjs.PrettierConfiguration.NodeInterpreter" value="project" />
     <property name="prettierjs.PrettierConfiguration.Package" value="D:\Users\nxj\AppData\Roaming\npm\node_modules\prettier" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/25-lay-date(date object)-past-time/date-time-selector.js" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\test\exercise-angular\lib" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\test\exercise-angular-1.x" />
       <recent name="D:\test\exercise-angular-1.x\13-$q" />
       <recent name="D:\test\exercise-angular-1.x\26-message-modal" />
       <recent name="D:\test\exercise-angular-1.x\12-checkbox-bind-to-arr" />
       <recent name="D:\test\exercise-angular-1.x\lib\fonts" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\test\exercise-angular\lib" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -301,12 +309,13 @@
       <workItem from="1553569527803" duration="14561000" />
       <workItem from="1553673540757" duration="2570000" />
       <workItem from="1553760893828" duration="2063000" />
-      <workItem from="1553838289926" duration="14908000" />
+      <workItem from="1553838289926" duration="15331000" />
+      <workItem from="1554167682333" duration="24541000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="502076000" />
+    <option name="totallyTimeSpent" value="527040000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -354,27 +363,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/05-directive/02-manipulate-dom-directive.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="15" column="43" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/05-directive/03.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/05-directive/04-tabs-planes-directive.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-210">
-          <caret line="9" column="48" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/fonts/style.css" />
     <entry file="file://$PROJECT_DIR$/lib/icon-fonts/icon-fonts.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -682,31 +670,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/25-lay-date(date object)-past-time/date-time-selector.template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="71" lean-forward="true" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/25-lay-date(date object)-past-time/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="61" column="55" selection-start-line="61" selection-start-column="55" selection-end-line="61" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/25-lay-date(date object)-past-time/date-time-selector.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="176" column="58" selection-start-line="176" selection-start-column="48" selection-end-line="176" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/29-angular-jstree-nav-tree/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
-          <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -719,8 +686,53 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/29-angular-jstree-nav-tree/js-tree-directive.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+        <state relative-caret-position="171">
+          <caret line="27" column="35" lean-forward="true" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/25-lay-date(date object)-past-time/date-time-selector.template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="71" lean-forward="true" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/25-lay-date(date object)-past-time/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="44" column="43" selection-start-line="44" selection-start-column="32" selection-end-line="44" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/25-lay-date(date object)-past-time/date-time-selector.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="296" column="20" selection-start-line="296" selection-start-column="20" selection-end-line="296" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/25-lay-date(date object)-past-time-duration/date-time-selector.template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="4" lean-forward="true" selection-start-column="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/25-lay-date(date object)-past-time-duration/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="51" column="43" lean-forward="true" selection-start-line="51" selection-start-column="43" selection-end-line="51" selection-end-column="43" />
+          <folding>
+            <element signature="n#form#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/25-lay-date(date object)-past-time-duration/date-time-selector.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="362" column="55" selection-start-line="362" selection-start-column="48" selection-end-line="362" selection-end-column="55" />
         </state>
       </provider>
     </entry>

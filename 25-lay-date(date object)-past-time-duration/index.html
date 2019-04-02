@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lay Date</title>
+  <!-- 引入 bootstrap 样式文件 -->
+  <link rel="stylesheet" href="../lib/bootstrap.css">
+  <!-- 图标字体 -->
+  <link rel="stylesheet" href="../lib/icon-fonts/icon-fonts.css">
+  <style>
+    /* 隐藏 laydate 中的秒选项 */
+    .laydate-time-list > li {
+      width: 50% !important;
+    }
+
+    .laydate-time-list > li:last-child {
+      display: none;
+    }
+
+    .laydate-time-list > li > ol > li {
+      padding-left: 54px;
+    }
+  </style>
+</head>
+<body ng-app="myApp" ng-controller="MyController">
+<form class="form-horizontal">
+  <div class="form-group form-group-10" style="margin-bottom: 10px">
+    <label class="control-label col-md-2">调试时间</label>
+    <div class="col-md-6">
+      <date-time-selector time="debugTime" max-time="startTime1"
+                          config="{
+                          pastTimeDisabled: true,
+                          mode: 'date'
+                          }"
+      ></date-time-selector>
+    </div>
+  </div>
+</form>
+<form class="form-horizontal">
+  <div class="form-group form-group-10" style="margin-bottom: 10px">
+    <label class="control-label col-md-2">开会时间</label>
+    <div class="col-md-6">
+      <date-time-selector time="startTime1"
+                          config="{
+                          pastTimeDisabled: true,
+                          minutesGradient: gradient
+                          }"
+      ></date-time-selector>
+    </div>
+  </div>
+  <div class="form-group form-group-10">
+    <label class="control-label col-md-2">结束时间</label>
+    <div class="col-md-6">
+      <date-time-selector time="finishTime1" min-time="startTime1"
+                          config="{
+                          isSameDay: true,
+                          minutesGradient: gradient,
+                          increasedMinutes: 60,
+                          minDuration: 60,
+                          maxDuration: 60*4
+                          }"
+      ></date-time-selector>
+    </div>
+  </div>
+</form>
+<!--<hr>
+<form class="form-horizontal">
+  <div class="form-group form-group-10" style="margin-bottom: 10px">
+    <label class="control-label col-md-2">开会时间</label>
+    <div class="col-md-6">
+      <date-time-selector time="startTime2"
+                          config="{
+                          pastTimeDisabled: true,
+                          minutesGradient: gradient
+                          }"
+      ></date-time-selector>
+    </div>
+  </div>
+  <div class="form-group form-group-10">
+    <label class="control-label col-md-2">结束时间</label>
+    <div class="col-md-6">
+      <date-time-selector time="finishTime2" min-time="startTime2"
+                          config="{
+                          minutesGradient: gradient,
+                          increasedMinutes: 60*2,
+                          minDuration: 60,
+                          maxDuration: 60*4
+                          }"
+      ></date-time-selector>
+    </div>
+  </div>
+</form>
+<hr>
+<form class="form-horizontal">
+  <div class="form-group form-group-10" style="margin-bottom: 10px">
+    <label class="control-label col-md-2">最小时间</label>
+    <div class="col-md-6">
+      <date-time-selector time="startTime5" max-time="finishTime5"
+                          config="{
+                          shouldInitialize: false,
+                          mode: 'date',
+                          hasClearBtn: true
+                          }"
+      ></date-time-selector>
+    </div>
+  </div>
+  <div class="form-group form-group-10">
+    <label class="control-label col-md-2">中间时间</label>
+    <div class="col-md-6">
+      <date-time-selector time="middleTime5" min-time="startTime5" max-time="finishTime5"
+                          config="{
+                          shouldInitialize: false,
+                          mode: 'date',
+                          hasClearBtn: true
+                          }"
+      ></date-time-selector>
+    </div>
+  </div>
+  <div class="form-group form-group-10">
+    <label class="control-label col-md-2">最大时间</label>
+    <div class="col-md-6">
+      <date-time-selector time="finishTime5" min-time="startTime5"
+                          config="{
+                          shouldInitialize: false,
+                          mode: 'date',
+                          hasClearBtn: true
+                          }"
+      ></date-time-selector>
+    </div>
+  </div>
+</form>-->
+<!-- JavaScript 库 -->
+<script src="../lib/jquery.js"></script>
+<script src="../lib/bootstrap.js"></script>
+<script src="../lib/angular.js"></script>
+<script src="../lib/laydate/laydate.js"></script>
+<script>
+  (function (angular) {
+    'use strict';
+    angular.module('myApp', []);
+    angular.module('myApp').controller('MyController', ['$scope', function ($scope) {
+      $scope.gradient = 5;
+    }]);
+  })(window.angular)
+</script>
+<!-- 自定义 JS -->
+<script src="./date-time-selector.js"></script>
+</body>
+</html>
