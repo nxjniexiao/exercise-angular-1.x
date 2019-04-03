@@ -1,17 +1,17 @@
 /**
  * 基于layDate的日期和时间分开选择的组件。
  * @param {Object} time - 时间，Date 对象
- * @param {Object} [minTime] - 最小时间，Date 对象
- * @param {Object} [maxTime] - 最大时间，Date 对象
- * @param {Object} [config] - 配置对象
- * @param {boolean} [config.shouldInitialize] - 初始 time 为空时，是否初始化，默认为 true
- * @param {boolean} [config.pastTimeDisabled] - 是否禁用过去的时间，默认为不禁用(优先级比minTime/maxTime的低)
- * @param {string} [config.mode] - 为'date'时，只显示日期选择框
- * @param {boolean} [config.isSameDay] - 是否为同一天。当有最小值时，日期默认为最小值日期，且日期选择框不可用
- * @param {number} [config.minutesGradient] - 分钟梯度，可选项，用于修正默认时间。如传入的梯度为5，当前时间为08:02，则默认时间将为08:05
- * @param {number} [config.increasedMinutes] - 增加的分钟数，可选项，用于修正默认时间。如传入60，当前时间为08:02，则默认时间将为09:02
- * @param {boolean} [config.isDisabled] - 是否禁用选择功能。
- * @param {boolean} [config.hasClearBtn] - 是否有清除按钮。
+ * @param {Object} [minTime] - 最小时间，Date 对象。
+ * @param {Object} [maxTime] - 最大时间，Date 对象。
+ * @param {Object} [config] - 配置对象。
+ * @param {boolean} [config.shouldInitialize] - 初始 time 为空时，是否初始化，默认为 true。
+ * @param {boolean} [config.pastTimeDisabled] - 是否禁用过去的时间，优先级比minTime/maxTime的低，默认为 false。
+ * @param {string} [config.mode] - 为'date' 时，只显示日期选择框。
+ * @param {boolean} [config.isSameDay] - 是否为同一天。当有最小值时，日期默认为最小值日期，且日期选择框不可用。默认为 false。
+ * @param {number} [config.minutesGradient] - 分钟梯度，用于修正默认时间。如传入的梯度为5，当前时间为08:02，则默认时间将为08:05。
+ * @param {number} [config.increasedMinutes] - 增加的分钟数，用于修正默认时间。如传入60，当前时间为08:02，则默认时间将为09:02。
+ * @param {boolean} [config.isDisabled] - 是否禁用选择功能，默认为 false。
+ * @param {boolean} [config.hasClearBtn] - 是否有清除按钮，默认为 false。
  * @param {number} [config.minDuration] - 最小时间段(分钟数)，配合 minTime 或 maxTime 使用。
  * @param {number} [config.maxDuration] - 最大时间段(分钟数)，配合 minTime 或 maxTime 使用。
  * */
