@@ -135,7 +135,7 @@ angular.module('myApp').directive('dateTimeSelector', [function () {
       }
       // 3.过去时间不可用
       if (pastTimeDisabled) {
-        return new Date();
+        return fixTime(new Date(), $scope.config.minutesGradient);
       }
       return null;
     }
@@ -201,13 +201,9 @@ angular.module('myApp').directive('dateTimeSelector', [function () {
     function calcNowDateTime() {
       var date = new Date();
       // 按分钟数增加时间
-      if ($scope.config.increasedMinutes) {
-        date = addOrMinusMinutes(date, $scope.config.increasedMinutes, true);
-      }
+      date = addOrMinusMinutes(date, $scope.config.increasedMinutes, true);
       // 根据分钟梯度修正时间
-      if ($scope.config.minutesGradient) {
-        date = fixTime(date, $scope.config.minutesGradient);
-      }
+      date = fixTime(date, $scope.config.minutesGradient);
       return date;
     }
 
@@ -245,6 +241,9 @@ angular.module('myApp').directive('dateTimeSelector', [function () {
 
     // 使用分钟梯度向后修正时间
     function fixTime(date, minutesGradient) {
+      if (!minutesGradient) {
+        return date;
+      }
       var hours = date.getHours();
       var minutes = date.getMinutes();
       var divideRes = minutes / minutesGradient;
