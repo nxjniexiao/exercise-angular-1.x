@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8"/>
+      <title>Stars</title>
+    </head>
+    <link rel="stylesheet" href="../lib/font-awesome/css/font-awesome.min.css">
+    <style>
+      #id {
+        color: #ffac2d;
+      }
+    </style>
+<body ng-app="myApp">
+<div ng-controller="MyController as myCtrl">
+  <stars score="1"></stars>
+  <stars score="3" is-click-available="true"></stars>
+  <stars score="rating" is-click-available="true" size="20px" color="ffac2d"></stars>
+</div>
+<script src="../lib/angular.min.js"></script>
+<script>
+  (function (angular) {
+    angular.module('myApp', []).controller('MyController', [
+      '$scope',
+      function ($scope) {
+      $scope.rating = null;
+      }
+    ]);
+  })(window.angular);
+</script>
+<!-- 自定义 JS -->
+<script src="./stars.directive.js"></script>
+</body>
+</html>
+</title>
+</head>
+<body>
+
+</body>
+</html>
