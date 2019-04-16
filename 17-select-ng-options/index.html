@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8"/>
+      <title>Select</title>
+    </head>
+    <style>
+      #id {
+        color: #ffac2d;
+      }
+    </style>
+<body ng-app="myApp">
+<div ng-controller="MyController as myCtrl">
+  <!--<select ng-options="opt.value as opt.label for opt in hoursOptsArr" ng-model="selectedValue"-->
+          <!--onmousedown="if(this.options.length>6){this.size=7}" onblur="this.size=0" onchange="this.size=0">-->
+  <!--</select>-->
+  <select ng-options="opt.value as opt.label for opt in hoursOptsArr" ng-model="selectedValue">
+  </select>
+  <div>{{selectedValue}}</div>
+</div>
+<script src="../lib/angular.min.js"></script>
+<script>
+  (function (angular) {
+    angular.module('myApp', []).controller('MyController', [
+      '$scope',
+      function ($scope) {
+        // 初始化会议时长选项
+        $scope.hoursOptsArr = [];
+        for (var i = 0; i < 15; i++) {
+          $scope.hoursOptsArr.push({
+            value: i + 1,
+            label: i + 1 + ' 小时'
+          });
+        }
+        $scope.selectedValue = 4;
+      }
+    ]);
+  })(window.angular);
+</script>
+</body>
+</html>
+</title>
+</head>
+<body>
+
+</body>
+</html>
