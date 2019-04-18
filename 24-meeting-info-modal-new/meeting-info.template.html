@@ -1,0 +1,113 @@
+<!-- Modal -->
+<div class="modal fade" id="meetingInfoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header" style="border-bottom: none;">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+        <div class="tabbable-line resource_title">
+          <ul class="nav nav-tabs">
+            <li ng-class="{'active': !tab || tab === 'meetingDetail'}">
+              <a ng-click="changeTab('meetingDetail')" href="" data-toggle="tab" aria-expanded="true">会议详情</a>
+            </li>
+            <li ng-class="{'active':tab === 'approvalProcess'}">
+              <a ng-click="changeTab('approvalProcess')" href="" data-toggle="tab" aria-expanded="false">审批流程</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- tab 1 会议详情 -->
+      <div class="modal-body" ng-show="tab === 'meetingDetail'" style="padding: 0 25px 25px;">
+        <!--会议信息-->
+        <div>
+          <h5 style="font-weight: bold">会议信息</h5>
+          <hr style="margin: 0 0 10px 0;">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-6" ng-repeat="title in meetingInfoTitlesArr">
+                <div class="row" style="padding-bottom: 10px;">
+                  <span class="col-md-4" style="text-align: right; padding-right: 20px;">{{title.name}}:</span>
+                  <span class="col-md-8">{{meetingDetail.meetingInfo[title.keyName] | date: 'yyyy-MM-dd HH:mm'}}</span>
+                </div>
+              </div>
+            </div>
+            <div class="row" style="padding-bottom: 10px;">
+              <span class="col-md-2">会议要求:</span>
+              <span class="col-md-10">{{meetingDetail.meetingInfo.meetingRequirements}}</span>
+            </div>
+            <div class="col-md-12" style="padding-bottom: 10px;padding-left: 0;">{{meetingDetail.meetingInfo.tips}}</div>
+          </div>
+        </div>
+        <!--会议室信息-->
+        <div>
+          <h5 style="font-weight: bold">会议室信息</h5>
+          <hr style="margin: 0;">
+          <table class="table table-light table-hover">
+            <thead class="bg-light-grey">
+              <tr>
+                <td ng-repeat="title in roomInfoTitlesArr">{{title.name}}</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr ng-repeat="meetingRoom in meetingDetail.meetingRoomDetail">
+                <td ng-repeat="title in roomInfoTitlesArr">{{meetingRoom[title.keyName]}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--参会人信息-->
+        <div>
+          <h5 style="font-weight: bold">参会人信息</h5>
+          <hr style="margin: 0;">
+          <table class="table table-light table-hover">
+            <thead class="bg-light-grey">
+            <tr>
+              <td ng-repeat="title in personInfoTitlesArr">{{title.name}}</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="meetingDetail in meetingDetail.participantsInfo">
+              <td ng-repeat="title in personInfoTitlesArr">{{meetingDetail[title.keyName]}}</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--会议联系人-->
+        <div>
+          <h5 style="font-weight: bold">会议联系人</h5>
+          <hr style="margin: 0;">
+          <table class="table table-light table-hover">
+            <thead class="bg-light-grey">
+            <tr>
+              <td ng-repeat="title in personInfoTitlesArr">{{title.name}}</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="meetingContact in meetingDetail.meetingContacts">
+              <td ng-repeat="title in personInfoTitlesArr">{{meetingContact[title.keyName]}}</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!-- tab 2 审批流程 -->
+      <div class="modal-body" ng-show="tab == 'approvalProcess'" style="padding: 0 25px 25px;">
+        <div>
+          <table class="table table-light table-hover">
+            <thead class="bg-light-grey">
+            <tr>
+              <td>审批人</td>
+              <td>状态</td>
+              <td>描述</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="process in meetingDetail.approvalProcess">
+              <td ng-repeat="title in approvalTitlesArr">{{process[title.keyName]}}</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

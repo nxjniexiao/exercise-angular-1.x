@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Modal</title>
+  <!-- 引入 bootstrap 样式文件 -->
+  <link rel="stylesheet" href="../lib/bootstrap.css">
+  <!-- 自定义样式 -->
+  <link rel="stylesheet" href="./components-md.css">
+</head>
+<body ng-app="myApp">
+<div ng-controller="MyController">
+  <div ng-controller="MyController">
+    <li><a href="" ng-click="$emit('SHOW_MEETING_INFO', '1')">会议1</a></li>
+    <li><a href="" ng-click="$emit('SHOW_MEETING_INFO', '2')">会议2</a></li>
+  </div>
+</div>
+<div ng-controller="MyController">
+  <meeting-info></meeting-info>
+</div>
+
+<!-- JavaScript 库 -->
+<script src="../lib/jquery.js"></script>
+<script src="../lib/bootstrap.js"></script>
+<script src="../lib/angular.js"></script>
+<!-- angular 相关 -->
+<script src="my-app.js"></script>
+<script src="meeting-info.directive.js"></script>
+</body>
+</html>

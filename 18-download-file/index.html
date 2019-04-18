@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8"/>
+      <title>Select</title>
+    </head>
+
+<body ng-app="myApp">
+<div ng-controller="MyController as myCtrl">
+  <a href="文件.txt" download="temp.txt">下载</a>
+  <button file-saver="http://localhost:63342/exercise-angular-1.x/18-download-file/文件.txt">下载</button>
+  <button file-saver="http://localhost:63342/exercise-angular-1.x/18-download-file/文件.txt">下载</button>
+</div>
+<script src="../lib/angular.min.js"></script>
+<script>
+  (function (angular) {
+    angular.module('myApp', []).controller('MyController', [
+      '$scope',
+      function ($scope) {
+        //
+      }
+    ]);
+  })(window.angular);
+</script>
+<script src="../lib/file-saver/FileSaver.js"></script>
+<!-- 自定义 JS -->
+<script src="./file-saver.directive.js"></script>
+</body>
+</html>
+</title>
+</head>
+<body>
+
+</body>
+</html>
