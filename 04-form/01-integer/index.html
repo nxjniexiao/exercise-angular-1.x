@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Integer</title>
+</head>
+<body ng-app="myApp">
+<input type="text" ng-model="num" integer>
+<script src="../../lib/angular.min.js"></script>
+<script src="integer.directive.js"></script>
+<script>
+  (function (angular) {
+    angular.module('myApp', ['Integer']);
+  })(window.angular);
+</script>
+</body>
+</html>
