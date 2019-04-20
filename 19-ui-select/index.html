@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8"/>
+      <title>Select</title>
+    </head>
+    <link rel="stylesheet" href="../lib/ui-select/select.css">
+    <link rel="stylesheet" href="../lib/bootstrap.css">
+<body ng-app="myApp">
+<div ng-controller="MyController">
+  <!--
+    <ui-select ng-model="selectedValue" ng-options="opt.value as opt.label for opt in hoursOptsArr" select="selectedValue"></ui-select>
+    <div>{{selectedValue}}</div>
+  -->
+
+  <ui-select multiple ng-model="selectedItems" on-select="selectItem($item, $model)">
+    <ui-select-match>
+      <span ng-bind="$item.name"></span>
+    </ui-select-match>
+    <ui-select-choices repeat="item in itemArray track by $index"
+                       >
+      <span ng-bind="item.name"></span>
+    </ui-select-choices>
+  </ui-select>
+
+  <!--<ui-select multiple ng-model="selectedItems">-->
+  <!--<ui-select-match>-->
+  <!--<span ng-bind="$item.name"></span>-->
+  <!--</ui-select-match>-->
+  <!--<ui-select-choices repeat="item in itemArray track by item.id">-->
+  <!--<span ng-bind="item.name"></span>-->
+  <!--</ui-select-choices>-->
+  <!--</ui-select>-->
+</div>
+<script src="../lib/jquery.js"></script>
+<!--<script src="../lib/angular.min.js"></script>-->
+<script src="../lib/angular-1.3/angular.min.js"></script>
+<script src="../lib/ui-select/select.js"></script>
+<!--<script src="../lib/ui-select/0.8.3/select.min.js"></script>-->
+<script>
+  (function (angular) {
+    angular.module('myApp', ['ui.select']).controller('MyController', [
+      '$scope',
+      '$timeout',
+      '$q',
+      function ($scope, $timeout, $q) {
+        $scope.hoursOptsArr = [];
+        for (var i = 0; i < 15; i++) {
+          $scope.hoursOptsArr.push({
+            value: i + 1,
+            label: i + 1 + ' 小时'
+          });
+        }
+        $scope.selectedValue = 4;
+        // ui-select
+        $scope.itemArray = null;
+        $scope.selectedItems = null;
+        // $scope.itemArray_delay = null;
+        // $scope.selectedItems_delay = null;
+
+        $timeout(function () {
+          $scope.selectedItems = [
+            {id: 3, name: 'third'},
+            {id: 4, name: 'fourth'},
+          ];
+        }, 1000);
+
+        $timeout(function () {
+          $scope.itemArray = [
+            {id: 1, name: 'first'},
+            {id: 2, name: 'second'},
+            {id: 3, name: 'third'},
+            {id: 4, name: 'fourth'},
+            {id: 5, name: 'fifth'}
+          ];
+        }, 2000);
+
+        // $scope.$watchGroup(['selectedItems', 'itemArray'], function (newValues, oldValues) {
+        //   var selectedItems = newValues[0];
+        //   var itemArray = newValues[1];
+        //   if (selectedItems && itemArray) {
+        //     $scope.selectedItems_delay = selectedItems;
+        //     $scope.itemArray_delay = itemArray;
+        //   }
+        // });
+        $scope.selectItem = function (item, model) {
+          console.log(item);
+          console.log(model);
+        };
+        $scope.refreshData = function () {
+          var deferred = $q.defer();
+          $timeout(function () {
+            $scope.itemArray = [
+              {id: 1, name: 'first'},
+              {id: 2, name: 'second'},
+              {id: 3, name: 'third'},
+              {id: 4, name: 'fourth'},
+              {id: 5, name: 'fifth'}
+            ];
+            deferred.resolve($scope.itemArray);
+          }, 2000);
+          return deferred.promise;
+        }
+      }
+    ]);
+  })(window.angular);
+</script>
+</body>
+</html>
+</title>
+</head>
+<body>
+
+</body>
+</html>
