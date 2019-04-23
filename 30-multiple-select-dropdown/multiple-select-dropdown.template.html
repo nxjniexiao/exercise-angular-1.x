@@ -1,0 +1,23 @@
+<div class="dropdown">
+  <button
+    class="btn btn-default"
+    type="button"
+    data-toggle="dropdown"
+    style="width:100%;text-align:left;box-shadow:none"
+  >
+    <span class="font-13">
+      {{ areAllSelected ? '全部' : title ? title : '请选择' }}
+    </span>
+    <span class="caret pull-right" style="margin-top:7px"></span>
+  </button>
+  <ul ng-if="optionsArr.length" class="dropdown-menu" style="width:100%">
+    <li ng-click="toggleAll($event)" style="cursor: pointer">
+      <input type="checkbox" ng-checked="areAllSelected" />
+      <span>选择全部</span>
+    </li>
+    <li ng-repeat="item in optionsArr" ng-click="toggleSingle($event, $index)" style="cursor: pointer">
+      <input type="checkbox" ng-checked="item.selected" />
+      <span>{{ item.name }}</span>
+    </li>
+  </ul>
+</div>

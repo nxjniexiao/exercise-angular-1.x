@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bbe6b199-0bef-486c-9a57-42ad99e2a99f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/19-ui-select/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/19-ui-select/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/19-ui-select/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,11 +19,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/19-ui-select/index.html">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/30-multiple-select-dropdown/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-324">
-              <caret line="62" column="45" lean-forward="true" selection-start-line="62" selection-start-column="45" selection-end-line="62" selection-end-column="45" />
+            <state relative-caret-position="228">
+              <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/30-multiple-select-dropdown/my-app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/30-multiple-select-dropdown/multiple-select-dropdown.directive.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="28" column="31" lean-forward="true" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/30-multiple-select-dropdown/multiple-select-dropdown.template.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+              <folding>
+                <element signature="n#style#0;n#span#1;n#button#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ul#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#1;n#ul#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -34,24 +67,13 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>apply</find>
-      <find>&amp;</find>
-      <find>ca</find>
-      <find>callback=</find>
-      <find>callback:</find>
-      <find>onChangeFn</find>
-      <find>treedata</find>
-      <find>autoFix</find>
-      <find>yyyy-MM-dd</find>
-      <find>$scope.minDuration</find>
-      <find>pastTimeDisabled</find>
       <find>addMinutes</find>
       <find>addOrMinusMinutes</find>
       <find>limitPicker</find>
@@ -71,6 +93,17 @@
       <find>file</find>
       <find>multiple</find>
       <find>refreshData</find>
+      <find>$scope</find>
+      <find>selectedArr</find>
+      <find>listArray</find>
+      <find>filterSelectedArr</find>
+      <find>selectedExecutivesName</find>
+      <find>areAllExecutivesSelected</find>
+      <find>filterOptionsArr</find>
+      <find>title</find>
+      <find>callback</find>
+      <find>onChangeFn</find>
+      <find>onSelectFn</find>
     </findStrings>
     <replaceStrings>
       <replace>form</replace>
@@ -95,6 +128,11 @@
       <replace>addOrMinusMinutes</replace>
       <replace>score</replace>
       <replace>totalScore</replace>
+      <replace>scope</replace>
+      <replace>optionsArr</replace>
+      <replace>filterOptionsArr</replace>
+      <replace>title</replace>
+      <replace>resetOptionsArr</replace>
     </replaceStrings>
     <dirStrings>
       <dir>D:\test\exercise-angular-1.x\24-meeting-info-modal</dir>
@@ -106,15 +144,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/26-message-modal/index.html" />
-        <option value="$PROJECT_DIR$/26-message-modal/message-modal.directive.js" />
-        <option value="$PROJECT_DIR$/27-confirm-modal/confirm-modal.directive.js" />
-        <option value="$PROJECT_DIR$/27-message-confirm-modal/message-confirm-modal.directive.js" />
-        <option value="$PROJECT_DIR$/27-message-confirm-modal/message-confirm-modal.template.html" />
-        <option value="$PROJECT_DIR$/27-message-confirm-modal/index.html" />
-        <option value="$PROJECT_DIR$/12-checkbox-bind-to-arr/check-box.template.html" />
         <option value="$PROJECT_DIR$/12-checkbox-bind-to-arr/check-box.directive.js" />
-        <option value="$PROJECT_DIR$/12-checkbox-bind-to-arr/index.html" />
         <option value="$PROJECT_DIR$/25-lay-date/date-time-selector.template.html" />
         <option value="$PROJECT_DIR$/25-lay-date/date-time-selector.js" />
         <option value="$PROJECT_DIR$/25-lay-date/index.html" />
@@ -157,10 +187,18 @@
         <option value="$PROJECT_DIR$/04-form/01-integer/integer.directive.js" />
         <option value="$PROJECT_DIR$/17-select-ng-options/index.html" />
         <option value="$PROJECT_DIR$/19-ui-select/index.html" />
+        <option value="$PROJECT_DIR$/19-ui-select/dropdown-multiple/index.html" />
+        <option value="$PROJECT_DIR$/30-multiple-select-dropdown/infinite-dropdown.template.html" />
+        <option value="$PROJECT_DIR$/12-checkbox-bind-to-arr/index.html" />
+        <option value="$PROJECT_DIR$/22-drop-down-menu/infinite-dropdown.template.html" />
+        <option value="$PROJECT_DIR$/30-multiple-select-dropdown/multiple-select-dropdown.template.html" />
+        <option value="$PROJECT_DIR$/30-multiple-select-dropdown/my-app.js" />
+        <option value="$PROJECT_DIR$/30-multiple-select-dropdown/index.html" />
+        <option value="$PROJECT_DIR$/30-multiple-select-dropdown/multiple-select-dropdown.directive.js" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1" />
     <option name="y" value="1" />
     <option name="width" value="1678" />
@@ -184,12 +222,7 @@
             <path>
               <item name="exercise-angular-1.x" type="b2602c69:ProjectViewProjectNode" />
               <item name="exercise-angular-1.x" type="462c0819:PsiDirectoryNode" />
-              <item name="19-ui-select" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exercise-angular-1.x" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exercise-angular-1.x" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="30-multiple-select-dropdown" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -212,17 +245,17 @@
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/25-lay-date(date object)-past-time/date-time-selector.js" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\test\exercise-angular-1.x\19-ui-select" />
-      <recent name="D:\test\exercise-angular-1.x" />
-      <recent name="D:\test\exercise-angular-1.x\18-download-file" />
-      <recent name="D:\test\exercise-angular-1.x\17-select-ng-options" />
-      <recent name="D:\test\exercise-angular-1.x\13-$q" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\test\exercise-angular-1.x\18-download-file" />
       <recent name="D:\test\exercise-angular-1.x" />
       <recent name="D:\test\exercise-angular\lib" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\test\exercise-angular-1.x\30-multiple-select-dropdown" />
+      <recent name="D:\test\exercise-angular-1.x\19-ui-select\dropdown-multiple" />
+      <recent name="D:\test\exercise-angular-1.x\19-ui-select" />
+      <recent name="D:\test\exercise-angular-1.x" />
+      <recent name="D:\test\exercise-angular-1.x\18-download-file" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -293,12 +326,14 @@
       <workItem from="1554970915965" duration="623000" />
       <workItem from="1555291911270" duration="13707000" />
       <workItem from="1555326467926" duration="31000" />
-      <workItem from="1555382292400" duration="54779000" />
+      <workItem from="1555382292400" duration="54896000" />
+      <workItem from="1555899247839" duration="8459000" />
+      <workItem from="1555915289718" duration="20708000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="605630000" />
+    <option name="totallyTimeSpent" value="634914000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -327,82 +362,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/29-angular-jstree-nav-tree/js-tree-directive.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="27" column="35" lean-forward="true" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/25-lay-date(date object)-past-time/date-time-selector.template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="71" lean-forward="true" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/25-lay-date(date object)-past-time/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="44" column="43" selection-start-line="44" selection-start-column="32" selection-end-line="44" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/25-lay-date(date object)-past-time/date-time-selector.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="296" column="20" selection-start-line="296" selection-start-column="20" selection-end-line="296" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/25-lay-date(date object)-past-time-duration/date-time-selector.template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="17" lean-forward="true" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/25-lay-date(date object)-past-time-duration/date-time-selector.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/15-scroll-tbody-in-bootstrap/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="74" column="41" selection-start-line="74" selection-start-column="41" selection-end-line="74" selection-end-column="41" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/12-checkbox-bind-to-arr/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="43" lean-forward="true" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/12-checkbox-bind-to-arr/check-box.directive.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="35" lean-forward="true" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/16-stars/stars.template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/04-form/01-use-css-class-and-attribute.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/26-message-modal/message-modal.directive.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -655,8 +614,81 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/19-ui-select/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-324">
-          <caret line="62" column="45" lean-forward="true" selection-start-line="62" selection-start-column="45" selection-end-line="62" selection-end-column="45" />
+        <state relative-caret-position="228">
+          <caret line="12" column="11" lean-forward="true" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/19-ui-select/dropdown-multiple/index.html" />
+    <entry file="file://$PROJECT_DIR$/22-drop-down-menu/infinite-dropdown.directive.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="10" lean-forward="true" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/12-checkbox-bind-to-arr/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="44" lean-forward="true" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/12-checkbox-bind-to-arr/check-box.directive.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="26" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/12-checkbox-bind-to-arr/check-box.template.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/22-drop-down-menu/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/22-drop-down-menu/infinite-dropdown.template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/30-multiple-select-dropdown/multiple-select-dropdown.template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+          <folding>
+            <element signature="n#style#0;n#span#1;n#button#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ul#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#1;n#ul#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/30-multiple-select-dropdown/my-app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/30-multiple-select-dropdown/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/30-multiple-select-dropdown/multiple-select-dropdown.directive.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="28" column="31" lean-forward="true" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
         </state>
       </provider>
     </entry>

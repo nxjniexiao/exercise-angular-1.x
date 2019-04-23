@@ -10,6 +10,11 @@
     </head>
     <link rel="stylesheet" href="../lib/ui-select/select.css">
     <link rel="stylesheet" href="../lib/bootstrap.css">
+    <style>
+      .select-input {
+        width: 200px;
+      }
+    </style>
 <body ng-app="myApp">
 <div ng-controller="MyController">
   <!--
@@ -17,15 +22,17 @@
     <div>{{selectedValue}}</div>
   -->
 
-  <ui-select multiple ng-model="selectedItems" on-select="selectItem($item, $model)">
-    <ui-select-match>
-      <span ng-bind="$item.name"></span>
-    </ui-select-match>
-    <ui-select-choices repeat="item in itemArray track by $index"
-                       >
-      <span ng-bind="item.name"></span>
-    </ui-select-choices>
-  </ui-select>
+  <div class="select-input">
+    <ui-select multiple ng-model="selectedItems" on-select="selectItem($item, $model)">
+      <ui-select-match>
+        <span ng-bind="$item.name"></span>
+      </ui-select-match>
+      <ui-select-choices repeat="item in itemArray track by $index"
+      >
+        <span ng-bind="item.name"></span>
+      </ui-select-choices>
+    </ui-select>
+  </div>
 
   <!--<ui-select multiple ng-model="selectedItems">-->
   <!--<ui-select-match>-->

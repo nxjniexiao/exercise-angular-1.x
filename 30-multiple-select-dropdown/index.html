@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="UTF-8">
+  <title>Multiple Select drop down</title>
+  <!-- 引入 bootstrap 样式文件 -->
+  <link rel="stylesheet" href="../lib/bootstrap.css">
+  <style>
+    .select-input {
+      width: 300px;
+    }
+  </style>
+</head>
+<body ng-controller="myController">
+<div class="select-input">
+  <multiple-select-dropdown options-arr="allArray" selected-arr="selectedArray" on-select-fn="myLogger()"
+                            config="{
+                              keyNameForFilter: 'userId',
+                              keyNameForTitle: 'name',
+                            }">
+  </multiple-select-dropdown>
+</div>
+<!-- 库 -->
+<script src="../lib/jquery.js"></script>
+<script src="../lib/bootstrap.js"></script>
+<script src="../lib/angular.min.js"></script>
+<!-- 自定义文件 -->
+<script src="my-app.js"></script>
+<script src="multiple-select-dropdown.directive.js"></script>
+</body>
+</html>
