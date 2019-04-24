@@ -9,7 +9,8 @@
         $scope.allArray = [
           {userId: 1, name: '领导1领导1'},
           {userId: 2, name: '领导2领导2'},
-          {userId: 3, name: '领导3领导3'}
+          {userId: 3, name: '领导3领导3'},
+          {userId: 4, name: '领导4领导4'}
         ];
       },1000);
 
@@ -37,14 +38,6 @@
         ];
       },1500);
 
-      // $scope.allArray = [
-      //   {userId: 1, name: '领导1'},
-      //   {userId: 2, name: '领导2'},
-      //   {userId: 3, name: '领导3'}
-      // ];
-      // $scope.selectedArray = [
-      //   {userId: 1, name: '领导1-a'}
-      // ];
       $scope.myLogger = function() {
         console.log($scope.selectedArray);
       }

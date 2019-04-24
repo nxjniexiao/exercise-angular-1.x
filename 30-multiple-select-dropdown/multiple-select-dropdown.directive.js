@@ -6,7 +6,6 @@
  * @param {Object} [config] 其他配置
  * @param {string} [config.keyNameForFilter]  根据已选项判断可选项中被选中项时使用的 key 名称，默认为'id'
  * @param {string} [config.keyNameForTitle]  组成标题的 key 名称，默认为 'label'
- * @param {number} [config.maxTitleLength]  所有已选项组成的标题的最大长度，默认为10
  */
 angular.module('myApp').directive('multipleSelectDropdown', ['$timeout', function ($timeout) {
   return {
@@ -28,7 +27,6 @@ angular.module('myApp').directive('multipleSelectDropdown', ['$timeout', functio
       var defaultConfig = {
         keyNameForFilter: 'id',
         keyNameForTitle: 'label',
-        maxTitleLength: 10
       }; // 默认配置
       scope.config = angular.extend({}, defaultConfig, scope.config);
       scope.onSelectFnWrapper = throttle($timeout, scope.onSelectFn, 500);
@@ -95,10 +93,6 @@ angular.module('myApp').directive('multipleSelectDropdown', ['$timeout', functio
         }
       }
       title = titlesArr.join();
-      var maxTitleLength = scope.config.maxTitleLength;
-      if (title.length > maxTitleLength) {
-        title = title.substr(0, maxTitleLength) + '...';
-      }
       scope.selectedArr = selectedArr;
       scope.areAllSelected = areAllSelected;
       scope.title = title;

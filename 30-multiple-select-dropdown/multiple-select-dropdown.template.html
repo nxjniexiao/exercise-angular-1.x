@@ -1,23 +1,50 @@
 <div class="dropdown">
-  <button
-    class="btn btn-default"
-    type="button"
+  <div
+    class="multiple-dropdown"
     data-toggle="dropdown"
-    style="width:100%;text-align:left;box-shadow:none"
   >
-    <span class="font-13">
+    <div class="font-13 text-no-wrap">
       {{ areAllSelected ? '全部' : title ? title : '请选择' }}
-    </span>
-    <span class="caret pull-right" style="margin-top:7px"></span>
-  </button>
-  <ul ng-if="optionsArr.length" class="dropdown-menu" style="width:100%">
-    <li ng-click="toggleAll($event)" style="cursor: pointer">
-      <input type="checkbox" ng-checked="areAllSelected" />
+    </div>
+    <span class="caret" style="position:absolute;top:15px;right:4px"></span>
+  </div>
+  <ul ng-if="optionsArr.length" class="dropdown-menu w-100-pct">
+    <li ng-click="toggleAll($event)">
+      <input type="checkbox" ng-checked="areAllSelected"/>
       <span>选择全部</span>
     </li>
-    <li ng-repeat="item in optionsArr" ng-click="toggleSingle($event, $index)" style="cursor: pointer">
-      <input type="checkbox" ng-checked="item.selected" />
+    <li ng-repeat="item in optionsArr" ng-click="toggleSingle($event, $index)">
+      <input type="checkbox" ng-checked="item.selected"/>
       <span>{{ item.name }}</span>
     </li>
   </ul>
 </div>
+<style>
+  .multiple-dropdown {
+    width: 100%;
+    height: 34px;
+    position: relative;
+    line-height: 34px;
+    border: 1px solid #c7c6c6;
+    border-radius: 3px;
+    padding-left: 12px;
+    padding-right: 12px;
+    cursor: pointer;
+  }
+
+  .text-no-wrap {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .w-100-pct {
+    width: 100%;
+  }
+
+  .w-100-pct > li {
+    padding-left: 12px;
+    padding-bottom: 10px;
+    cursor: pointer;
+  }
+</style>
