@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8"/>
+      <title>Select</title>
+    </head>
+    <link rel="stylesheet" href="../lib/ui-select/select.css">
+    <link rel="stylesheet" href="../lib/bootstrap.css">
+    <style>
+      .select-input {
+        width: 200px;
+      }
+    </style>
+<body ng-app="myApp">
+<div ng-controller="MyController">
+  <div class="select-input">
+    <ui-select ng-model="selectedItem.id" on-select="selectItem($item, $model)">
+      <ui-select-match>
+        <span ng-bind="$select.selected.name"></span>
+      </ui-select-match>
+      <ui-select-choices repeat="item in (itemArray | filter:$select.search) track by $index"
+      >
+        <span ng-bind="item.name"></span>
+      </ui-select-choices>
+    </ui-select>
+  </div>
+</div>
+<script src="../lib/jquery.js"></script>
+<script src="../lib/angular.min.js"></script>
+<script src="../lib/ui-select/select.js"></script>
+<script src="arrData.js"></script>
+<script>
+  (function (angular) {
+    angular.module('myApp', ['ui.select']).controller('MyController', [
+      '$scope',
+      '$timeout',
+      '$q',
+      function ($scope, $timeout, $q) {
+        // ui-select
+        $scope.itemArray = arrData;
+        $scope.selectedItem = {};
+
+        $scope.selectItem = function (item, model) {
+          console.log(item);
+          console.log(model);
+        };
+      }
+    ]);
+  })(window.angular);
+</script>
+</body>
+</html>
+</title>
+</head>
+<body>
+
+</body>
+</html>

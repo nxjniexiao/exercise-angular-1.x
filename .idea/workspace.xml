@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bbe6b199-0bef-486c-9a57-42ad99e2a99f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/30-multiple-select-dropdown/multiple-select-dropdown.directive.js" beforeDir="false" afterPath="$PROJECT_DIR$/30-multiple-select-dropdown/multiple-select-dropdown.directive.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/30-multiple-select-dropdown/multiple-select-dropdown.template.html" beforeDir="false" afterPath="$PROJECT_DIR$/30-multiple-select-dropdown/multiple-select-dropdown.template.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/30-multiple-select-dropdown/my-app.js" beforeDir="false" afterPath="$PROJECT_DIR$/30-multiple-select-dropdown/my-app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,40 +20,40 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/30-multiple-select-dropdown/index.html">
+        <entry file="file://$PROJECT_DIR$/19-ui-select/arrData.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+            <state relative-caret-position="16920">
+              <caret line="8300" column="20" selection-start-line="8300" selection-start-column="18" selection-end-line="8300" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/30-multiple-select-dropdown/my-app.js">
+        <entry file="file://$PROJECT_DIR$/19-ui-select/ui-select-filter/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="38" lean-forward="true" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+            <state relative-caret-position="171">
+              <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/30-multiple-select-dropdown/multiple-select-dropdown.template.html">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/19-ui-select/ui-select-filter/ui-select-filter.directive.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="64" lean-forward="true" selection-start-line="10" selection-start-column="64" selection-end-line="10" selection-end-column="64" />
+            <state relative-caret-position="75">
+              <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
               <folding>
-                <element signature="n#style#0;n#span#1;n#button#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#0;n#ui-select-choices#0;n#ui-select#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/30-multiple-select-dropdown/multiple-select-dropdown.directive.js">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1786">
-              <caret line="94" column="31" lean-forward="true" selection-start-line="94" selection-start-column="31" selection-end-line="94" selection-end-column="31" />
+            <state relative-caret-position="190">
+              <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -72,14 +71,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>addMinutes</find>
-      <find>addOrMinusMinutes</find>
-      <find>limitPicker</find>
-      <find>fixing...</find>
-      <find>$scope.minTime</find>
-      <find>$scope.time</find>
-      <find>convertStringToDate</find>
-      <find>isSameDay</find>
       <find>fixTime</find>
       <find>rating</find>
       <find>totalRatings</find>
@@ -91,7 +82,6 @@
       <find>file</find>
       <find>multiple</find>
       <find>refreshData</find>
-      <find>$scope</find>
       <find>selectedArr</find>
       <find>listArray</find>
       <find>filterSelectedArr</find>
@@ -102,6 +92,15 @@
       <find>callback</find>
       <find>onChangeFn</find>
       <find>onSelectFn</find>
+      <find>template</find>
+      <find>match.tpl.html</find>
+      <find>$scope</find>
+      <find>itemArrayCopy</find>
+      <find>itemArray</find>
+      <find>1233</find>
+      <find>anyPropertyKey</find>
+      <find>comparator</find>
+      <find>天河</find>
     </findStrings>
     <replaceStrings>
       <replace>form</replace>
@@ -126,11 +125,12 @@
       <replace>addOrMinusMinutes</replace>
       <replace>score</replace>
       <replace>totalScore</replace>
-      <replace>scope</replace>
-      <replace>optionsArr</replace>
       <replace>filterOptionsArr</replace>
       <replace>title</replace>
       <replace>resetOptionsArr</replace>
+      <replace>scope</replace>
+      <replace>optionsArrCopy</replace>
+      <replace>optionsArr</replace>
     </replaceStrings>
     <dirStrings>
       <dir>D:\test\exercise-angular-1.x\24-meeting-info-modal</dir>
@@ -142,12 +142,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/12-checkbox-bind-to-arr/check-box.directive.js" />
-        <option value="$PROJECT_DIR$/25-lay-date/date-time-selector.template.html" />
-        <option value="$PROJECT_DIR$/25-lay-date/date-time-selector.js" />
-        <option value="$PROJECT_DIR$/25-lay-date/index.html" />
-        <option value="$PROJECT_DIR$/13-$q/index.html" />
-        <option value="$PROJECT_DIR$/13-$q/test.html" />
         <option value="$PROJECT_DIR$/25-lay-date(date object)/index.html" />
         <option value="$PROJECT_DIR$/25-lay-date(date object)/date-time-selector.template.html" />
         <option value="$PROJECT_DIR$/25-lay-date(date object)/date-time-selector.js" />
@@ -184,15 +178,21 @@
         <option value="$PROJECT_DIR$/04-form/01-integer/index.html" />
         <option value="$PROJECT_DIR$/04-form/01-integer/integer.directive.js" />
         <option value="$PROJECT_DIR$/17-select-ng-options/index.html" />
-        <option value="$PROJECT_DIR$/19-ui-select/index.html" />
         <option value="$PROJECT_DIR$/19-ui-select/dropdown-multiple/index.html" />
         <option value="$PROJECT_DIR$/30-multiple-select-dropdown/infinite-dropdown.template.html" />
         <option value="$PROJECT_DIR$/12-checkbox-bind-to-arr/index.html" />
         <option value="$PROJECT_DIR$/22-drop-down-menu/infinite-dropdown.template.html" />
-        <option value="$PROJECT_DIR$/30-multiple-select-dropdown/index.html" />
         <option value="$PROJECT_DIR$/30-multiple-select-dropdown/multiple-select-dropdown.directive.js" />
-        <option value="$PROJECT_DIR$/30-multiple-select-dropdown/my-app.js" />
         <option value="$PROJECT_DIR$/30-multiple-select-dropdown/multiple-select-dropdown.template.html" />
+        <option value="$PROJECT_DIR$/30-multiple-select-dropdown/index.html" />
+        <option value="$PROJECT_DIR$/30-multiple-select-dropdown/my-app.js" />
+        <option value="$PROJECT_DIR$/19-ui-select/arrData.js" />
+        <option value="$PROJECT_DIR$/19-ui-select/index.html" />
+        <option value="$PROJECT_DIR$/19-ui-select/single-with-large-size-date-opt.html" />
+        <option value="$PROJECT_DIR$/19-ui-select/single-with-large-size-date.html" />
+        <option value="$PROJECT_DIR$/19-ui-select/ui-select-filter/index.html" />
+        <option value="$PROJECT_DIR$/19-ui-select/ui-select-filter/ui-select-filter.directive.js" />
+        <option value="$PROJECT_DIR$/server/index.js" />
       </list>
     </option>
   </component>
@@ -220,7 +220,27 @@
             <path>
               <item name="exercise-angular-1.x" type="b2602c69:ProjectViewProjectNode" />
               <item name="exercise-angular-1.x" type="462c0819:PsiDirectoryNode" />
+              <item name="01-emit-broadcast" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="exercise-angular-1.x" type="b2602c69:ProjectViewProjectNode" />
+              <item name="exercise-angular-1.x" type="462c0819:PsiDirectoryNode" />
+              <item name="19-ui-select" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="exercise-angular-1.x" type="b2602c69:ProjectViewProjectNode" />
+              <item name="exercise-angular-1.x" type="462c0819:PsiDirectoryNode" />
               <item name="30-multiple-select-dropdown" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="exercise-angular-1.x" type="b2602c69:ProjectViewProjectNode" />
+              <item name="exercise-angular-1.x" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="exercise-angular-1.x" type="b2602c69:ProjectViewProjectNode" />
+              <item name="exercise-angular-1.x" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -243,17 +263,17 @@
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/25-lay-date(date object)-past-time/date-time-selector.js" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\test\exercise-angular-1.x\19-ui-select\ui-select-filter" />
+      <recent name="D:\test\exercise-angular-1.x\19-ui-select" />
+      <recent name="D:\test\exercise-angular-1.x\30-multiple-select-dropdown" />
+      <recent name="D:\test\exercise-angular-1.x\19-ui-select\dropdown-multiple" />
+      <recent name="D:\test\exercise-angular-1.x" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\test\exercise-angular-1.x\18-download-file" />
       <recent name="D:\test\exercise-angular-1.x" />
       <recent name="D:\test\exercise-angular\lib" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\test\exercise-angular-1.x\30-multiple-select-dropdown" />
-      <recent name="D:\test\exercise-angular-1.x\19-ui-select\dropdown-multiple" />
-      <recent name="D:\test\exercise-angular-1.x\19-ui-select" />
-      <recent name="D:\test\exercise-angular-1.x" />
-      <recent name="D:\test\exercise-angular-1.x\18-download-file" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -326,12 +346,12 @@
       <workItem from="1555326467926" duration="31000" />
       <workItem from="1555382292400" duration="54896000" />
       <workItem from="1555899247839" duration="8459000" />
-      <workItem from="1555915289718" duration="27110000" />
+      <workItem from="1555915289718" duration="48513000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="641316000" />
+    <option name="totallyTimeSpent" value="662719000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -349,7 +369,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49947312" weight="0.21885157" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49947312" visible="true" weight="0.21885157" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50052685" side_tool="true" weight="0.32936078" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -360,70 +380,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/26-message-modal/message-modal.directive.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/26-message-modal/message-modal.template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#2;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/18-download-file/文件.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="4" selection-start-column="4" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/18-download-file/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/18-download-file/file-saver.directive.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/24-meeting-info-modal/show-meeting-info.directive.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="65" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/26-message-modal/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="21" column="40" lean-forward="true" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01-emit-broadcast/script.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01-emit-broadcast/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02-service/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/09-controller/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-96" />
@@ -556,13 +512,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/angular.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60831">
-          <caret line="19450" column="6" selection-start-line="19450" selection-start-column="6" selection-end-line="19450" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/04-form/01-integer/integer.directive.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
@@ -590,20 +539,6 @@
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/ui-select/select.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="45" lean-forward="true" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/19-ui-select/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="11" lean-forward="true" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -658,8 +593,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/30-multiple-select-dropdown/my-app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="38" lean-forward="true" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+        <state relative-caret-position="760">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
         </state>
       </provider>
     </entry>
@@ -670,20 +605,116 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/30-multiple-select-dropdown/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/30-multiple-select-dropdown/multiple-select-dropdown.template.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="10" column="64" lean-forward="true" selection-start-line="10" selection-start-column="64" selection-end-line="10" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/ui-select/select.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="2411" selection-start-line="2411" selection-end-line="2412" />
           <folding>
-            <element signature="n#style#0;n#span#1;n#button#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#559#565#0" expanded="true" />
+            <element signature="e#565#572#0" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#span#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#li#0;n#ul#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#531#538#1" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/19-ui-select/single-with-large-size-date-opt.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="26" column="45" lean-forward="true" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#ui-select-choices#0;n#ui-select#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/19-ui-select/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="58" column="35" lean-forward="true" selection-start-line="58" selection-start-column="35" selection-end-line="58" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/30-multiple-select-dropdown/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="66" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/19-ui-select/single-with-large-size-date.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="24" column="61" selection-start-line="24" selection-start-column="61" selection-end-line="24" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/angular-1.3/angular.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18311" column="26" selection-start-line="18311" selection-start-column="26" selection-end-line="18311" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/angular.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="22244" column="9" selection-start-line="22244" selection-start-column="9" selection-end-line="22244" selection-end-column="9" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-emit-broadcast/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/getHtmlStr.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/manageStaticFiles.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1425" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/19-ui-select/ui-select-filter/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/19-ui-select/arrData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16920">
+          <caret line="8300" column="20" selection-start-line="8300" selection-start-column="18" selection-end-line="8300" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/19-ui-select/ui-select-filter/ui-select-filter.directive.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#ui-select-choices#0;n#ui-select#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
         </state>
       </provider>
     </entry>

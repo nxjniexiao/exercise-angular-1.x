@@ -5,8 +5,8 @@ const srv = http.createServer((req, res) => {
   // 静态文件托管
   manageStaticFiles(req, res, '');
 });
-// 本机 IP 地址：192.168.8.101
-srv.listen(8081, '127.0.0.1', () => {
+// 本机 IP 地址：192.168.8.101 / 192.168.22.150 / 127.0.0.1
+srv.listen(8081, '192.168.22.150', () => {
   const address = srv.address().address;
   const port = srv.address().port;
   console.log('http://%s:%s', address, port);

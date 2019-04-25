@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8"/>
+      <title>Select</title>
+    </head>
+    <link rel="stylesheet" href="../../lib/ui-select/select.css">
+    <link rel="stylesheet" href="../../lib/bootstrap.css">
+    <style>
+      .select-input {
+        width: 200px;
+      }
+    </style>
+<body ng-app="myApp">
+<div ng-controller="MyController">
+  <div>{{selectedOrg.name}}</div>
+  <hr>
+  <div class="select-input">
+    <ui-select-filter options-arr="orgArray"
+                      selected-item="selectedOrg"
+                      on-select="update(item)"
+                      key-name-for-searching="name">
+    </ui-select-filter>
+  </div>
+</div>
+<script src="../../lib/jquery.js"></script>
+<script src="../../lib/angular.min.js"></script>
+<script src="../../lib/ui-select/select.js"></script>
+<script src="../arrData.js"></script>
+<script src="ui-select-filter.directive.js"></script>
+<script>
+  (function (angular) {
+    angular.module('myApp', ['uiSelectFilter']).controller('MyController', [
+      '$scope',
+      '$timeout',
+      '$q',
+      '$filter',
+      function ($scope, $timeout, $q, $filter) {
+        // ui-select
+        $scope.orgArray = arrData;
+        $scope.selectedOrg = {
+          sort: null,
+          parentName: null,
+          uSNCreated: null,
+          pid: 0,
+          levels: null,
+          phone: null,
+          isDelete: null,
+          isEnable: 1,
+          whenChanged: null,
+          zipCode: null,
+          isParent: false,
+          syncOrgId: null,
+          orgType: null,
+          address: null,
+          name: '组织中心',
+          id: 1,
+          description: null
+        };
+
+        $scope.update = function (item) {
+          console.log(item);
+        };
+      }
+    ]);
+  })(window.angular);
+</script>
+</body>
+</html>
+</title>
+</head>
+<body>
+
+</body>
+</html>
