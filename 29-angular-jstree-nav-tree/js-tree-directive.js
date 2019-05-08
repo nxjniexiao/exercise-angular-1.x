@@ -69,11 +69,11 @@ angular.module('myApp')
           jsTreeInstance = $('#' + scope._id).jstree(); // 获取 jsTree 的实例
         });
         scope.$watch('treeData', function () {
-          // if (!scope.treeData || !jsTreeInstance) {
-          //   return;
-          // }
-          // jsTreeInstance.settings.core.data = scope.treeData;
-          // jsTreeInstance.refresh();
+          if (!scope.treeData || !jsTreeInstance) {
+            return;
+          }
+          jsTreeInstance.settings.core.data = scope.treeData;
+          jsTreeInstance.refresh();
         }, true);
       }
     };

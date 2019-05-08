@@ -6,6 +6,11 @@
 </head>
 <body>
 <div ng-app="main" ng-controller="DemoCtrl">
+  <!--
+  1. id: 其值(dp)用来在 $scope 中储存此 Daypilot.Scheduler 的实例，我们可以通过 $scope.dp 来访问此实例；
+  2. config: 对象，配置选项，用于配置如 resource 数组、起始日期和事件处理函数等；
+  3. events: 数组，数组中的事件对象将显示在此插件中。
+  -->
   <daypilot-scheduler id="dp" config="config" events="events"></daypilot-scheduler>
   <div class="space">
     New event:

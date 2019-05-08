@@ -1,91 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title><!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <meta charset="UTF-8"/>
-      <title>Select</title>
-    </head>
-    <link rel="stylesheet" href="../lib/ui-select/select.css">
-    <link rel="stylesheet" href="../lib/bootstrap.css">
-    <style>
-      .select-input {
-        width: 200px;
-      }
-    </style>
-<body ng-app="myApp">
-<div ng-controller="MyController">
-  <div class="select-input">
-    <ui-select ng-model="selectedItem.id" on-select="selectItem($item, $model)">
-      <ui-select-match>
-        <span ng-bind="$select.selected.name"></span>
-      </ui-select-match>
-      <ui-select-choices repeat="item in itemArrayCopy track by $index"
-                         refresh="updateArr($select)"
-                         refresh-delay="300">
-        <div ng-bind="item.name"></div>
-        <button
-          ng-if="$index === itemArrayCopy.length-1 && hasMore"
-          class="btn btn-xs btn-success"
-          style="width: 100%; margin-top: 5px;"
-          ng-click="updateArr($select, $event);"
+  <head>
+    <meta charset="UTF-8" />
+    <title>Select</title>
+  </head>
+  <link rel="stylesheet" href="../lib/ui-select/select.css" />
+  <link rel="stylesheet" href="../lib/bootstrap.css" />
+  <style>
+    .select-input {
+      width: 200px;
+    }
+  </style>
+  <body ng-app="myApp">
+    <div ng-controller="MyController">
+      <div class="select-input">
+        <ui-select
+          ng-model="selectedItem.id"
+          on-select="selectItem($item, $model)"
         >
-          显示更多...
-        </button>
-      </ui-select-choices>
-    </ui-select>
-  </div>
-</div>
-<script src="../lib/jquery.js"></script>
-<script src="../lib/angular.min.js"></script>
-<script src="../lib/ui-select/select.js"></script>
-<script src="arrData.js"></script>
-<script>
-  (function (angular) {
-    angular.module('myApp', ['ui.select']).controller('MyController', [
-      '$scope',
-      '$timeout',
-      '$q',
-      '$filter',
-      function ($scope, $timeout, $q, $filter) {
-        // ui-select
-        $scope.itemArray = arrData;
-        $scope.displayedNumber = 10;
-        $scope.itemArrayCopy = arrData.slice(0, $scope.displayedNumber);
-        $scope.selectedItem = {};
+          <ui-select-match>
+            <span ng-bind="$select.selected.name"></span>
+          </ui-select-match>
+          <ui-select-choices
+            repeat="item in itemArrayCopy track by $index"
+            refresh="updateArr($select)"
+            refresh-delay="300"
+          >
+            <div ng-bind="item.name"></div>
+            <button
+              ng-if="$index === itemArrayCopy.length-1 && hasMore"
+              class="btn btn-xs btn-success"
+              style="width: 100%; margin-top: 5px;"
+              ng-click="updateArr($select, $event);"
+            >
+              显示更多...
+            </button>
+          </ui-select-choices>
+        </ui-select>
+      </div>
+    </div>
+    <script src="../lib/jquery.js"></script>
+    <script src="../lib/angular.min.js"></script>
+    <script src="../lib/ui-select/select.js"></script>
+    <script src="arrData.js"></script>
+    <script>
+      (function(angular) {
+        angular.module('myApp', ['ui.select']).controller('MyController', [
+          '$scope',
+          '$timeout',
+          '$q',
+          '$filter',
+          function($scope, $timeout, $q, $filter) {
+            // ui-select
+            $scope.itemArray = arrData;
+            $scope.displayedNumber = 10;
+            $scope.itemArrayCopy = arrData.slice(0, $scope.displayedNumber);
+            $scope.selectedItem = {};
 
-        $scope.selectItem = function (item, model) {
-          console.log(item);
-          console.log(model);
-        };
+            $scope.selectItem = function(item, model) {
+              console.log(item);
+              console.log(model);
+            };
 
-        $scope.hasMore = true;
+            $scope.hasMore = true;
 
-        $scope.updateArr = function (select, event) {
-          console.log('updating...');
-          var keyWords = select.search;
-          var filteredArr = $filter('filter')($scope.itemArray, keyWords);
-          if (event) {
-            var displayedNumber = $scope.displayedNumber;
-            if (displayedNumber < filteredArr.length) {
-              $scope.displayedNumber = displayedNumber + 10;
-            }
-            event.stopPropagation();
+            $scope.updateArr = function(select, event) {
+              console.log('updating...');
+              var keyWords = select.search;
+              var filteredArr = $filter('filter')($scope.itemArray, keyWords);
+              if (event) {
+                var displayedNumber = $scope.displayedNumber;
+                if (displayedNumber < filteredArr.length) {
+                  $scope.displayedNumber = displayedNumber + 10;
+                }
+                event.stopPropagation();
+              }
+              $scope.hasMore = $scope.displayedNumber < filteredArr.length;
+              $scope.itemArrayCopy = filteredArr.slice(
+                0,
+                $scope.displayedNumber
+              );
+            };
           }
-          $scope.hasMore = $scope.displayedNumber < filteredArr.length;
-          $scope.itemArrayCopy = filteredArr.slice(0, $scope.displayedNumber);
-        };
-      }
-    ]);
-  })(window.angular);
-</script>
-</body>
-</html>
-</title>
-</head>
-<body>
-
-</body>
+        ]);
+      })(window.angular);
+    </script>
+  </body>
 </html>

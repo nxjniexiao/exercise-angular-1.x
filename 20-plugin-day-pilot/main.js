@@ -74,6 +74,7 @@ var app = angular.module('main', ['daypilot']).controller('DemoCtrl', function (
     eventClickHandling: "Select",
     // 鼠标右键菜单
     contextMenu: new DayPilot.Menu([
+      // $scope.dp 是通过在 <daypilot-scheduler> 元素中的 id="dp" 来指定的
       {text:"Delete", onclick: function() { $scope.dp.events.remove(this.source); } },
       {text:"Show event ID", onclick: function() {alert("Event value: " + this.source.value());} },
       {text:"Show event text", onclick: function() {alert("Event text: " + this.source.text());} },
