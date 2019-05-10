@@ -1,1 +1,11 @@
-<div ng-attr-id="{{_id}}"></div>
+<div>
+  <input type="text" ng-model="keywords" placeholder="请输入搜索内容">
+</div>
+<div ng-show="!noSearchResults" ng-attr-id="{{_id}}"></div>
+<div ng-show="noSearchResults">无搜索结果</div>
+<style>
+  .jstree-default .jstree-search {
+    font-style: normal;
+    color: #2386ca;
+  }
+</style>

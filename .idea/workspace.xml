@@ -1,83 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/29-angular-jstree-nav-tree/js-tree.template.html" line="0" />
+    <bookmark url="file://$PROJECT_DIR$/29-angular-jstree-nav-tree/js-tree.template.html" line="3" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bbe6b199-0bef-486c-9a57-42ad99e2a99f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/16-stars/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/16-stars/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/17-select-ng-options/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/17-select-ng-options/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/18-download-file/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/18-download-file/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/19-ui-select/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/19-ui-select/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/19-ui-select/single-with-large-size-date-opt.html" beforeDir="false" afterPath="$PROJECT_DIR$/19-ui-select/single-with-large-size-date-opt.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/19-ui-select/single-with-large-size-date.html" beforeDir="false" afterPath="$PROJECT_DIR$/19-ui-select/single-with-large-size-date.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/19-ui-select/ui-select-filter-with-footer/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/19-ui-select/ui-select-filter-with-footer/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/19-ui-select/ui-select-filter/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/19-ui-select/ui-select-filter/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/20-plugin-day-pilot/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/20-plugin-day-pilot/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/20-plugin-day-pilot/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/20-plugin-day-pilot/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/29-angular-jstree-nav-tree/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/29-angular-jstree-nav-tree/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/29-angular-jstree-nav-tree/js-tree-directive.js" beforeDir="false" afterPath="$PROJECT_DIR$/29-angular-jstree-nav-tree/js-tree-directive.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/node_modules/ui-select/.npmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/node_modules/ui-select/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/node_modules/ui-select/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/node_modules/ui-select/CONTRIBUTING.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/node_modules/ui-select/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/node_modules/ui-select/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/node_modules/ui-select/bower.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/node_modules/ui-select/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/node_modules/ui-select/dist/select.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/node_modules/ui-select/dist/select.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/node_modules/ui-select/dist/select.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/node_modules/ui-select/dist/select.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/node_modules/ui-select/examples/bootstrap.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/node_modules/ui-select/examples/demo-append-to-body.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/node_modules/ui-select/examples/demo-bind-to-single-property-async.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/node_modules/ui-select/examples/demo-bind-to-single-property.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/node_modules/ui-select/examples/demo-disable-search.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/node_modules/ui-select/examples/demo-dropdown-position.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/node_modules/ui-select/examples/demo-event-on-select.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/node_modules/ui-select/examples/demo-focus.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/node_modules/ui-select/examples/demo-groupby.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/node_modules/ui-select/examples/demo-groupfilter.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/node_modules/ui-select/examples/demo-multi-select.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/node_modules/ui-select/examples/demo-object-as-source.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/node_modules/ui-select/examples/demo-tagging.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/node_modules/ui-select/examples/demo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/node_modules/ui-select/examples/demo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/node_modules/ui-select/examples/select2-bootstrap3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/node_modules/ui-select/examples/selectize-bootstrap3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/node_modules/ui-select/gulpfile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/node_modules/ui-select/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/node_modules/ui-select/karma.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/node_modules/ui-select/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/node_modules/ui-select/src/.jshintrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/node_modules/ui-select/src/bootstrap/choices.tpl.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/node_modules/ui-select/src/bootstrap/match-multiple.tpl.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/node_modules/ui-select/src/bootstrap/match.tpl.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/node_modules/ui-select/src/bootstrap/select-multiple.tpl.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/node_modules/ui-select/src/bootstrap/select.tpl.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/node_modules/ui-select/src/common.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/node_modules/ui-select/src/common.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/node_modules/ui-select/src/select2/choices.tpl.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/node_modules/ui-select/src/select2/match-multiple.tpl.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/node_modules/ui-select/src/select2/match.tpl.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/node_modules/ui-select/src/select2/select-multiple.tpl.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/node_modules/ui-select/src/select2/select.tpl.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/node_modules/ui-select/src/selectize/choices.tpl.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/node_modules/ui-select/src/selectize/match.tpl.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/node_modules/ui-select/src/selectize/select.tpl.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/node_modules/ui-select/src/uiSelectChoicesDirective.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/node_modules/ui-select/src/uiSelectController.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/node_modules/ui-select/src/uiSelectDirective.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/node_modules/ui-select/src/uiSelectMatchDirective.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/node_modules/ui-select/src/uiSelectMultipleDirective.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/node_modules/ui-select/src/uiSelectSingleDirective.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/node_modules/ui-select/src/uiSelectSortDirective.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/node_modules/ui-select/src/uisRepeatParserService.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/node_modules/ui-select/test/helpers.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/node_modules/ui-select/test/select.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/29-angular-jstree-nav-tree/js-tree.template.html" beforeDir="false" afterPath="$PROJECT_DIR$/29-angular-jstree-nav-tree/js-tree.template.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jstree/jstree.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jstree/jstree.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/getHtmlStr.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/getHtmlStr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/manageStaticFiles.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/manageStaticFiles.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -91,49 +24,53 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/18-upload-file/index.html">
+        <entry file="file://$PROJECT_DIR$/29-angular-jstree-nav-tree/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="53" lean-forward="true" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="53" />
+            <state relative-caret-position="323">
+              <caret line="17" column="41" lean-forward="true" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/18-upload-file/app.js">
+        <entry file="file://$PROJECT_DIR$/lib/jstree/jstree.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="35" lean-forward="true" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/getHtmlStr.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="105" selection-start-line="9" selection-start-column="105" selection-end-line="9" selection-end-column="105" />
+            <state>
               <folding>
-                <element signature="n#style#0;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="n#style#0;n#ins#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/29-angular-jstree-nav-tree/my-app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="321" column="17" selection-start-line="321" selection-start-column="9" selection-end-line="321" selection-end-column="17" />
+              <folding>
+                <element signature="e#178#8524#0" />
+                <element signature="e#8546#9414#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/server/manageStaticFiles.js">
+        <entry file="file://$PROJECT_DIR$/29-angular-jstree-nav-tree/js-tree-directive.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="33" column="28" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="28" />
+            <state relative-caret-position="608">
+              <caret line="59" column="37" lean-forward="true" selection-start-line="59" selection-start-column="37" selection-end-line="59" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/29-angular-jstree-nav-tree/js-tree.template.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -222,11 +159,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/28-angular-bootstrap-nav-tree/index.html" />
-        <option value="$PROJECT_DIR$/29-angular-jstree-nav-tree/js-tree.template.html" />
-        <option value="$PROJECT_DIR$/25-lay-date(date object)-past-time/date-time-selector.template.html" />
         <option value="$PROJECT_DIR$/25-lay-date(date object)-past-time/index.html" />
-        <option value="$PROJECT_DIR$/29-angular-jstree-nav-tree/index.html" />
         <option value="$PROJECT_DIR$/29-angular-jstree-nav-tree/my-app.js" />
         <option value="$PROJECT_DIR$/25-lay-date(date object)-past-time-duration/date-time-selector.template.html" />
         <option value="$PROJECT_DIR$/25-lay-date(date object)-past-time/date-time-selector.js" />
@@ -267,12 +200,16 @@
         <option value="$PROJECT_DIR$/19-ui-select/ui-select-filter-with-footer/index.html" />
         <option value="$PROJECT_DIR$/19-ui-select/ui-select-filter-with-footer/ui-select-filter.directive.js" />
         <option value="$PROJECT_DIR$/13-$q/index.html" />
-        <option value="$PROJECT_DIR$/29-angular-jstree-nav-tree/js-tree-directive.js" />
         <option value="$PROJECT_DIR$/20-plugin-day-pilot/main.js" />
         <option value="$PROJECT_DIR$/20-plugin-day-pilot/index.html" />
         <option value="$PROJECT_DIR$/18-upload-file/app.js" />
         <option value="$PROJECT_DIR$/18-upload-file/index.html" />
         <option value="$PROJECT_DIR$/server/getHtmlStr.js" />
+        <option value="$PROJECT_DIR$/server/manageStaticFiles.js" />
+        <option value="$PROJECT_DIR$/lib/jstree/jstree.js" />
+        <option value="$PROJECT_DIR$/29-angular-jstree-nav-tree/index.html" />
+        <option value="$PROJECT_DIR$/29-angular-jstree-nav-tree/js-tree-directive.js" />
+        <option value="$PROJECT_DIR$/29-angular-jstree-nav-tree/js-tree.template.html" />
       </list>
     </option>
   </component>
@@ -301,25 +238,18 @@
             <path>
               <item name="exercise-angular-1.x" type="b2602c69:ProjectViewProjectNode" />
               <item name="exercise-angular-1.x" type="462c0819:PsiDirectoryNode" />
+              <item name="29-angular-jstree-nav-tree" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="exercise-angular-1.x" type="b2602c69:ProjectViewProjectNode" />
+              <item name="exercise-angular-1.x" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="exercise-angular-1.x" type="b2602c69:ProjectViewProjectNode" />
               <item name="exercise-angular-1.x" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="ui-select" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exercise-angular-1.x" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exercise-angular-1.x" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="ui-select" type="462c0819:PsiDirectoryNode" />
-              <item name="0.19.8-with-header-footer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exercise-angular-1.x" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exercise-angular-1.x" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="jstree" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -429,16 +359,15 @@
       <workItem from="1556501452108" duration="627000" />
       <workItem from="1556524401404" duration="5617000" />
       <workItem from="1556586069075" duration="6454000" />
-      <workItem from="1557019065296" duration="18410000" />
+      <workItem from="1557019065296" duration="34815000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="702918000" />
+    <option name="totallyTimeSpent" value="719323000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17281349" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -452,7 +381,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49947312" visible="true" weight="0.21885157" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49947312" weight="0.21885157" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50052685" side_tool="true" weight="0.32936078" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -463,13 +392,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/16-stars/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="19" column="29" lean-forward="true" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/16-stars/stars.directive.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-513">
@@ -717,34 +639,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/29-angular-jstree-nav-tree/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/29-angular-jstree-nav-tree/my-app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6099">
-          <caret line="321" column="17" selection-start-line="321" selection-start-column="9" selection-end-line="321" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/29-angular-jstree-nav-tree/js-tree.template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/29-angular-jstree-nav-tree/js-tree-directive.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="32" column="37" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/daypilot-all.min.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -809,6 +703,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/server/manageStaticFiles.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/server/getHtmlStr.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -819,10 +720,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/manageStaticFiles.js">
+    <entry file="file://$PROJECT_DIR$/29-angular-jstree-nav-tree/my-app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="33" column="28" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="28" />
+        <state relative-caret-position="76">
+          <caret line="321" column="17" selection-start-line="321" selection-start-column="9" selection-end-line="321" selection-end-column="17" />
+          <folding>
+            <element signature="e#178#8524#0" />
+            <element signature="e#8546#9414#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/jstree/jstree.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#style#0;n#ins#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/29-angular-jstree-nav-tree/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="41" lean-forward="true" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/29-angular-jstree-nav-tree/js-tree.template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/29-angular-jstree-nav-tree/js-tree-directive.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="59" column="37" lean-forward="true" selection-start-line="59" selection-start-column="37" selection-end-line="59" selection-end-column="37" />
         </state>
       </provider>
     </entry>
