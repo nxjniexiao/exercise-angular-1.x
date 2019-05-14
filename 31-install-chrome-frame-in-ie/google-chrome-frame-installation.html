@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>谷歌插件安装</title>
+  <style type="text/css">
+    body {
+      font-family: "Microsoft YaHei" ! important;
+    }
+
+    /*灰色遮罩层*/
+    .fade {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, .5); /* IE无效 */
+      filter: alpha(opacity=80);
+      -moz-opacity: 0.8;
+      -khtml-opacity: 0.3;
+      opacity: 0.8;
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000, endColorstr=#7F000000); /*ie*/
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: 99;
+    }
+
+    /*弹出层*/
+    .pop-box {
+      width: 30%;
+      height: 250px;
+      background: #fff;
+      position: fixed;
+      left: 50%;
+      top: 50%;
+      margin-left: -316px;
+      margin-top: -150px;
+      z-index: 999;
+      border-radius: 5px;
+    }
+
+    .pop-box h3.title {
+      text-align: left;
+      color: #333;
+      border-bottom: 1px solid #ddd;
+      padding: 15px;
+      margin: 0;
+      font-size: 14px;
+    }
+
+    .content {
+      padding-left: 16px;
+      padding-right: 16px;
+      line-height: 50px;
+      font-size: 20px;
+    }
+
+    .install-btn {
+      padding: 10px 28px;
+      background: #09f;
+      color: #fff;
+      text-align: center;
+      border-radius: 5px;
+      margin-left: 16px;
+      text-decoration: none;
+      font-size: 14px;
+      position: absolute;
+      right: 16px;
+      bottom: 26px;
+    }
+  </style>
+</head>
+<body>
+<div id="showIE">
+  <div class="fade"></div>
+  <div class="pop-box">
+    <h3 class="title">提示（此网站需要安装Google Chrome Frame插件）</h3>
+    <p class="content">您的浏览器版本过低，需要安装插件方可使用会管。</p>
+    <p class="content">请安装好插件后重新访问会管。</p>
+    <a class="install-btn" href="../lib/chrome-frame/GoogleChromeframeStandaloneEnterprise.msi">立即安装</a>
+  </div>
+</div>
+<script src="../lib/chrome-frame/cfinstall/cfinstall.1.0.3mod.js"></script>
+<script>CFInstall.check({destination:'https://cn.bing.com/?mkt=zh-CN'})</script>
+</body>
+</html>

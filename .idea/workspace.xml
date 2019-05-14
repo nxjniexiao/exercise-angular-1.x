@@ -6,11 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="bbe6b199-0bef-486c-9a57-42ad99e2a99f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/29-angular-jstree-nav-tree/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/29-angular-jstree-nav-tree/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/29-angular-jstree-nav-tree/js-tree-directive.js" beforeDir="false" afterPath="$PROJECT_DIR$/29-angular-jstree-nav-tree/js-tree-directive.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/29-angular-jstree-nav-tree/js-tree.template.html" beforeDir="false" afterPath="$PROJECT_DIR$/29-angular-jstree-nav-tree/js-tree.template.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jstree/jstree.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jstree/jstree.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/getHtmlStr.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/getHtmlStr.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,55 +17,44 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/29-angular-jstree-nav-tree/index.html">
+        <entry file="file://$PROJECT_DIR$/31-install-chrome-frame-in-ie/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" column="41" lean-forward="true" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/jstree/jstree.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="n#style#0;n#ins#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/29-angular-jstree-nav-tree/my-app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="321" column="17" selection-start-line="321" selection-start-column="9" selection-end-line="321" selection-end-column="17" />
-              <folding>
-                <element signature="e#178#8524#0" />
-                <element signature="e#8546#9414#0" />
-              </folding>
+            <state relative-caret-position="171">
+              <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/29-angular-jstree-nav-tree/js-tree-directive.js">
+        <entry file="file://$PROJECT_DIR$/31-install-chrome-frame-in-ie/for-ie.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="608">
-              <caret line="59" column="37" lean-forward="true" selection-start-line="59" selection-start-column="37" selection-end-line="59" selection-end-column="37" />
+            <state relative-caret-position="475">
+              <caret line="25" column="15" lean-forward="true" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="15" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/29-angular-jstree-nav-tree/js-tree.template.html">
+        <entry file="file://$PROJECT_DIR$/lib/chrome-frame/cfinstall/cfinstall.1.0.3mod.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+            <state>
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/31-install-chrome-frame-in-ie/google-chrome-frame-installation.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="500">
+              <caret line="82" column="80" lean-forward="true" selection-start-line="82" selection-start-column="80" selection-end-line="82" selection-end-column="80" />
             </state>
           </provider>
         </entry>
@@ -159,10 +143,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/25-lay-date(date object)-past-time/index.html" />
-        <option value="$PROJECT_DIR$/29-angular-jstree-nav-tree/my-app.js" />
-        <option value="$PROJECT_DIR$/25-lay-date(date object)-past-time-duration/date-time-selector.template.html" />
-        <option value="$PROJECT_DIR$/25-lay-date(date object)-past-time/date-time-selector.js" />
         <option value="$PROJECT_DIR$/25-lay-date(date object)-past-time-duration/index.html" />
         <option value="$PROJECT_DIR$/25-lay-date(date object)-past-time-duration/date-time-selector.js" />
         <option value="$PROJECT_DIR$/16-stars/stars.template.html" />
@@ -210,6 +190,10 @@
         <option value="$PROJECT_DIR$/29-angular-jstree-nav-tree/index.html" />
         <option value="$PROJECT_DIR$/29-angular-jstree-nav-tree/js-tree-directive.js" />
         <option value="$PROJECT_DIR$/29-angular-jstree-nav-tree/js-tree.template.html" />
+        <option value="$PROJECT_DIR$/31-install-chrome-frame-in-ie/install.html" />
+        <option value="$PROJECT_DIR$/31-install-chrome-frame-in-ie/for-ie.js" />
+        <option value="$PROJECT_DIR$/31-install-chrome-frame-in-ie/index.html" />
+        <option value="$PROJECT_DIR$/31-install-chrome-frame-in-ie/google-chrome-frame-installation.html" />
       </list>
     </option>
   </component>
@@ -227,7 +211,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -238,50 +221,78 @@
             <path>
               <item name="exercise-angular-1.x" type="b2602c69:ProjectViewProjectNode" />
               <item name="exercise-angular-1.x" type="462c0819:PsiDirectoryNode" />
+              <item name="13-$q" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="exercise-angular-1.x" type="b2602c69:ProjectViewProjectNode" />
+              <item name="exercise-angular-1.x" type="462c0819:PsiDirectoryNode" />
+              <item name="25-lay-date" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="exercise-angular-1.x" type="b2602c69:ProjectViewProjectNode" />
+              <item name="exercise-angular-1.x" type="462c0819:PsiDirectoryNode" />
               <item name="29-angular-jstree-nav-tree" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="exercise-angular-1.x" type="b2602c69:ProjectViewProjectNode" />
               <item name="exercise-angular-1.x" type="462c0819:PsiDirectoryNode" />
+              <item name="30-multiple-select-dropdown" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="exercise-angular-1.x" type="b2602c69:ProjectViewProjectNode" />
+              <item name="exercise-angular-1.x" type="462c0819:PsiDirectoryNode" />
+              <item name="31-install-chrome-frame-in-ie" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="exercise-angular-1.x" type="b2602c69:ProjectViewProjectNode" />
+              <item name="exercise-angular-1.x" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="exercise-angular-1.x" type="b2602c69:ProjectViewProjectNode" />
               <item name="exercise-angular-1.x" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="jstree" type="462c0819:PsiDirectoryNode" />
+              <item name="chrome-frame" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="exercise-angular-1.x" type="b2602c69:ProjectViewProjectNode" />
+              <item name="exercise-angular-1.x" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="chrome-frame" type="462c0819:PsiDirectoryNode" />
+              <item name="cfinstall" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/sys-project/XiangYu/umeet-web" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.NodeInterpreter" value="project" />
     <property name="prettierjs.PrettierConfiguration.Package" value="D:\Users\nxj\AppData\Roaming\npm\node_modules\prettier" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/25-lay-date(date object)-past-time/date-time-selector.js" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\test\exercise-angular-1.x\18-upload-file" />
-      <recent name="D:\test\exercise-angular-1.x\19-ui-select" />
-      <recent name="D:\test\exercise-angular-1.x\19-ui-select\ui-select-filter" />
-      <recent name="D:\test\exercise-angular-1.x\30-multiple-select-dropdown" />
-      <recent name="D:\test\exercise-angular-1.x\19-ui-select\dropdown-multiple" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\test\exercise-angular-1.x\18-download-file" />
       <recent name="D:\test\exercise-angular-1.x" />
       <recent name="D:\test\exercise-angular\lib" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\test\exercise-angular-1.x\31-install-chrome-frame-in-ie" />
+      <recent name="D:\test\exercise-angular-1.x\18-upload-file" />
+      <recent name="D:\test\exercise-angular-1.x\19-ui-select" />
+      <recent name="D:\test\exercise-angular-1.x\19-ui-select\ui-select-filter" />
+      <recent name="D:\test\exercise-angular-1.x\30-multiple-select-dropdown" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -359,17 +370,20 @@
       <workItem from="1556501452108" duration="627000" />
       <workItem from="1556524401404" duration="5617000" />
       <workItem from="1556586069075" duration="6454000" />
-      <workItem from="1557019065296" duration="34815000" />
+      <workItem from="1557019065296" duration="36089000" />
+      <workItem from="1557711159134" duration="66000" />
+      <workItem from="1557798640422" duration="9503000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="719323000" />
+    <option name="totallyTimeSpent" value="730166000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17281349" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17281349" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -381,7 +395,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49947312" weight="0.21885157" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49947312" visible="true" weight="0.21885157" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50052685" side_tool="true" weight="0.32936078" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -392,41 +406,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/16-stars/stars.directive.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-513">
-          <caret column="57" lean-forward="true" selection-start-column="57" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/04-form/03-custom-validation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/04-form/03.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="20" column="100" lean-forward="true" selection-start-line="20" selection-start-column="100" selection-end-line="20" selection-end-column="100" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/04-form/01.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="626">
-          <caret line="69" selection-start-line="69" selection-end-line="73" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/14-integer-directive/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="18" selection-start-line="18" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/04-form/01-integer/integer.directive.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
@@ -554,13 +533,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="372">
           <caret line="58" column="35" lean-forward="true" selection-start-line="58" selection-start-column="35" selection-end-line="58" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/30-multiple-select-dropdown/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="66" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="66" />
         </state>
       </provider>
     </entry>
@@ -720,6 +692,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/jstree/jstree.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#style#0;n#ins#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/29-angular-jstree-nav-tree/my-app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -731,20 +713,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/jstree/jstree.js">
+    <entry file="file://$PROJECT_DIR$/29-angular-jstree-nav-tree/js-tree-directive.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="n#style#0;n#ins#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/29-angular-jstree-nav-tree/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="41" lean-forward="true" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+        <state relative-caret-position="1121">
+          <caret line="59" column="37" selection-start-line="59" selection-start-column="37" selection-end-line="59" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -755,10 +727,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/29-angular-jstree-nav-tree/js-tree-directive.js">
+    <entry file="file://$PROJECT_DIR$/29-angular-jstree-nav-tree/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="59" column="37" lean-forward="true" selection-start-line="59" selection-start-column="37" selection-end-line="59" selection-end-column="37" />
+        <state relative-caret-position="323">
+          <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/30-multiple-select-dropdown/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="66" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/chrome-frame/cfinstall/cfinstall.1.0.3mod-min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/31-install-chrome-frame-in-ie/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/chrome-frame/cfinstall/cfinstall.1.0.3mod.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/31-install-chrome-frame-in-ie/google-chrome-frame-installation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="82" column="80" lean-forward="true" selection-start-line="82" selection-start-column="80" selection-end-line="82" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/31-install-chrome-frame-in-ie/for-ie.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="25" column="15" lean-forward="true" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="15" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
