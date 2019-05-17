@@ -1,5 +1,5 @@
 angular.module('myApp', []);
-angular.module('myApp').controller('MyController', ['$rootScope', '$scope', function ($rootScope, $scope) {
+angular.module('myApp').controller('MyController', ['$rootScope', '$scope', '$timeout', function ($rootScope, $scope, $timeout) {
   // 用于测试scope的继承关系
   $scope.treedata1 = [
     {
@@ -364,17 +364,41 @@ angular.module('myApp').controller('MyController', ['$rootScope', '$scope', func
     ],
   };
   $scope.treedataName = 'treedata1';
-  $scope.selectedArr = [ { "text": "Root node 2", "id": 2 }, { "text": "Child node 1-1", "id": 111 } ];
-  $scope.onChangeFn = function(data) {
-    // console.log($scope.selectedArr);
-    // console.log(data)
+  $timeout(function () {
+    $scope.selectedArray = [{"text": "Root node 2", "id": 2}, {"text": "Child node 1-1", "id": 111}];
+    $scope.$broadcast('refresh-tree-1');
+  }, 1000);
+  $scope.onChangeFnc = function (arr) {
+    $scope.selectedArray = arr;
+    // $scope.$apply();
   };
-  $scope.changeData = function() {
+  $scope.changeData = function () {
     var treedataName = $scope.treedataName;
     if (treedataName === 'treedata1') {
       $scope.treedataName = 'treedata2';
     } else {
       $scope.treedataName = 'treedata1';
     }
+  };
+  var flag = true;
+  $scope.changeSelected = function () {
+    if (flag) {
+      $scope.selectedArray = [{"text": "Root node 2", "id": 2}, {
+        "text": "Child node 1-2",
+        "id": 112
+      }, {"text": "Child node 1-4", "id": 114}];
+    } else {
+      $scope.selectedArray = [{"text": "Root node 2", "id": 2}, {"text": "Child node 1-1", "id": 111}];
+    }
+    flag = !flag;
+    $timeout(function () {
+      $scope.$broadcast('refresh-tree-2');
+    }, 1000);
+  };
+  $scope.config = {
+    //待完成
+  };
+  $scope.unselect = function(index) {
+    $scope.selectedArray.splice(index, 1);
   }
 }]);

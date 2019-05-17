@@ -4,36 +4,31 @@ angular.module('myApp')
       templateUrl: 'js-tree.template.html',
       restrict: 'E',
       scope: {
+        id: '@',
         treeData: '=',
         selectedArr: '=',
-        onChangeFn: '&'
+        onChangeFn: '&',
+        config: '=?'
       },
-      link: function(scope, element, attrs) {
+      link: function (scope, element, attrs) {
+        var jsTreeDom;
         var jsTreeInstance;
         var timerForSearch;
         scope._id = 'jstree-' + Math.random().toString(36).substr(2);
         scope.noSearchResults = false;
         $timeout(function () {
-          $('#' + scope._id)
-            .on('open_node.jstree', function(event, data) {
+          jsTreeDom = $('#' + scope._id);
+          jsTreeDom
+            .on('open_node.jstree', function (event, data) {
               // console.log(data);
             })
+            .on('redraw.jstree', function (event, data) {
+              console.log('redraw...');
+            })
             // 数据回显
-            .on('ready.jstree', function(event, data) {
-              console.log(event);
-              console.log(data);
-              var obj = data.instance._model.data;
-              var selectedArr = scope.selectedArr;
-              if (selectedArr instanceof Array) {
-                for(var i = 0, len = selectedArr.length; i < len; i++) {
-                  var item = selectedArr[i];
-                  var id = item.id;
-                  if(obj.hasOwnProperty(id)) {
-                    obj[id].state.selected = true;
-                  }
-                }
-                data.instance.refresh(true);
-              }
+            .on('ready.jstree', function (event, data) {
+              console.log('=== ready.jstree ===');
+              freshJSTreeSelected(data.instance, scope.selectedArr);
             })
             .on('changed.jstree', function (event, data) {
               // console.log(data);
@@ -42,17 +37,26 @@ angular.module('myApp')
               selectedArr.forEach(function (item) {
                 arr.push(item.original);
               });
-              scope.selectedArr = arr;
-              scope.$apply();
-              scope.onChangeFn({data: data});
+              // scope.selectedArr = arr;
+              // scope.$apply();
+              // scope.onChangeFn({arr: arr});
+              if (typeof scope.onChangeFn === 'function') {
+                scope.onChangeFn({arr: arr});
+              }
+            })
+            .on('select_node.jstree', function(node, selected, event) {
+              console.log('select_node');
+              console.log(selected);
+            })
+            .on('deselect_node.jstree', function(node, selected, event) {
+              console.log('deselect_node');
+              console.log(selected);
+
             })
             .on('search.jstree', function (event, data) {
-              console.log(data);
               scope.noSearchResults = !data.res.length;
             })
             .on('clear_search.jstree', function (event, data) {
-              console.log('=== clear search ===');
-              console.log(data);
               scope.noSearchResults = false;
             })
             .jstree({
@@ -69,8 +73,6 @@ angular.module('myApp')
                 show_only_matches_children: true
               },
               conditionalselect: function (node, event) {
-                // console.log(node);
-                // console.log(event);
                 var className = event.target.getAttribute('class');
                 var isCheckBox = /checkbox/.test(className);
                 if (isCheckBox) {
@@ -81,22 +83,62 @@ angular.module('myApp')
                 return true;
               }
             });
-          jsTreeInstance = $('#' + scope._id).jstree(); // 获取 jsTree 的实例
+          jsTreeInstance = jsTreeDom.jstree(); // 获取 jsTree 的实例
         });
+
+        // 刷新 jstree 中的已选项
+        function freshJSTreeSelected(jstreeInstance, selectedArr) {
+          resetJSTreeSelected(jstreeInstance);
+          var data = jstreeInstance._model.data;
+          if (selectedArr instanceof Array) {
+            for (var i = 0, len = selectedArr.length; i < len; i++) {
+              var item = selectedArr[i];
+              var id = item.id;
+              if (data.hasOwnProperty(id)) {
+                data[id].state.selected = true;
+              }
+            }
+            jstreeInstance.refresh();
+          }
+        }
+
+        // 重置 jstree 中的已选项
+        function resetJSTreeSelected(jstreeInstance) {
+          var data = jstreeInstance._model.data;
+          for (var propName in data) {
+            data[propName].state.selected = false;
+          }
+        }
 
         // 监听树形数组 treeData
         scope.$watch('treeData', function () {
-          if (!scope.treeData || !jsTreeInstance) {
-            return;
+          if (scope.treeData && jsTreeInstance) {
+            jsTreeInstance.settings.core.data = scope.treeData;
+            jsTreeInstance.refresh();
           }
-          jsTreeInstance.settings.core.data = scope.treeData;
-          jsTreeInstance.refresh();
         }, true);
 
+        // 监听已选项 selectedArr(有bug)
+        scope.$watch('selectedArr', function (newValue) {
+          if (!newValue) {
+            return;
+          }
+          if (scope.treeData && jsTreeInstance) {
+            freshJSTreeSelected(jsTreeInstance, scope.selectedArr);
+          }
+        }, true);
+
+        // // 事件
+        // scope.$on('refresh-tree-' + scope.id, function () {
+        //   if (scope.treeData && jsTreeInstance) {
+        //     freshJSTreeSelected(jsTreeInstance, scope.selectedArr);
+        //   }
+        // });
+
         // 监听搜索框
-        scope.$watch('keywords', function() {
+        scope.$watch('keywords', function () {
           $timeout.cancel(timerForSearch);
-          timerForSearch = $timeout(function() {
+          timerForSearch = $timeout(function () {
             jsTreeInstance.search(scope.keywords || '');
           }, 500)
         });

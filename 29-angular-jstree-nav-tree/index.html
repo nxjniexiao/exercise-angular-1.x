@@ -9,8 +9,10 @@
 <body ng-app="myApp" ng-controller="MyController">
 <div>
   <button ng-click="changeData()">切换数据源</button>
-  <js-tree tree-data="treedata[treedataName]" selected-arr="selectedArr" on-change-fn="onChangeFn(data)"></js-tree>
-  <div>{{selectedArr | json}}</div>
+  <button ng-click="changeSelected()">切换已选项</button>
+  <button ng-click="$apply()">apply</button>
+  <js-tree id="2" tree-data="treedata[treedataName]" selected-arr="selectedArray" on-change-fn="onChangeFnc(arr)"></js-tree>
+  <div ng-repeat="item in selectedArray" ng-click="unselect($index)">{{item.text}}</div>
 </div>
 <!-- JavaScript 库 -->
 <script src="../lib/jquery.js"></script>
