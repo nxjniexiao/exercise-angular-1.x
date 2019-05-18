@@ -4,15 +4,27 @@
   <meta charset="UTF-8">
   <title>JS-Tree</title>
   <!--<link rel="stylesheet" href="../lib/bootstrap.css">-->
-  <link rel="stylesheet" href="../lib/jstree/3.3.8/themes/default/style.min.css" />
+  <link rel="stylesheet" href="../lib/jstree/3.3.8/themes/default/style.min.css"/>
 </head>
 <body ng-app="myApp" ng-controller="MyController">
 <div>
   <button ng-click="changeData()">切换数据源</button>
   <button ng-click="changeSelected()">切换已选项</button>
   <button ng-click="$apply()">apply</button>
-  <js-tree id="2" tree-data="treedata[treedataName]" selected-arr="selectedArray" on-change-fn="onChangeFnc(arr)"></js-tree>
-  <div ng-repeat="item in selectedArray" ng-click="unselect($index)">{{item.text}}</div>
+  <js-tree
+    tree-data="treedata[treedataName]"
+    selected-arr="selectedArray"
+    on-change-fn="onChangeFnc(selectedArr)">
+  </js-tree>
+  <js-tree
+    tree-data="treedata[treedataName]"
+    selected-arr="selectedArray"
+    on-change-fn="onChangeFnc(selectedArr)"
+    config="{isSearchAvailable: true}">
+  </js-tree>
+  <ul>
+    <li ng-repeat="item in selectedArray" ng-click="unselect($index)"><a href="#">{{item.text}}</a></li>
+  </ul>
 </div>
 <!-- JavaScript 库 -->
 <script src="../lib/jquery.js"></script>

@@ -363,14 +363,17 @@ angular.module('myApp').controller('MyController', ['$rootScope', '$scope', '$ti
       }
     ],
   };
-  $scope.treedataName = 'treedata1';
+  $timeout(function () {
+    $scope.treedataName = 'treedata1';
+  }, 500);
   $timeout(function () {
     $scope.selectedArray = [{"text": "Root node 2", "id": 2}, {"text": "Child node 1-1", "id": 111}];
     $scope.$broadcast('refresh-tree-1');
   }, 1000);
-  $scope.onChangeFnc = function (arr) {
-    $scope.selectedArray = arr;
+  $scope.onChangeFnc = function (selectedArr) {
+    // $scope.selectedArray = arr;
     // $scope.$apply();
+    console.log(selectedArr);
   };
   $scope.changeData = function () {
     var treedataName = $scope.treedataName;
