@@ -84,10 +84,10 @@ angular.module('myApp')
                 var className = event.target.getAttribute('class');
                 var isCheckBox = /checkbox/.test(className);
                 if (isCheckBox) {
-                  // 'down': 勾选时，其子元素也会被勾选上
+                  // 'down': 勾选时，其子节点也会被勾选上
                   jsTreeInstance.settings.checkbox.cascade = 'down';
                 } else {
-                  // '': 勾选时，其子元素不会被勾选上
+                  // '': 勾选时，其子节点不会被勾选上
                   jsTreeInstance.settings.checkbox.cascade = '';
                 }
                 return true;
@@ -101,7 +101,7 @@ angular.module('myApp')
           //防止手动触发 select_node 事件时，其子元素也会被勾选上
           jsTreeInstance.settings.checkbox.cascade = ''; //大坑！！！！
           jstreeInstance.deselect_all(true); // true: 不会触发 changed.jstree 事件
-          jstreeInstance.select_node(selectedArr, true); // true: 不会触发 changed.jstree 事件
+          jstreeInstance.select_node(selectedArr, true, true); // true: 不会触发 changed.jstree 事件
         }
 
         // 监听树形数组 treeData

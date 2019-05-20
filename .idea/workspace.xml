@@ -6,16 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="bbe6b199-0bef-486c-9a57-42ad99e2a99f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/29-angular-jstree-nav-tree/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/29-angular-jstree-nav-tree/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/29-angular-jstree-nav-tree/js-tree-directive.js" beforeDir="false" afterPath="$PROJECT_DIR$/29-angular-jstree-nav-tree/js-tree-directive.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/29-angular-jstree-nav-tree/js-tree.template.html" beforeDir="false" afterPath="$PROJECT_DIR$/29-angular-jstree-nav-tree/js-tree.template.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/29-angular-jstree-nav-tree/my-app.js" beforeDir="false" afterPath="$PROJECT_DIR$/29-angular-jstree-nav-tree/my-app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jquery.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,41 +21,62 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/29-angular-jstree-nav-tree/index.html">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/32-angular-ztree-nav-tree/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="22" column="6" lean-forward="true" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+            <state relative-caret-position="342">
+              <caret line="18" column="11" lean-forward="true" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="my-app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/29-angular-jstree-nav-tree/my-app.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/32-angular-ztree-nav-tree/my-app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2322">
-              <caret line="403" column="37" lean-forward="true" selection-start-line="403" selection-start-column="37" selection-end-line="403" selection-end-column="37" />
+            <state relative-caret-position="152">
+              <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/32-angular-ztree-nav-tree/ztree-directive.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="7" selection-end-column="5" />
               <folding>
-                <element signature="e#200#8546#0" />
+                <element signature="e#609#5053#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="js-tree-directive.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/29-angular-jstree-nav-tree/js-tree-directive.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/32-angular-ztree-nav-tree/ztree.template.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3051">
-              <caret line="113" column="28" selection-start-line="113" selection-start-column="28" selection-end-line="113" selection-end-column="28" />
+            <state>
+              <caret selection-end-column="46" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="js-tree.template.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/29-angular-jstree-nav-tree/js-tree.template.html">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/ztree/3.5.40/js/jquery.ztree.excheck.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="12" selection-start-column="12" selection-end-column="12" />
+            <state relative-caret-position="71">
+              <caret line="162" column="84" lean-forward="true" selection-start-line="162" selection-start-column="84" selection-end-line="162" selection-end-column="84" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/29-angular-jstree-nav-tree/js-tree-directive.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="82" column="16" selection-start-line="82" selection-start-column="16" selection-end-line="82" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -75,11 +94,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>selectedExecutivesName</find>
-      <find>areAllExecutivesSelected</find>
-      <find>filterOptionsArr</find>
-      <find>title</find>
-      <find>callback</find>
       <find>onSelectFn</find>
       <find>template</find>
       <find>match.tpl.html</find>
@@ -93,7 +107,6 @@
       <find>onChangeFn</find>
       <find>.dp</find>
       <find>getHtmlStr</find>
-      <find>check</find>
       <find>uSign</find>
       <find>jstree(true)</find>
       <find>jstree()</find>
@@ -105,6 +118,12 @@
       <find>freshJSTreeSelected</find>
       <find>isExternal</find>
       <find>search()</find>
+      <find>| filter:</find>
+      <find>conditionalselect</find>
+      <find>check</find>
+      <find>isExternalChange</find>
+      <find>console.log</find>
+      <find>element.on</find>
     </findStrings>
     <replaceStrings>
       <replace>.config.</replace>
@@ -148,12 +167,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/16-stars/stars.template.html" />
-        <option value="$PROJECT_DIR$/16-stars/index.html" />
-        <option value="$PROJECT_DIR$/17-select-ng-options/download.txt" />
-        <option value="$PROJECT_DIR$/18-download-file/file-saver.directive.js" />
-        <option value="$PROJECT_DIR$/18-download-file/index.html" />
-        <option value="$PROJECT_DIR$/24-meeting-info-modal/meeting-info.directive.js" />
         <option value="$PROJECT_DIR$/24-meeting-info-modal/meeting-info.template.html" />
         <option value="$PROJECT_DIR$/24-meeting-info-modal/meeting-modal.html" />
         <option value="$PROJECT_DIR$/24-meeting-info-modal/my-app.js" />
@@ -195,26 +208,24 @@
         <option value="$PROJECT_DIR$/31-install-chrome-frame-in-ie/google-chrome-frame-installation.html" />
         <option value="$PROJECT_DIR$/lib/chrome-frame/cfinstall/cfinstall.1.0.3mod.js" />
         <option value="$PROJECT_DIR$/31-install-chrome-frame-in-ie/index.html" />
-        <option value="$PROJECT_DIR$/29-angular-jstree-nav-tree/my-app.js" />
         <option value="$PROJECT_DIR$/29-angular-jstree-nav-tree/index.html" />
         <option value="$PROJECT_DIR$/29-angular-jstree-nav-tree/js-tree.template.html" />
+        <option value="$PROJECT_DIR$/29-angular-jstree-nav-tree/my-app.js" />
         <option value="$PROJECT_DIR$/29-angular-jstree-nav-tree/js-tree-directive.js" />
+        <option value="$PROJECT_DIR$/32-angular-ztree-nav-tree/data.json" />
+        <option value="$PROJECT_DIR$/32-angular-ztree-nav-tree/data.js" />
+        <option value="$PROJECT_DIR$/32-angular-ztree-nav-tree/ztree.template.html" />
+        <option value="$PROJECT_DIR$/32-angular-ztree-nav-tree/index.html" />
+        <option value="$PROJECT_DIR$/32-angular-ztree-nav-tree/my-app.js" />
+        <option value="$PROJECT_DIR$/32-angular-ztree-nav-tree/ztree-directive.js" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths />
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="width" value="1932" />
-    <option name="height" value="1056" />
+    <option name="x" value="1" />
+    <option name="y" value="1" />
+    <option name="width" value="1678" />
+    <option name="height" value="1008" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -224,6 +235,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -234,18 +246,17 @@
             <path>
               <item name="exercise-angular-1.x" type="b2602c69:ProjectViewProjectNode" />
               <item name="exercise-angular-1.x" type="462c0819:PsiDirectoryNode" />
-              <item name="25-lay-date(date object)-past-time-duration" type="462c0819:PsiDirectoryNode" />
+              <item name="29-angular-jstree-nav-tree" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="exercise-angular-1.x" type="b2602c69:ProjectViewProjectNode" />
               <item name="exercise-angular-1.x" type="462c0819:PsiDirectoryNode" />
-              <item name="29-angular-jstree-nav-tree" type="462c0819:PsiDirectoryNode" />
+              <item name="32-angular-ztree-nav-tree" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -262,17 +273,17 @@
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/25-lay-date(date object)-past-time/date-time-selector.js" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\test\exercise-angular-1.x\18-download-file" />
-      <recent name="D:\test\exercise-angular-1.x" />
-      <recent name="D:\test\exercise-angular\lib" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\test\exercise-angular-1.x\32-angular-ztree-nav-tree" />
       <recent name="D:\test\exercise-angular-1.x\31-install-chrome-frame-in-ie" />
       <recent name="D:\test\exercise-angular-1.x\18-upload-file" />
       <recent name="D:\test\exercise-angular-1.x\19-ui-select" />
       <recent name="D:\test\exercise-angular-1.x\19-ui-select\ui-select-filter" />
-      <recent name="D:\test\exercise-angular-1.x\30-multiple-select-dropdown" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\test\exercise-angular-1.x\18-download-file" />
+      <recent name="D:\test\exercise-angular-1.x" />
+      <recent name="D:\test\exercise-angular\lib" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -354,122 +365,41 @@
       <workItem from="1557711159134" duration="66000" />
       <workItem from="1557798640422" duration="11202000" />
       <workItem from="1557898754054" duration="42446000" />
+      <workItem from="1558246307299" duration="1082000" />
+      <workItem from="1558313026615" duration="18575000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="782220000" />
+    <option name="totallyTimeSpent" value="806004000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15226555" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14910433" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.28107503" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.26002166" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/12-checkbox-bind-to-arr/check-box.directive.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="26" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/12-checkbox-bind-to-arr/check-box.template.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/22-drop-down-menu/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/22-drop-down-menu/infinite-dropdown.template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/25-lay-date(date object)-past-time-duration/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="130" column="10" lean-forward="true" selection-start-line="130" selection-start-column="10" selection-end-line="130" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/30-multiple-select-dropdown/my-app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/30-multiple-select-dropdown/multiple-select-dropdown.directive.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1786">
-          <caret line="94" column="31" lean-forward="true" selection-start-line="94" selection-start-column="31" selection-end-line="94" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/30-multiple-select-dropdown/multiple-select-dropdown.template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="64" lean-forward="true" selection-start-line="10" selection-start-column="64" selection-end-line="10" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/ui-select/select.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="2411" selection-start-line="2411" selection-end-line="2412" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/19-ui-select/single-with-large-size-date-opt.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="26" column="45" lean-forward="true" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/19-ui-select/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="58" column="35" lean-forward="true" selection-start-line="58" selection-start-column="35" selection-end-line="58" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/19-ui-select/single-with-large-size-date.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="61" selection-start-line="24" selection-start-column="61" selection-end-line="24" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/angular-1.3/angular.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -689,24 +619,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/29-angular-jstree-nav-tree/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="22" column="6" lean-forward="true" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/jstree/3.3.8/jstree.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1016">
-          <caret line="3222" column="66" lean-forward="true" selection-start-line="3222" selection-start-column="66" selection-end-line="3222" selection-end-column="66" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="n#style#0;n#ins#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/29-angular-jstree-nav-tree/js-tree.template.html">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -714,20 +626,129 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/29-angular-jstree-nav-tree/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/jstree/3.3.8/jstree.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-323">
+          <caret line="5774" column="4" lean-forward="true" selection-start-line="5774" selection-start-column="4" selection-end-line="5774" selection-end-column="4" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#style#0;n#ins#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/29-angular-jstree-nav-tree/my-app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2322">
-          <caret line="403" column="37" lean-forward="true" selection-start-line="403" selection-start-column="37" selection-end-line="403" selection-end-column="37" />
+        <state relative-caret-position="835">
+          <caret line="379" column="4" selection-start-line="379" selection-start-column="4" selection-end-line="379" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/32-angular-ztree-nav-tree/js-tree-directive.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/ztree/3.5.40/css/zTreeStyle/zTreeStyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="34" column="31" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
           <folding>
-            <element signature="e#200#8546#0" />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/ztree/3.5.40/js/jquery.ztree.all.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/ztree/3.5.40/js/jquery.ztree.core.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/32-angular-ztree-nav-tree/data.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-171">
+          <caret line="18" selection-start-line="18" selection-end-line="34" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/29-angular-jstree-nav-tree/js-tree-directive.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3051">
-          <caret line="113" column="28" selection-start-line="113" selection-start-column="28" selection-end-line="113" selection-end-column="28" />
+        <state relative-caret-position="280">
+          <caret line="82" column="16" selection-start-line="82" selection-start-column="16" selection-end-line="82" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05-directive/02-manipulate-dom-directive.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/ztree/3.5.40/js/jquery.ztree.excheck.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71">
+          <caret line="162" column="84" lean-forward="true" selection-start-line="162" selection-start-column="84" selection-end-line="162" selection-end-column="84" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/32-angular-ztree-nav-tree/my-app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/32-angular-ztree-nav-tree/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="11" lean-forward="true" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/32-angular-ztree-nav-tree/ztree.template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/32-angular-ztree-nav-tree/ztree-directive.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="7" selection-end-column="5" />
+          <folding>
+            <element signature="e#609#5053#0" />
+          </folding>
         </state>
       </provider>
     </entry>

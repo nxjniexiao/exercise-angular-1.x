@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>zTree</title>
+  <link rel="stylesheet" href="../lib/ztree/3.5.40/css/zTreeStyle/zTreeStyle.css"/>
+</head>
+<body ng-app="myApp" ng-controller="MyController">
+<div>
+
+  <!--<z-tree
+    tree-data="ArrayList"
+    selected-arr="selectedArray"
+    on-change-fn="onChangeFnc(selectedArr)"
+    config="{
+      hasCheckbox: true
+    }"
+  >
+  </z-tree>
+  <hr>
+  <z-tree
+    tree-data="ArrayList"
+    selected-arr="selectedArray"
+    on-change-fn="onChangeFnc(selectedArr)"
+    config="{
+      hasCheckbox: true
+    }"
+  >
+  </z-tree>-->
+
+  <z-tree
+    tree-data="ArrayList"
+    selected-arr="selectedArray"
+    on-change-fn="onChangeFnc(selectedArr)"
+  >
+  </z-tree>
+
+  <ul>
+    <li ng-repeat="item in selectedArray" ng-click="unselect($index)"><a href="#">{{item.name}}</a></li>
+  </ul>
+</div>
+<!-- JavaScript 库 -->
+<script src="../lib/jquery.js"></script>
+<script src="../lib/angular.js"></script>
+<script src="../lib/ztree/3.5.40/js/jquery.ztree.core.js"></script>
+<script src="../lib/ztree/3.5.40/js/jquery.ztree.excheck.js"></script>
+<!-- 组件 -->
+<script src="data.js"></script>
+<script src="./my-app.js"></script>
+<script src="./ztree-directive.js"></script>
+</body>
+</html>

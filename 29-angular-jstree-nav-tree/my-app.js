@@ -367,7 +367,10 @@ angular.module('myApp').controller('MyController', ['$rootScope', '$scope', '$ti
     $scope.treedataName = 'treedata1';
   }, 500);
   $timeout(function () {
-    $scope.selectedArray = [{"text": "Root node 2", "id": 2}, {"text": "Child node 1-1", "id": 111}];
+    $scope.selectedArray = [
+      {"text": "Root node 2", "id": 2},
+      {"text": "Child node 1-2", "id": 112},
+    ];
     $scope.$broadcast('refresh-tree-1');
   }, 1000);
   $scope.onChangeFnc = function (selectedArr) {
@@ -386,12 +389,16 @@ angular.module('myApp').controller('MyController', ['$rootScope', '$scope', '$ti
   var flag = true;
   $scope.changeSelected = function () {
     if (flag) {
-      $scope.selectedArray = [{"text": "Root node 2", "id": 2}, {
-        "text": "Child node 1-2",
-        "id": 112
-      }, {"text": "Child node 1-4", "id": 114}];
+      $scope.selectedArray = [
+        {"text": "Root node 2", "id": 2},
+        {"text": "Child node 1-2", "id": 112},
+        {"text": "Child node 1-4", "id": 114}
+      ];
     } else {
-      $scope.selectedArray = [{"text": "Root node 2", "id": 2}, {"text": "Child node 1-1", "id": 111}];
+      $scope.selectedArray = [
+        {"text": "Root node 2", "id": 2},
+        {"text": "Child node 1-1", "id": 111}
+      ];
     }
     flag = !flag;
     $timeout(function () {
