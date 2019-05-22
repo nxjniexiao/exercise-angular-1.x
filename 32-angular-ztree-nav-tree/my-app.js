@@ -11,6 +11,9 @@ angular.module('myApp').controller('MyController', ['$rootScope', '$scope', '$ti
       {"name": "研发部", "id": 151},
       // {"name": "测试组", "id": 152},
     ];
+    $scope.selectedArray1 = [
+      {"name": "研发部", "id": 151},
+    ];
   }, 1000);
 
   $scope.onChangeFnc = function (selectedArr) {
@@ -19,5 +22,9 @@ angular.module('myApp').controller('MyController', ['$rootScope', '$scope', '$ti
 
   $scope.unselect = function(index) {
     $scope.selectedArray.splice(index, 1);
-  }
+  };
+
+  $scope.unselect1 = function(index) {
+    $scope.selectedArray1.splice(index, 1);
+  };
 }]);

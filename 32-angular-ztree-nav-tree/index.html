@@ -8,7 +8,7 @@
 <body ng-app="myApp" ng-controller="MyController">
 <div>
 
-  <!--<z-tree
+  <z-tree
     tree-data="ArrayList"
     selected-arr="selectedArray"
     on-change-fn="onChangeFnc(selectedArr)"
@@ -26,17 +26,21 @@
       hasCheckbox: true
     }"
   >
-  </z-tree>-->
+  </z-tree>
+  <ul>
+    <li ng-repeat="item in selectedArray" ng-click="unselect($index)"><a href="#">{{item.name}}</a></li>
+  </ul>
 
+  <hr>
   <z-tree
     tree-data="ArrayList"
-    selected-arr="selectedArray"
+    selected-arr="selectedArray1"
     on-change-fn="onChangeFnc(selectedArr)"
   >
   </z-tree>
 
   <ul>
-    <li ng-repeat="item in selectedArray" ng-click="unselect($index)"><a href="#">{{item.name}}</a></li>
+    <li ng-repeat="item in selectedArray1" ng-click="unselect1($index)"><a href="#">{{item.name}}</a></li>
   </ul>
 </div>
 <!-- JavaScript 库 -->

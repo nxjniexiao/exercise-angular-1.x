@@ -80,6 +80,9 @@ angular.module('myApp')
 
         // 根据 selectedArr 重新勾选
         function reCheckTree(selectedArr) {
+          if (!selectedArr) {
+            return;
+          }
           var i, len, item, node;
           var zTreeObj = scope.zTreeObj;
           zTreeObj.checkAllNodes(false); // 取消所有勾选
@@ -94,6 +97,9 @@ angular.module('myApp')
 
         // 根据 selectedArr 重新选择
         function reSelectTree(selectedArr) {
+          if (!selectedArr) {
+            return;
+          }
           var i, len, item, node;
           var zTreeObj = scope.zTreeObj;
           zTreeObj.cancelSelectedNode(); // 取消所有选中
@@ -129,6 +135,11 @@ angular.module('myApp')
           }
           scope.zTreeObj.destroy();
           scope.zTreeObj = $.fn.zTree.init($("#" + scope._id), scope.setting, scope.treeData);
+          if (scope.config.hasCheckbox) {
+            reCheckTree(scope.selectedArr);
+          } else {
+            reSelectTree(scope.selectedArr);
+          }
         }, true);
 
         // 监听组件销毁
