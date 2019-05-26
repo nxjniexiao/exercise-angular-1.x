@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>On Scroll Bottom</title>
+  <style>
+    .father{
+      width: 200px;
+      height: 200px;
+      background-color: skyblue;
+      overflow: auto;
+    }
+    .child{
+      width: 100%;
+      height: 600px;
+      background-color: tomato;
+    }
+  </style>
+</head>
+<body ng-app="myApp" ng-controller="MyController">
+<div class="father" on-scroll-bottom="loadMore()">
+  <div class="child"></div>
+</div>
+<!-- JavaScript 库 -->
+<script src="../lib/jquery.js"></script>
+<script src="../lib/angular.js"></script>
+<!-- 组件 -->
+<script src="./my-app.js"></script>
+<script src="./on-scroll-bottom.js"></script>
+</body>
+</html>
