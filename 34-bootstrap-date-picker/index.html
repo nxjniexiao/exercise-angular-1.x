@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap Datepicker</title>
+  <link rel="stylesheet" href="../lib/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../lib/bootstrap.css">
+  <link rel="stylesheet" href="../lib/bootstrap-datepicker/css/bootstrap-datepicker3.min.css">
+  <style>
+    .block {
+      padding: 10px;
+      border-bottom: #ccc 1px solid;
+    }
+  </style>
+</head>
+<body ng-app="myApp" ng-controller="MyController">
+<div class="block">
+  <div style="width: 200px">
+    <bootstrap-datepicker
+      date="startDate1"
+      config="{
+      icon: 'fa fa-clock-o'
+      }">
+    </bootstrap-datepicker>
+    <span>{{startDate1 | date: 'yyyy-MM-dd'}}</span>
+    <bootstrap-datepicker
+      date="endDate1"
+      config="{
+      icon: 'fa fa-calendar'
+      }">
+    </bootstrap-datepicker>
+    <span>{{endDate1 | date: 'yyyy-MM-dd'}}</span>
+  </div>
+</div>
+<div class="block">
+  <div style="width: 400px">
+    <bootstrap-datepicker-range
+      start-date="startDate2"
+      end-date="endDate2">
+    </bootstrap-datepicker-range>
+    <span>{{startDate2 | date: 'yyyy-MM-dd'}} - {{endDate2 | date: 'yyyy-MM-dd'}}</span>
+  </div>
+</div>
+<!-- JavaScript 库 -->
+<script src="../lib/jquery.js"></script>
+<script src="../lib/angular.js"></script>
+<script src="../lib/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+<script src="../lib/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js"></script>
+<!-- 自定义库 -->
+<script src="./my-app.js"></script>
+<script src="./bootstrap-datepicker-directive.js"></script>
+<script src="./bootstrap-datepicker-range-directive.js"></script>
+</body>
+</html>

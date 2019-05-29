@@ -4,7 +4,9 @@
     <bookmark url="file://$PROJECT_DIR$/29-angular-jstree-nav-tree/js-tree.template.html" line="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbe6b199-0bef-486c-9a57-42ad99e2a99f" name="Default Changelist" comment="" />
+    <list default="true" id="bbe6b199-0bef-486c-9a57-42ad99e2a99f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -15,48 +17,52 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/33-on-scroll-bottom/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/33-on-scroll-bottom/my-app.js">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/34-bootstrap-date-picker/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="152">
-              <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+              <caret line="8" column="9" lean-forward="true" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/33-on-scroll-bottom/on-scroll-bottom.js">
+        <entry file="file://$PROJECT_DIR$/34-bootstrap-date-picker/my-app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+            <state relative-caret-position="247">
+              <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/ui-select/0.19.8-with-header-footer/select.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/34-bootstrap-date-picker/bootstrap-datepicker-directive.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="1297" lean-forward="true" selection-start-line="1297" selection-end-line="1297" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="e#559#565#0" expanded="true" />
-                <element signature="e#565#572#0" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#span#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#li#0;n#ul#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="e#531#538#1" expanded="true" />
-              </folding>
+            <state relative-caret-position="190">
+              <caret line="22" column="45" lean-forward="true" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/34-bootstrap-date-picker/bootstrap-datepicker-range-directive.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="551">
+              <caret line="62" column="49" selection-start-line="62" selection-start-column="49" selection-end-line="62" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/bootstrap-datepicker/js/bootstrap-datepicker.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-792">
+              <caret line="1630" column="42" lean-forward="true" selection-start-line="1630" selection-start-column="42" selection-end-line="1630" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -74,7 +80,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>anyPropertyKey</find>
       <find>comparator</find>
       <find>天河</find>
       <find>onChangeFn</find>
@@ -104,6 +109,7 @@
       <find>uis:select</find>
       <find>refreshItems</find>
       <find>element</find>
+      <find>jquery</find>
     </findStrings>
     <replaceStrings>
       <replace>.config.</replace>
@@ -147,10 +153,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/24-meeting-info-modal-new/meeting-info.template.html" />
-        <option value="$PROJECT_DIR$/24-meeting-info-modal-new/meeting-info.directive.js" />
-        <option value="$PROJECT_DIR$/24-meeting-info-modal-new/meeting-modal.html" />
-        <option value="$PROJECT_DIR$/16-stars/stars.directive.js" />
         <option value="$PROJECT_DIR$/04-form/01-integer/index.html" />
         <option value="$PROJECT_DIR$/04-form/01-integer/integer.directive.js" />
         <option value="$PROJECT_DIR$/17-select-ng-options/index.html" />
@@ -196,8 +198,12 @@
         <option value="$PROJECT_DIR$/32-angular-ztree-nav-tree/my-app.js" />
         <option value="$PROJECT_DIR$/33-scroll-on-bottom/index.html" />
         <option value="$PROJECT_DIR$/33-on-scroll-bottom/index.html" />
-        <option value="$PROJECT_DIR$/33-on-scroll-bottom/my-app.js" />
         <option value="$PROJECT_DIR$/33-on-scroll-bottom/on-scroll-bottom.js" />
+        <option value="$PROJECT_DIR$/33-on-scroll-bottom/my-app.js" />
+        <option value="$PROJECT_DIR$/34-bootstrap-date-picker/index.html" />
+        <option value="$PROJECT_DIR$/34-bootstrap-date-picker/bootstrap-datepicker-directive.js" />
+        <option value="$PROJECT_DIR$/34-bootstrap-date-picker/bootstrap-datepicker-range-directive.js" />
+        <option value="$PROJECT_DIR$/34-bootstrap-date-picker/my-app.js" />
       </list>
     </option>
   </component>
@@ -225,43 +231,23 @@
             <path>
               <item name="exercise-angular-1.x" type="b2602c69:ProjectViewProjectNode" />
               <item name="exercise-angular-1.x" type="462c0819:PsiDirectoryNode" />
-              <item name="32-angular-ztree-nav-tree" type="462c0819:PsiDirectoryNode" />
+              <item name="25-lay-date(date object)-past-time-duration" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="exercise-angular-1.x" type="b2602c69:ProjectViewProjectNode" />
               <item name="exercise-angular-1.x" type="462c0819:PsiDirectoryNode" />
-              <item name="33-on-scroll-bottom" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exercise-angular-1.x" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exercise-angular-1.x" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="34-bootstrap-date-picker" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="exercise-angular-1.x" type="b2602c69:ProjectViewProjectNode" />
               <item name="exercise-angular-1.x" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="ui-select" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="exercise-angular-1.x" type="b2602c69:ProjectViewProjectNode" />
               <item name="exercise-angular-1.x" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="ui-select" type="462c0819:PsiDirectoryNode" />
-              <item name="0.19.8-with-header-footer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exercise-angular-1.x" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exercise-angular-1.x" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="ztree" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exercise-angular-1.x" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exercise-angular-1.x" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="ztree" type="462c0819:PsiDirectoryNode" />
-              <item name="3.5.40" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap-datepicker" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="exercise-angular-1.x" type="b2602c69:ProjectViewProjectNode" />
@@ -289,17 +275,17 @@
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/25-lay-date(date object)-past-time/date-time-selector.js" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\test\exercise-angular-1.x\18-download-file" />
-      <recent name="D:\test\exercise-angular-1.x" />
-      <recent name="D:\test\exercise-angular\lib" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\test\exercise-angular-1.x\34-bootstrap-date-picker" />
       <recent name="D:\test\exercise-angular-1.x\33-on-scroll-bottom" />
       <recent name="D:\test\exercise-angular-1.x\32-angular-ztree-nav-tree" />
       <recent name="D:\test\exercise-angular-1.x\31-install-chrome-frame-in-ie" />
       <recent name="D:\test\exercise-angular-1.x\18-upload-file" />
-      <recent name="D:\test\exercise-angular-1.x\19-ui-select" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\test\exercise-angular-1.x\18-download-file" />
+      <recent name="D:\test\exercise-angular-1.x" />
+      <recent name="D:\test\exercise-angular\lib" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -384,17 +370,18 @@
       <workItem from="1558246307299" duration="1082000" />
       <workItem from="1558313026615" duration="19864000" />
       <workItem from="1558348089747" duration="45672000" />
+      <workItem from="1558919564214" duration="25951000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="852965000" />
+    <option name="totallyTimeSpent" value="878916000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14910433" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17913593" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -417,52 +404,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/20-plugin-day-pilot/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="40" column="29" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/20-plugin-day-pilot/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="73" column="33" lean-forward="true" selection-start-line="73" selection-start-column="33" selection-end-line="73" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/18-download-file/file-saver.directive.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/file-saver/FileSaver.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/18-download-file/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/angular-file-upload/angular-file-upload.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-38927" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/18-upload-file/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="35" lean-forward="true" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/18-upload-file/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -552,20 +493,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/01-emit-broadcast/script.js">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/28-angular-bootstrap-nav-tree/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="25" column="62" lean-forward="true" selection-start-line="25" selection-start-column="62" selection-end-line="25" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/25-lay-date(date object)-past-time-duration/date-time-selector.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="16" selection-end-column="5" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/29-angular-jstree-nav-tree/js-tree.template.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -722,27 +649,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/33-on-scroll-bottom/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/33-on-scroll-bottom/my-app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/33-on-scroll-bottom/on-scroll-bottom.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/ui-select/select.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="367">
@@ -758,17 +664,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/32-angular-ztree-nav-tree/index.html">
+    <entry file="file://$PROJECT_DIR$/33-on-scroll-bottom/on-scroll-bottom.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="25" column="23" lean-forward="true" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+        <state relative-caret-position="437">
+          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/ui-select/0.19.8-with-header-footer/select.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="1297" lean-forward="true" selection-start-line="1297" selection-end-line="1297" />
+          <caret line="1297" selection-start-line="1297" selection-end-line="1297" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#559#565#0" expanded="true" />
@@ -777,6 +683,104 @@
             <element signature="n#style#0;n#a#0;n#span#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#li#0;n#ul#0;n#div#0;n#!!top" expanded="true" />
             <element signature="e#531#538#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/33-on-scroll-bottom/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="1297" column="7" selection-start-line="1297" selection-start-column="7" selection-end-line="1297" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/angular.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-310773">
+          <caret line="393" column="8" selection-start-line="393" selection-start-column="8" selection-end-line="393" selection-end-column="8" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/33-on-scroll-bottom/my-app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/32-angular-ztree-nav-tree/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="703">
+          <caret line="52" selection-start-line="52" selection-end-line="53" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/28-angular-bootstrap-nav-tree/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-304">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/25-lay-date(date object)-past-time-duration/date-time-selector.template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="69" selection-start-line="3" selection-start-column="69" selection-end-line="3" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/25-lay-date(date object)-past-time-duration/date-time-selector.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="35" lean-forward="true" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/bootstrap-datepicker/js/bootstrap-datepicker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-792">
+          <caret line="1630" column="42" lean-forward="true" selection-start-line="1630" selection-start-column="42" selection-end-line="1630" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/34-bootstrap-date-picker/bootstrap-datepicker-directive.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="22" column="45" lean-forward="true" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/34-bootstrap-date-picker/bootstrap-datepicker-range-directive.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="62" column="49" selection-start-line="62" selection-start-column="49" selection-end-line="62" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/34-bootstrap-date-picker/my-app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/34-bootstrap-date-picker/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="9" lean-forward="true" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
