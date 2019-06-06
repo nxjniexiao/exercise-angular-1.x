@@ -50,6 +50,7 @@ angular.module('myApp').directive('bootstrapDatepickerRange', [
           scope.customSettings = {
             format: 'yyyy-mm-dd',
             language: "zh-CN",
+            inputs: $('#' + scope._id + ' input'),
             // todayHighlight: true,
             // autoclose: true,
           };
@@ -60,17 +61,19 @@ angular.module('myApp').directive('bootstrapDatepickerRange', [
           if (!newValue) {
             return;
           }
-          $('#' + scope._id + ' input[name="start"]')
-            .datepicker(scope.customSettings)
-            .datepicker('setDate', newValue);
+          console.log($.fn.datepicker.defaults);
+          // $('#' + scope._id + ' input[name="start"]')
+          //   .datepicker(scope.customSettings)
+          //   .datepicker('setDate', newValue);
         });
         scope.$watch('endDate', function (newValue) {
           if (!newValue) {
             return;
           }
-          $('#' + scope._id + ' input[name="end"]')
-            .datepicker(scope.customSettings)
-            .datepicker('setDate', newValue);
+          console.log($('#' + scope._id).datepicker());
+          // $('#' + scope._id + ' input[name="end"]')
+          //   .datepicker(scope.customSettings)
+          //   .datepicker('setDate', newValue);
         });
       }
     };

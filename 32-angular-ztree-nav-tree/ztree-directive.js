@@ -30,6 +30,9 @@ angular.module('myApp')
               rootPid: 0
             }
           },
+          view: {
+            selectedMulti: false
+          },
           callback: {
             onClick: onClick
           }
@@ -44,7 +47,7 @@ angular.module('myApp')
         }
 
         // 点击回调函数
-        function onClick(event, treeId, treeNode) {
+        function onClick(event, treeId, treeNode, clickFlag) {
           isExternalChange = false; // 不是组件外部修改
           if (scope.config.hasCheckbox) {
             // 带选框
@@ -57,9 +60,17 @@ angular.module('myApp')
             });
           } else {
             // 不带选框
-            scope.selectedArr = [treeNode];
+            var selectedArr;
+            if (clickFlag === 0) {
+              // 取消选中
+              selectedArr = [];
+            } else {
+              // 选中
+              selectedArr = [treeNode];
+            }
+            scope.selectedArr = selectedArr;
             scope.$apply();
-            scope.onChangeFn({selectedArr: [treeNode]});
+            scope.onChangeFn({selectedArr: scope.selectedArr});
           }
         }
 
