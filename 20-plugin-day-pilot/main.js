@@ -1,76 +1,23 @@
 var app = angular.module('main', ['daypilot']).controller('DemoCtrl', function ($scope) {
   $scope.resourceIndex = 0;
-  $scope.resourceList = [
+  $scope.resourceList =
     [
       {name: "Room A", id: "A"},
       {name: "Room B", id: "B"},
       {name: "Room C", id: "C"},
       {name: "Room D", id: "D"},
-      {name: "Room E", id: "E"},
-      {name: "Room F", id: "F"},
-      {name: "Room G", id: "G"},
-      {name: "Room H", id: "H"},
-      {name: "Room I", id: "I"},
-      {name: "Room J", id: "J"},
-      {name: "Room K", id: "K"},
-      {name: "Room L", id: "L"},
-      {name: "Room M", id: "M"},
-      {name: "Room N", id: "N"},
-      {name: "Room O", id: "O"},
-      {name: "Room P", id: "P"},
-      {name: "Room Q", id: "Q"},
-      {name: "Room R", id: "R"},
-      {name: "Room S", id: "S"},
-      {name: "Room T", id: "T"},
-      {name: "Room U", id: "U"},
-      {name: "Room V", id: "V"},
-      {name: "Room W", id: "W"},
-      {name: "Room X", id: "X"},
-      {name: "Room Y", id: "Y"},
-      {name: "Room Z", id: "Z"},
-      {name: "Room a", id: "a"},
-      {name: "Room b", id: "b"},
-      {name: "Room c", id: "c"},
-      {name: "Room d", id: "d"},
-      {name: "Room e", id: "e"},
-      {name: "Room f", id: "f"},
-      {name: "Room g", id: "g"},
-      {name: "Room h", id: "h"},
-      {name: "Room i", id: "i"},
-      {name: "Room j", id: "j"},
-      {name: "Room k", id: "k"},
-      {name: "Room l", id: "l"},
-      {name: "Room m", id: "m"},
-      {name: "Room n", id: "n"},
-      {name: "Room o", id: "o"},
-      {name: "Room p", id: "p"},
-      {name: "Room q", id: "q"},
-      {name: "Room r", id: "r"},
-      {name: "Room s", id: "s"},
-      {name: "Room t", id: "t"},
-      {name: "Room u", id: "u"},
-      {name: "Room v", id: "v"},
-      {name: "Room w", id: "w"},
-      {name: "Room x", id: "x"},
-      {name: "Room y", id: "y"},
-      {name: "Room z", id: "z"},
-    ],
-    [
-      {name: "Room 1", id: "1"},
-      {name: "Room 2", id: "2"},
-      {name: "Room 3", id: "3"},
-    ]
-  ];
+    ];
   $scope.config = {
     scale: "Day",
     days: 66,
-    startDate: "2014-09-01",
+    startDate: "2019-09-01",
     timeHeaders: [
       {groupBy: "Month"},
       {groupBy: "Cell", format: "d"}
     ],
     allowEventOverlap: false,
-    resources: $scope.resourceList[$scope.resourceIndex],
+    // treeEnabled: true,
+    resources: $scope.resourceList,
     eventClickHandling: "Select",
     // 鼠标右键菜单
     contextMenu: new DayPilot.Menu([
@@ -97,6 +44,32 @@ var app = angular.module('main', ['daypilot']).controller('DemoCtrl', function (
       $scope.currentSelectedEvent = {start, end, resource};
       // $scope.add();
       // $scope.$apply();
+    },
+    // 点击每行左侧的标题
+    onRowClick: function(args) {
+      console.log(args);
+      var isChecked =
+      args.resource.data.isChecked = !args.resource.data.isChecked;
+      if (isChecked) {
+        args.row.addClass('is-checked');
+      } else {
+        args.row.removeClass('is-checked');
+      }
+      var existingEvents = findEventsByRange(args.row.id, new Date('2019/09/01'), new Date('2019/09/30'));
+      console.log(existingEvents);
+    },
+    //
+    onBeforeResHeaderRender: function(args) {
+      args.resource.html = "<i class='fa fa-check-square'></i><i class='fa fa-square-o'></i>" + args.resource.html;
+      args.resource.backColor = "#ccc";
+      // if (args.resource.loaded === false) {
+      //   args.resource.html += " (loaded dynamically)";
+      //   args.resource.backColor = "gray";
+      // }
+    },
+    //
+    onBeforeRowHeaderRender: function(args) {
+      console.log(args);
     }
   };
 
@@ -145,5 +118,19 @@ var app = angular.module('main', ['daypilot']).controller('DemoCtrl', function (
     // $scope.dp.cleanSelection();
     $scope.resourceIndex = ($scope.resourceIndex + 1) % 2;
     $scope.config.resources = $scope.resourceList[$scope.resourceIndex];
+  };
+
+  // 根据会议室 id 找出 指定时间段的 events 数组
+  function findEventsByRange(roomId, startTime, endTime) {
+    var scheduler = $scope.dp;
+    var row = scheduler.rows.find(roomId);
+    if (!row) {
+      return []; //指定 roomId 的会议室未显示在 daypilot 中
+    }
+    var events = row.$.row.events;
+    return events.forRange(
+      new DayPilot.Date(startTime, true),
+      new DayPilot.Date(endTime, true)
+    );
   }
 });

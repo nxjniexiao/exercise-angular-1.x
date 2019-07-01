@@ -3,6 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <title>Day Pilot</title>
+  <link rel="stylesheet" href="../lib/font-awesome/css/font-awesome.min.css" />
+  <style>
+    .scheduler_default_rowheader.is-checked i.fa-square-o {
+      display: none;
+    }
+    .scheduler_default_rowheader.is-checked i.fa-check-square {
+      display: inline-block;
+    }
+    .scheduler_default_rowheader i.fa-square-o {
+      display: inline-block;
+    }
+    .scheduler_default_rowheader i.fa-check-square {
+      display: none;
+    }
+  </style>
 </head>
 <body>
 <div ng-app="main" ng-controller="DemoCtrl">
