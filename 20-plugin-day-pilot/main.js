@@ -1,12 +1,14 @@
-var app = angular.module('main', ['daypilot']).controller('DemoCtrl', function ($scope) {
+var app = angular.module('main', ['daypilot']).controller('DemoCtrl', ['$scope', '$timeout',function ($scope, $timeout) {
   $scope.resourceIndex = 0;
-  $scope.resourceList =
-    [
+  $timeout(function () {
+    $scope.config.resources = [
       {name: "Room A", id: "A"},
       {name: "Room B", id: "B"},
       {name: "Room C", id: "C"},
       {name: "Room D", id: "D"},
     ];
+  }, 1000); //模拟HTTP请求
+  $scope.checkedList = {'A': {name: "Room A", id: "A"}};
   $scope.config = {
     scale: "Day",
     days: 66,
@@ -17,18 +19,17 @@ var app = angular.module('main', ['daypilot']).controller('DemoCtrl', function (
     ],
     allowEventOverlap: false,
     // treeEnabled: true,
-    resources: $scope.resourceList,
     eventClickHandling: "Select",
-    // 鼠标右键菜单
-    contextMenu: new DayPilot.Menu([
-      // $scope.dp 是通过在 <daypilot-scheduler> 元素中的 id="dp" 来指定的
-      {text:"Delete", onclick: function() { $scope.dp.events.remove(this.source); } },
-      {text:"Show event ID", onclick: function() {alert("Event value: " + this.source.value());} },
-      {text:"Show event text", onclick: function() {alert("Event text: " + this.source.text());} },
-      {text:"Show event start", onclick: function() {alert("Event start: " + this.source.start().toStringSortable());} },
-      {text:"Go to google.com", href: "http://www.google.com/?q={0}"},
-      {text:"CallBack: Delete this event", command: "delete"},
-    ]),
+    // // 鼠标右键菜单
+    // contextMenu: new DayPilot.Menu([
+    //   // $scope.dp 是通过在 <daypilot-scheduler> 元素中的 id="dp" 来指定的
+    //   {text:"Delete", onclick: function() { $scope.dp.events.remove(this.source); } },
+    //   {text:"Show event ID", onclick: function() {alert("Event value: " + this.source.value());} },
+    //   {text:"Show event text", onclick: function() {alert("Event text: " + this.source.text());} },
+    //   {text:"Show event start", onclick: function() {alert("Event start: " + this.source.start().toStringSortable());} },
+    //   {text:"Go to google.com", href: "http://www.google.com/?q={0}"},
+    //   {text:"CallBack: Delete this event", command: "delete"},
+    // ]),
     // 事件被移动后执行
     onEventMoved: function (args) {
       $scope.dp.message("Event moved: " + args.e.text());
@@ -47,13 +48,14 @@ var app = angular.module('main', ['daypilot']).controller('DemoCtrl', function (
     },
     // 点击每行左侧的标题
     onRowClick: function(args) {
-      console.log(args);
-      var isChecked =
-      args.resource.data.isChecked = !args.resource.data.isChecked;
+      var roomId = args.resource.data.id;
+      var isChecked = roomId in $scope.checkedList;
       if (isChecked) {
-        args.row.addClass('is-checked');
-      } else {
         args.row.removeClass('is-checked');
+        delete $scope.checkedList[roomId];
+      } else {
+        args.row.addClass('is-checked');
+        $scope.checkedList[roomId] = args.resource.data;
       }
       var existingEvents = findEventsByRange(args.row.id, new Date('2019/09/01'), new Date('2019/09/30'));
       console.log(existingEvents);
@@ -69,7 +71,14 @@ var app = angular.module('main', ['daypilot']).controller('DemoCtrl', function (
     },
     //
     onBeforeRowHeaderRender: function(args) {
-      console.log(args);
+      // 从后台获取到数据，触发此回调函数时，row header 还未渲染，所以要延迟执行
+      $timeout(function() {
+        var roomId = args.row.data.id;
+        var isChecked = roomId in $scope.checkedList;
+        if (isChecked) {
+          args.row.addClass('is-checked');
+        }
+      });
     }
   };
 
@@ -133,4 +142,4 @@ var app = angular.module('main', ['daypilot']).controller('DemoCtrl', function (
       new DayPilot.Date(endTime, true)
     );
   }
-});
+}]);
