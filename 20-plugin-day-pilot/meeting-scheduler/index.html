@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Day Pilot</title>
+  <link rel="stylesheet" href="../../lib/font-awesome/css/font-awesome.min.css" />
+  <style>
+    .scheduler_default_rowheader.is-checked i.fa-square-o {
+      display: none;
+    }
+    .scheduler_default_rowheader.is-checked i.fa-check-square {
+      display: inline-block;
+    }
+    .scheduler_default_rowheader i.fa-square-o {
+      display: inline-block;
+    }
+    .scheduler_default_rowheader i.fa-check-square {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+<div ng-app="main" ng-controller="DemoCtrl">
+  <!--
+  1. id: 其值(dp)用来在 $scope 中储存此 Daypilot.Scheduler 的实例，我们可以通过 $scope.dp 来访问此实例；
+  2. config: 对象，配置选项，用于配置如 resource 数组、起始日期和事件处理函数等；
+  3. events: 数组，数组中的事件对象将显示在此插件中。
+  -->
+  <daypilot-scheduler id="dp" config="config" events="events"></daypilot-scheduler>
+  <div class="space">
+    New event:
+    <button ng-click="add()">Add</button>
+    <span>{{currentSelectedEvent.resource}}</span>
+    <span>{{currentSelectedEvent.start}}</span>
+    <span>{{currentSelectedEvent.end}}</span>
+  </div>
+  <div class="space">
+    First event:
+    <button ng-click="move()">Move</button>
+    <button ng-click="rename()">Rename</button>
+    <button ng-click="changeResource()">changeResource</button>
+  </div>
+  <div class="space">
+    <span class="bold">Scale:</span>
+    <a ng-click="scale('Day')" href="javascript:void(0)">Days</a>
+    <a ng-click="scale('Week')" href="javascript:void(0)">Weeks</a>
+  </div>
+  <div class="space">
+    <div class="bold">Selected events (click or Ctrl+click to select):</div>
+    <div ng-repeat="item in selectedEvents">
+      {{item.text()}}:  start:{{item.start()}},  end:{{item.end()}},  resource:{{item.resource()}},  id:{{item.id()}}
+    </div>
+  </div>
+</div>
+<script src="../../lib/angular.min.js"></script>
+<!--<script src="../lib/daypilot/daypilot-all.min.js"></script>-->
+<!-- Lite 版本没有 schedule 功能 -->
+<!--<script src="../lib/daypilot/daypilot-all-lite.js"></script>-->
+<script src="../../lib/daypilot/daypilot-all-2019.3.3913(trial).js"></script>
+<script src="main.js"></script>
+</body>
+</html>
