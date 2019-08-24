@@ -72,8 +72,8 @@ angular.module('myApp')
               },
               plugins: ['checkbox', 'conditionalselect', 'search'],
               checkbox: {
-                three_state: false,
-                cascade: 'down'
+                three_state: true,
+                cascade: 'down+undetermined'
               },
               search: {
                 show_only_matches: true,
@@ -85,10 +85,10 @@ angular.module('myApp')
                 var isCheckBox = /checkbox/.test(className);
                 if (isCheckBox) {
                   // 'down': 勾选时，其子节点也会被勾选上
-                  jsTreeInstance.settings.checkbox.cascade = 'down';
+                  jsTreeInstance.settings.checkbox.cascade = 'down+undetermined';
                 } else {
                   // '': 勾选时，其子节点不会被勾选上
-                  jsTreeInstance.settings.checkbox.cascade = '';
+                  jsTreeInstance.settings.checkbox.cascade = 'undetermined';
                 }
                 return true;
               }
@@ -99,7 +99,7 @@ angular.module('myApp')
         // 刷新 jstree 中的已选项
         function reselect(jstreeInstance, selectedArr) {
           //防止手动触发 select_node 事件时，其子元素也会被勾选上
-          jsTreeInstance.settings.checkbox.cascade = ''; //大坑！！！！
+          jsTreeInstance.settings.checkbox.cascade = 'undetermined'; //大坑！！！！
           jstreeInstance.deselect_all(true); // true: 不会触发 changed.jstree 事件
           jstreeInstance.select_node(selectedArr, true, true); // true: 不会触发 changed.jstree 事件
         }
