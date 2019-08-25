@@ -19,9 +19,10 @@ angular.module('myApp')
         config: '=?'
       },
       link: function (scope, element, attrs) {
-        var jsTreeDom, jsTreeInstance, timerForSearch, isExternalChange = true;
+        var jsTreeDom, timerForSearch, isExternalChange = true;
         scope.config = scope.config || {};
         scope._id = 'jstree-' + Math.random().toString(36).substr(2);
+        scope.jsTreeInstance = null;
         scope.noSearchResults = false;
         $timeout(function () {
           jsTreeDom = $('#' + scope._id);
@@ -44,24 +45,18 @@ angular.module('myApp')
             })
             .on('select_node.jstree', function (event, data) {
               console.log('select_node');
-              // var selectedArr = data.instance.get_checked(true);
-              // console.log(selectedArr);
             })
             .on('deselect_node.jstree', function (event, data) {
               console.log('deselect_node');
-              // var selectedArr = data.instance.get_checked(true);
-              // console.log(selectedArr);
             })
             .on('deselect_all.jstree', function (event, data) {
               console.log('deselect_all');
-              // var selectedArr = data.instance.get_checked(true);
-              // console.log(selectedArr);
             })
             .on('changed.jstree', function (event, data) {
               console.log('changed');
               var arr = [];
               if (scope.config.hasCheckbox) {
-                // 多选框情况
+                // 有多选框
                 var selectedArr = data.instance.get_checked(true);
                 selectedArr.forEach(function (item) {
                   arr.push(item.original);
@@ -83,7 +78,7 @@ angular.module('myApp')
               scope.noSearchResults = false;
             })
             .jstree(opts);
-          jsTreeInstance = jsTreeDom.jstree(true); // 获取 jsTree 的实例
+          scope.jsTreeInstance = jsTreeDom.jstree(true); // 获取 jsTree 的实例
         });
 
         // 初始化 options
@@ -92,6 +87,7 @@ angular.module('myApp')
           var opts = {
             core: {
               data: scope.treeData,
+              multiple: false
             },
             plugins: ['conditionalselect'],
             conditionalselect: function (node, event) {
@@ -100,24 +96,24 @@ angular.module('myApp')
               var isCheckBox = /checkbox/.test(className);
               if (config.hasCheckbox && isCheckBox) {
                 // 'down': 勾选时，其子节点也会被勾选上
-                jsTreeInstance.settings.checkbox.cascade = 'down+undetermined';
+                scope.jsTreeInstance.settings.checkbox.cascade = 'down+undetermined';
               } else {
                 // '': 勾选时，其子节点不会被勾选上
-                jsTreeInstance.settings.checkbox.cascade = 'undetermined';
+                scope.jsTreeInstance.settings.checkbox.cascade = 'undetermined';
               }
               return true;
             }
           };
-          // 如果有多选框
+          // 有多选框
           if (config.hasCheckbox) {
+            opts.core.multiple = true;
             opts.plugins.push('checkbox');
             opts.checkbox = {
               three_state: true,
-              whole_node: false,
               cascade: 'down+undetermined'
             };
           }
-          // 如果有搜索框
+          // 有搜索框
           if (config.hasSearchBox) {
             opts.plugins.push('search');
             opts.search = {
@@ -129,18 +125,20 @@ angular.module('myApp')
         }
 
         // 刷新 jstree 中的已选项
-        function reselect(jstreeInstance, selectedArr) {
+        function reselect(selectedArr) {
+          var jsTreeInstance = scope.jsTreeInstance;
           //防止手动触发 select_node 事件时，其子元素也会被勾选上
           jsTreeInstance.settings.checkbox.cascade = 'undetermined'; //大坑！！！！
-          jstreeInstance.deselect_all(true); // true: 不会触发 changed.jstree 事件
-          jstreeInstance.select_node(selectedArr, true, true); // true: 不会触发 changed.jstree 事件
+          jsTreeInstance.deselect_all(true); // true: 不会触发 changed.jstree 事件
+          jsTreeInstance.select_node(selectedArr, true, true); // true: 不会触发 changed.jstree 事件
+          jsTreeInstance.redraw(); // 重绘
         }
 
         // 监听树形数组 treeData
         scope.$watch('treeData', function () {
-          if (scope.treeData && jsTreeInstance) {
-            jsTreeInstance.settings.core.data = scope.treeData;
-            jsTreeInstance.refresh();
+          if (scope.treeData && scope.jsTreeInstance) {
+            scope.jsTreeInstance.settings.core.data = scope.treeData;
+            scope.jsTreeInstance.refresh();
           }
         }, true);
 
@@ -149,8 +147,8 @@ angular.module('myApp')
           if (!newValue) {
             return;
           }
-          if (newValue && jsTreeInstance && isExternalChange) {
-            reselect(jsTreeInstance, newValue);
+          if (newValue && scope.jsTreeInstance && isExternalChange) {
+            reselect(newValue);
           }
           isExternalChange = true; //重置 isExternalChange
         }, true);
@@ -160,10 +158,15 @@ angular.module('myApp')
           scope.$watch('keywords', function () {
             $timeout.cancel(timerForSearch);
             timerForSearch = $timeout(function () {
-              jsTreeInstance.search(scope.keywords || '');
+              scope.jsTreeInstance.search(scope.keywords || '');
             }, 500)
           });
         }
+
+        // 监听组件销毁
+        element.on('$destroy', function () {
+          scope.jsTreeInstance.destroy();
+        });
       }
     };
   }]);

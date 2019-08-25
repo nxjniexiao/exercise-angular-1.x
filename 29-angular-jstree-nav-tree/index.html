@@ -13,11 +13,17 @@
     <button ng-click="changeData()">切换数据源</button>
     <button ng-click="changeSelected()">切换已选项</button>
     <button ng-click="$apply()">apply</button>
-    <js-tree tree-data="treedata[treedataName]" selected-arr="selectedArray" on-change-fn="onChangeFnc(selectedArr)"
+    <js-tree
+      tree-data="treedata[treedataName]"
+      selected-arr="selectedArray"
+      on-change-fn="onChangeFnc(selectedArr)"
       config="{hasCheckbox: true}">
     </js-tree>
-    <js-tree tree-data="treedata[treedataName]" selected-arr="selectedArray" on-change-fn="onChangeFnc(selectedArr)"
-      config="{isSearchAvailable: true, hasCheckbox: true}">
+    <js-tree
+      tree-data="treedata[treedataName]"
+      selected-arr="selectedArray"
+      on-change-fn="onChangeFnc(selectedArr)"
+      config="{hasSearchBox: true, hasCheckbox: true}">
     </js-tree>
     <ul>
       <li ng-repeat="item in selectedArray" ng-click="unselect(selectedArray, $index)"><a href="#">{{item.text}}</a></li>
@@ -25,7 +31,11 @@
   </div>
   <hr>
   <div>
-    <js-tree tree-data="treedata[treedataName]" selected-arr="selectedArray2" on-change-fn="onChangeFnc(selectedArr)"></js-tree>
+    <js-tree
+      tree-data="treedata[treedataName]"
+      selected-arr="selectedArray2"
+      on-change-fn="onChangeFnc(selectedArr)">
+    </js-tree>
     <ul>
       <li ng-repeat="item in selectedArray2" ng-click="unselect(selectedArray2, $index)"><a href="#">{{item.text}}</a></li>
     </ul>
