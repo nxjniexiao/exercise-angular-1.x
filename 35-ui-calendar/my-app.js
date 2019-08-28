@@ -136,7 +136,14 @@ angular.module('MyApp', ['ui.calendar']).controller('MyController', [
     };
     /* alert on dayClick */
     $scope.alertOnDayClick = function(date, jsEvent, view) {
-      alert(date.format());
+      var currentView, myCalendar;
+      myCalendar = uiCalendarConfig.calendars.myCalendar;
+      currentView = myCalendar.fullCalendar('getView');
+      if (currentView.type !== 'agendaDay') {
+        myCalendar.fullCalendar('changeView', 'agendaDay');
+        myCalendar.fullCalendar('gotoDate', date);
+      }
+      // $(this).css('background-color', 'blue');
     };
     /* alert on Drop */
     $scope.alertOnDrop = function(event, delta, revertFunc, jsEvent, ui, view) {
@@ -214,6 +221,13 @@ angular.module('MyApp', ['ui.calendar']).controller('MyController', [
           day: '日',
           today: '今天'
         },
+        businessHours: {
+          dow: [1, 2, 3, 4, 5],
+          start: '08:00',
+          end: '24:00'
+        },
+        allDaySlot: false, // 不显示 'all-day'
+        minTime: '08:00:00', // 最小显示时间
         eventLimit: 4, // 限制事件数量，包括更多标签
         eventLimitText: '更多', // 默认为 `more`
         eventClick: $scope.alertOnEventClick,

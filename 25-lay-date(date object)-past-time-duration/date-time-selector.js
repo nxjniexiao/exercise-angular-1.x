@@ -76,6 +76,7 @@ angular.module('myApp').directive('dateTimeSelector', [function () {
         type: 'time',
         format: 'HH:mm',
         btns: btns,
+        minutesGradient: $scope.config.minutesGradient,
         ready: function (date) {
           // 控件在打开时触发(打开时修改config，弹窗在点击后才会刷新新的配置)
         },
