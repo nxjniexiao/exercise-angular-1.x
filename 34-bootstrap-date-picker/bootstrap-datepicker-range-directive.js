@@ -1,8 +1,7 @@
 /**
  * 基于 bootstrap-datepicker.js 的 angularjs 组件
- * @param {Object} date - 时间，Date 对象
- * @param {Object} [config] - 配置对象。
- * @param {string} [config.iconClass] - input 框后面图标字体的 class 名。
+ * @param {Object} startDate - 起始时间，Date 对象
+ * @param {Object} endDate - 结束时间，Date 对象
  */
 angular.module('myApp').directive('bootstrapDatepickerRange', [
   '$timeout',
@@ -34,13 +33,11 @@ angular.module('myApp').directive('bootstrapDatepickerRange', [
           var inputName = e.target.getAttribute('name');
           if (inputName === 'start') {
             if (e.date - scope.startDate !== 0) {
-              scope.startDate = e.date;
-              scope.$apply();
+              scope.$apply(scope.startDate = e.date);
             }
           } else {
             if (e.date - scope.endDate !== 0) {
-              scope.endDate = e.date;
-              scope.$apply();
+              scope.$apply(scope.endDate = e.date);
             }
           }
         }
@@ -50,30 +47,31 @@ angular.module('myApp').directive('bootstrapDatepickerRange', [
           scope.customSettings = {
             format: 'yyyy-mm-dd',
             language: "zh-CN",
-            inputs: $('#' + scope._id + ' input'),
-            // todayHighlight: true,
-            // autoclose: true,
+            todayHighlight: true,
           };
         }
 
-        // 监听外部修改date
+        // 监听外部修改 startDate
         scope.$watch('startDate', function (newValue) {
           if (!newValue) {
             return;
           }
-          console.log($.fn.datepicker.defaults);
-          // $('#' + scope._id + ' input[name="start"]')
-          //   .datepicker(scope.customSettings)
-          //   .datepicker('setDate', newValue);
+          // 延迟执行，防止修改 startDate 后插件自动修改 endDate ，从而触发 changeDate 事件
+          $timeout(function() {
+            $('#' + scope._id + ' input[name=start]')
+              .datepicker(scope.customSettings)
+              .datepicker('setDate', newValue);
+          });
         });
+
+        // 监听外部修改 endDate
         scope.$watch('endDate', function (newValue) {
           if (!newValue) {
             return;
           }
-          console.log($('#' + scope._id).datepicker());
-          // $('#' + scope._id + ' input[name="end"]')
-          //   .datepicker(scope.customSettings)
-          //   .datepicker('setDate', newValue);
+          $('#' + scope._id + ' input[name=end]')
+            .datepicker(scope.customSettings)
+            .datepicker('setDate', newValue);
         });
       }
     };

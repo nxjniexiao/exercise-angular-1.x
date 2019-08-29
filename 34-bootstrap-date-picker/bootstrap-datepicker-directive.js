@@ -32,8 +32,7 @@ angular.module('myApp').directive('bootstrapDatepicker', [
         // changeDate/hide 事件的回调函数
         function onChange(e) {
           if (e.date - scope.date !== 0) {
-            scope.date = e.date;
-            scope.$apply();
+            scope.$apply(scope.date = e.date);
           }
         }
 
@@ -42,7 +41,7 @@ angular.module('myApp').directive('bootstrapDatepicker', [
           scope.customSettings = {
             format: 'yyyy-mm-dd',
             language: "zh-CN",
-            // todayHighlight: true,
+            todayHighlight: true,
             autoclose: true,
             startDate: new Date(),
           };
