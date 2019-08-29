@@ -9,25 +9,30 @@ website:    http://code.google.com/p/jquerytree/
 -------------------------------------*/
 
 /* Definitions ----------------------*/
-@font-size: 12px;
+@font-size: 14px;
+@font-size-icon: 16px;
 // Regular icon and text color is white, which suits any medium -> dark background 
-@color-normal: white;
+@color-normal: #333;
+@color-light: #888;
 // Background color
-@color-bg: #af0000;
+@color-bg: #fff;
 // Highlight color
-@color-highlight: yellow;
+@color-highlight: #333;
 // Partially selected (checkboxes, radio buttons)
-@color-partial: #aaaaaa;
+@color-partial: #888;
 // Partially selected and focused (checkboxes, radio buttons)
 @color-partfocus: #cad96c;
 // Disabled altogether
 @color-disabled: #808080;
 // Editing color
 @color-edit: yellow;
+// Icon color
+@color-icon: #0099ff;
 @w: 15px;
 @h: 17px;
 @pad-left: 2px;
 @pad-top: 10px;
+@pad-icon: 10px;
 /* End of Definitions ---------------*/
 
 /* Imports  -------------------------*/
@@ -50,32 +55,34 @@ website:    http://code.google.com/p/jquerytree/
                         font-size:@font-size; border:1px #585956 solid; *border:0px}
         }
         a:hover {text-decoration:underline}
-        a.curSelectedNode {padding-top:0px; background-color:#af4040; color:@color-highlight; height:@h; opacity:0.8;}
+        a.curSelectedNode {padding-top:0px; background-color:#beebff; color:@color-highlight; height:@h; opacity:0.8;}
         a.curSelectedNode_Edit {padding-top:0px; background-color:transparent; color:@color-highlight; height:@h; border:1px #666 solid; opacity:0.8;}
         a.tmpTargetNode_inner {padding-top:0px; background-color:#aaa; color:@color-highlight; height:@h; border:1px #666 solid;
           opacity:0.8; filter:alpha(opacity=80)}
         a.tmpTargetNode_prev {}
         a.tmpTargetNode_next {}
         span {line-height:@h; margin-right:2px; background-color:transparent;}
-        span.button {line-height:0; margin:0; padding: 0; width:@w; height:@h; display: inline-block; vertical-align:top;
+        span.button {line-height:0; margin:0; padding: 0; width:@w; height:@h; display: inline-block; vertical-align:top; padding-right: @pad-icon;
           border:0px solid; cursor: pointer;outline:none;
           background-color:transparent; background-repeat:no-repeat; background-attachment: scroll;
  
-            &::before{color: @color-normal; font-family: FontAwesome; padding-top:@pad-top;}
-            &.chk { margin:0px; cursor: auto; width: 12px;
+            &::before{color: @color-normal; font-family: FontAwesome; font-size: @font-size-icon;}
+            &.chk { margin:0px; cursor: pointer; width: 12px; padding-right: @pad-icon;
                 display: inline-block;padding-top:@pad-top;padding-left:@pad-left;
                 
+                &.checkbox_true_full ~ a { background-color: #beebff; }
+                &.checkbox_true_part ~ a { background-color: #beebff; }
+                ~ a { background-color: transparent; }
                 &.checkbox_false_full::before {content: @fa-square-o;}
                 &.checkbox_false_full_focus::before {content: @fa-square-o; color:@color-highlight;}
-                &.checkbox_false_part::before {content: @fa-square-o;color: @color-partial;}
+                &.checkbox_false_part::before {content: @fa-square;color: @color-partial;}
                 &.checkbox_false_part_focus::before {content: @fa-square-o; color:@color-partfocus;}
                 &.checkbox_false_disable::before {content: @fa-square-o; color:@color-disabled;}
                 &.checkbox_true_full::before {content: @fa-check-square-o;}
                 &.checkbox_true_full_focus::before {content: @fa-check-square-o;}
-                &.checkbox_true_part::before {content: @fa-check-square;}
                 &.checkbox_true_part_focus::before {content: @fa-check-square; color: @color-highlight}
                 &.checkbox_true_full_focus::before {content: @fa-check-square-o; color: @color-highlight}
-                &.checkbox_true_part::before {content: @fa-check-square-o;color: @color-partial}
+                &.checkbox_true_part::before {content: @fa-check-square;color: @color-partial}
                 &.checkbox_true_part_focus::before {content: @fa-check-square-o;color: @color-partfocus;}
                 &.checkbox_true_disable::before {content: @fa-check-square-o;color: @color-disabled}
                  
@@ -92,25 +99,31 @@ website:    http://code.google.com/p/jquerytree/
                 
             }
             &.switch  {width:@w; height:@h}
-            &.root_open::before{content: @fa-chevron-down;padding-top:@pad-top;padding-left:@pad-left;display: inline-block;}
-            &.root_close::before{content: @fa-folder-open-o;padding-top:@pad-top;padding-left:@pad-left;display: inline-block;}
-            &.roots_open::before{content: @fa-chevron-down;padding-top:@pad-top;padding-left:@pad-left;display: inline-block;}
-            &.roots_close::before{content: @fa-chevron-right;padding-top:@pad-top;padding-left:@pad-left;display: inline-block;}
-            &.center_open::before{content: @fa-chevron-down;padding-top:@pad-top;padding-left:@pad-left;display: inline-block;}
-            &.center_close::before{content: @fa-chevron-right;padding-top:@pad-top;padding-left:@pad-left;display: inline-block;}
-            &.bottom_open::before{content: @fa-chevron-down;padding-top:@pad-top;padding-left:@pad-left;display: inline-block;}
-            &.bottom_close::before{content: @fa-chevron-right;padding-top:@pad-top;padding-left:@pad-left;display: inline-block;}  
+            &.root_open::before{content: @fa-minus;padding-top:@pad-top;padding-left:@pad-left;display: inline-block;color: @color-light;}
+            &.root_close::before{content: @fa-plus;padding-top:@pad-top;padding-left:@pad-left;display: inline-block;color: @color-light;}
+            &.roots_open::before{content: @fa-minus;padding-top:@pad-top;padding-left:@pad-left;display: inline-block;color: @color-light;}
+            &.roots_close::before{content: @fa-plus;padding-top:@pad-top;padding-left:@pad-left;display: inline-block;color: @color-light;}
+            &.center_open::before{content: @fa-minus;padding-top:@pad-top;padding-left:@pad-left;display: inline-block;color: @color-light;}
+            &.center_close::before{content: @fa-plus;padding-top:@pad-top;padding-left:@pad-left;display: inline-block;color: @color-light;}
+            &.bottom_open::before{content: @fa-minus;padding-top:@pad-top;padding-left:@pad-left;display: inline-block;color: @color-light;}
+            &.bottom_close::before{content: @fa-plus;padding-top:@pad-top;padding-left:@pad-left;display: inline-block;color: @color-light;}  
             &.noline_open{}
             &.noline_close{}
             &.root_docu{ background:none;}
-            &.roots_docu::before{content: @fa-list-alt;padding-left:@pad-left;display: inline-block;color:@color-normal;}
+            &.roots_docu::before{content: @fa-file;padding-left:@pad-left;display: inline-block;color:@color-icon;}
             &.center_docu::before{padding-top:@pad-top;padding-left:@pad-left;display: inline-block;color:@color-normal;}
             &.bottom_docu::before{padding-top:@pad-top;padding-left:@pad-left;display: inline-block;color:@color-normal;}
             &.noline_docu{ background:none;}
     
-            &.ico_open::before {content: @fa-folder-open-o;font-family: FontAwesome;padding-top:@pad-top;padding-left:@pad-left;display: inline-block;color:@color-normal;}
-            &.ico_close::before {content: @fa-folder-o;font-family: FontAwesome;padding-top:@pad-top;padding-left:@pad-left;display: inline-block;color:@color-normal;}
-            &.ico_docu::before{content: @fa-list-alt;font-family: FontAwesome;padding-top:@pad-top;padding-left:@pad-left;display: inline-block;color:@color-normal;}
+            &.ico_open::before {content: @fa-folder-open;font-family: FontAwesome;padding-top:@pad-top;padding-left:@pad-left;display: inline-block;color:@color-icon;}
+            &.ico_close::before {content: @fa-folder;font-family: FontAwesome;padding-top:@pad-top;padding-left:@pad-left;display: inline-block;color:@color-icon;}
+            &.org_ico_open::before {content: @fa-home;font-family: FontAwesome;padding-top:@pad-top;padding-left:@pad-left;display: inline-block;color:@color-icon;font-size: 20px;}
+            &.org_ico_close::before {content: @fa-home;font-family: FontAwesome;padding-top:@pad-top;padding-left:@pad-left;display: inline-block;color:@color-icon;font-size: 20px;}
+            &.org_ico_docu::before {content: @fa-home;font-family: FontAwesome;padding-top:@pad-top;padding-left:@pad-left;display: inline-block;color:@color-icon;font-size: 20px;}
+            &.org_ico_open {margin-left: -2px;padding-right: 25px;}
+            &.org_ico_close {margin-left: -2px;padding-right: 25px;}
+            &.org_ico_docu {margin-left: -2px;padding-right: 25px;}
+            &.ico_docu::before{content: @fa-file;font-family: FontAwesome;padding-top:@pad-top;padding-left:@pad-left;display: inline-block;color:@color-icon;}
             
             &.edit {margin-left:4px; margin-right: -1px;  vertical-align:top; *vertical-align:middle;padding-top:@pad-top;}
             &.edit::before{content: @fa-pencil-square-o;font-family: FontAwesome;}
