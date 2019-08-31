@@ -75,17 +75,19 @@ angular.module('myApp').directive('dateTimeSelector', [function () {
         trigger: 'click',
         type: 'time',
         format: 'HH:mm',
-        btns: btns,
+        btns: [],
         minutesGradient: $scope.config.minutesGradient,
         ready: function (date) {
           // 控件在打开时触发(打开时修改config，弹窗在点击后才会刷新新的配置)
         },
         change: function (value, date, endDate) {
           // 年月日时间被切换时都会触发
-        },
-        done: function (value, date, endDate) {
           $scope.timeStr = value;
           $scope.$apply();
+        },
+        done: function (value, date, endDate) {
+          // $scope.timeStr = value;
+          // $scope.$apply();
         }
       });
       limitPicker(); // 设置弹窗的最大、最小值
@@ -94,13 +96,18 @@ angular.module('myApp').directive('dateTimeSelector', [function () {
     $scope.styleWidth100 = {
       float: 'left',
       width: '100%',
-      'padding-right': '10px'
     };
 
-    $scope.styleWidth50 = {
+    $scope.styleWidth50Left = {
       float: 'left',
       width: '50%',
-      'padding-right': '10px'
+      'padding-right': '5px'
+    };
+
+    $scope.styleWidth50Right = {
+      float: 'left',
+      width: '50%',
+      'padding-left': '5px'
     };
 
     // 设置弹窗的最大、最小值

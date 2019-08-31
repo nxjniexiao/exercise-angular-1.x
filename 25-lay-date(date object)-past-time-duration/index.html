@@ -18,7 +18,21 @@
     }
 
     .laydate-time-list > li > ol > li {
-      padding-left: 54px;
+      padding-left: 25px;
+    }
+    /* 时间弹窗样式调整 */
+    .layui-laydate {
+      border-radius: 5px !important;
+      overflow: hidden;
+    }
+    .layui-laydate-main.laydate-time-show {
+      width: 160px;
+      height: 203px;
+    }
+    .layui-laydate-main.laydate-time-show + .layui-laydate-footer,
+    .layui-laydate-main.laydate-time-show .layui-laydate-header,
+    .layui-laydate-main.laydate-time-show .laydate-time-list p {
+      display: none;
     }
   </style>
 </head>
@@ -129,6 +143,20 @@
     </div>
   </div>
 </form>-->
+<hr>
+<form class="form-horizontal">
+  <div class="form-group form-group-10" style="margin-bottom: 10px">
+    <label class="control-label col-md-2">选择时长</label>
+    <div class="col-md-6">
+      <date-time-selector time="durationtime"
+                          config="{
+                          mode: 'time',
+                          minutesGradient: gradient
+                          }"
+      ></date-time-selector>
+    </div>
+  </div>
+</form>
 <!-- JavaScript 库 -->
 <script src="../lib/jquery.js"></script>
 <script src="../lib/bootstrap.js"></script>
