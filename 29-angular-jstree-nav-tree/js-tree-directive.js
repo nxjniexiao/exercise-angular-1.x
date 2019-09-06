@@ -52,6 +52,10 @@ angular.module('myApp')
             .on('deselect_all.jstree', function (event, data) {
               console.log('deselect_all');
             })
+            .on('refresh.jstree', function (event, data) {
+              console.log('refresh');
+              reselect(scope.selectedArr); // 修复初始化时不勾选初始已选项
+            })
             .on('changed.jstree', function (event, data) {
               console.log('changed');
               var arr = [];
@@ -134,16 +138,16 @@ angular.module('myApp')
           jsTreeInstance.redraw(); // 重绘
         }
 
-        // 监听树形数组 treeData
-        scope.$watch('treeData', function () {
+        // 监听树形数组 treeData ($watchCollection 优化性能)
+        scope.$watchCollection('treeData', function () {
           if (scope.treeData && scope.jsTreeInstance) {
             scope.jsTreeInstance.settings.core.data = scope.treeData;
-            scope.jsTreeInstance.refresh();
+            scope.jsTreeInstance.refresh(false, true); //skip_loading, forget_state(为true时保存状态)
           }
-        }, true);
+        });
 
-        // 监听已选项 selectedArr
-        scope.$watch('selectedArr', function (newValue) {
+        // 监听已选项 selectedArr ($watchCollection 优化性能)
+        scope.$watchCollection('selectedArr', function (newValue) {
           if (!newValue) {
             return;
           }
@@ -151,7 +155,7 @@ angular.module('myApp')
             reselect(newValue);
           }
           isExternalChange = true; //重置 isExternalChange
-        }, true);
+        });
 
         // 监听搜索框
         if (scope.config.hasSearchBox) {
