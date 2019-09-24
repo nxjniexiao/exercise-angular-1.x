@@ -123,8 +123,8 @@ angular.module('myApp')
           }
         }
 
-        // 监听组件外部修改 selectedArr
-        scope.$watch('selectedArr', function (newValue) {
+        // 监听组件外部修改 selectedArr(使用watchCollection，优化性能)
+        scope.$watchCollection('selectedArr', function (newValue) {
           if (!newValue) {
             return;
           }
@@ -137,10 +137,10 @@ angular.module('myApp')
             }
           }
           isExternalChange = true; //重置 isExternalChange
-        }, true);
+        });
 
-        // 监听组件外部修改 treeData
-        scope.$watch('treeData', function (newValue) {
+        // 监听组件外部修改 treeData(使用watchCollection，优化性能)
+        scope.$watchCollection('treeData', function (newValue) {
           if (!newValue) {
             return;
           }
@@ -151,7 +151,7 @@ angular.module('myApp')
           } else {
             reSelectTree(scope.selectedArr);
           }
-        }, true);
+        });
 
         // 监听组件销毁
         element.on('$destroy', function () {

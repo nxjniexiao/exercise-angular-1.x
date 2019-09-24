@@ -16,7 +16,7 @@ const file = {
   // 封装 fs.readdir，返回一个 Promise 对象
   readDir: function(filePath) {
     return new Promise((resolve, reject) => {
-      fs.readdir(filePath, (err, files) => {
+      fs.readdir(filePath, {withFileTypes: true}, (err, files) => {
         if (err) {
           return reject(err);
         }

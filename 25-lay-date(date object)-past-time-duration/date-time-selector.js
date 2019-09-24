@@ -30,6 +30,7 @@ angular.module('myApp').directive('dateTimeSelector', [function () {
   function controller($scope, $timeout, $filter, $interval) {
     var intervalTimer = null; // 防抖用定时器(修正 input 中的时间不小于当前时间)
     var timer = null; // 防抖用定时器(设置弹窗最大、最小值)
+    var isExternalChange = true; // 是否外部修改了 scope.time
     $scope.dateId = 'date-' + Math.random().toString(36).substr(2);
     $scope.timeId = 'time-' + Math.random().toString(36).substr(2);
     $scope.dateStr = null; // 日期字符串，如'2019-02-25'
@@ -288,6 +289,9 @@ angular.module('myApp').directive('dateTimeSelector', [function () {
 
     // 修正选择框中的值不小于当前时间
     function autoFix() {
+      if ($scope.config.isDisabled) {
+        return;
+      }
       var now = new Date();
       var dateStr = $scope.dateStr.replace(/-/g, '/');
       var timeStr = $scope.timeStr;
@@ -321,7 +325,11 @@ angular.module('myApp').directive('dateTimeSelector', [function () {
     }
 
     // 监听 dateStr
-    $scope.$watch('dateStr', function () {
+    $scope.$watch('dateStr', function (newValue) {
+      if(!newValue || $scope.config.isDisabled) {
+        return;
+      }
+      isExternalChange = false;
       var dateStr = $scope.dateStr;
       var timeStr = $scope.timeStr;
       $scope.time = convertStringToDate(dateStr, timeStr);
@@ -331,10 +339,15 @@ angular.module('myApp').directive('dateTimeSelector', [function () {
     });
 
     // 监听 timeStr
-    $scope.$watch('timeStr', function () {
+    $scope.$watch('timeStr', function (newValue) {
+      if(!newValue || $scope.config.isDisabled) {
+        return;
+      }
+      isExternalChange = false;
       var dateStr = $scope.dateStr;
       var timeStr = $scope.timeStr;
       $scope.time = convertStringToDate(dateStr, timeStr);
+      fixDateStrAndTimeStr();
     });
 
     // 监听 minTime
@@ -381,14 +394,18 @@ angular.module('myApp').directive('dateTimeSelector', [function () {
       if (!time) {
         return;
       }
-      var newDateStr = $filter('date')(time, 'yyyy-MM-dd');
-      var newTimeStr = $filter('date')(time, 'HH:mm');
-      if ($scope.dateStr !== newDateStr) {
-        $scope.dateStr = newDateStr;
+      // 组件外部修改了 scope.time
+      if (isExternalChange) {
+        var newDateStr = $filter('date')(time, 'yyyy-MM-dd');
+        var newTimeStr = $filter('date')(time, 'HH:mm');
+        if ($scope.dateStr !== newDateStr) {
+          $scope.dateStr = newDateStr;
+        }
+        if ($scope.timeStr !== newTimeStr) {
+          $scope.timeStr = newTimeStr;
+        }
       }
-      if ($scope.timeStr !== newTimeStr) {
-        $scope.timeStr = newTimeStr;
-      }
+      isExternalChange = true; //重置 isExternalChange
     });
 
     // 自动初始化默认为true
