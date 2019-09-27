@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Wakeup App</title>
+  </head>
+  <body>
+    <ul style="line-height: 35px;">
+      <li>
+        <a href="taobao://uniqlo.tmall.com">打开淘宝</a>
+      </li>
+      <li>
+        <a href="qqmail://">打开QQ邮箱</a>
+      </li>
+      <li>
+        <a href="qqmusic://">打开QQ音乐</a>
+      </li>
+      <li>
+        <a href="orpheuswidget://">打开网易云音乐</a>
+      </li>
+      <li>
+        <a href="cn.12306://">打开12306</a>
+      </li>
+    </ul>
+    <script>
+      var os = getMobileOperatingSystem();
+      var infoDom = document.createElement('div');
+      infoDom.innerHTML = os;
+      document.body.appendChild(infoDom);
+      /**
+       * Determine the mobile operating system.
+       * This function returns one of 'iOS', 'Android', 'Windows Phone', or 'unknown'.
+       *
+       * @returns {String}
+       */
+      function getMobileOperatingSystem() {
+        var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+        // 微信
+        if (/MicroMessenger/.test(userAgent)) {
+          return 'wechat';
+        }
+
+        // Windows Phone must come first because its UA also contains "Android"
+        if (/windows phone/i.test(userAgent)) {
+          return 'Windows Phone';
+        }
+
+        if (/android/i.test(userAgent)) {
+          return 'Android';
+        }
+
+        // iOS detection from: http://stackoverflow.com/a/9039885/177710
+        if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+          return 'iOS';
+        }
+
+        return 'unknown';
+      }
+    </script>
+  </body>
+</html>

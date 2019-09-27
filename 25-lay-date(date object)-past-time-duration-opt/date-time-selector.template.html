@@ -1,0 +1,14 @@
+<div style="overflow: hidden;">
+  <div ng-style="config.mode?styleWidth100:styleWidth50Left" ng-hide="config.mode=='time'">
+    <div class="input-group date">
+      <input class="form-control" type="text" name="startDate" ng-attr-id="{{config.isDisabled?'':dateId}}" ng-model="dateStr" ng-disabled="config.isDisabled" readonly>
+      <i class="input-group-addon btn default iconfont calendar" ng-attr-id="{{config.isDisabled?'':dateId + '-event'}}" ng-disabled="config.isDisabled"></i>
+    </div>
+  </div>
+  <div ng-style="config.mode?styleWidth100:styleWidth50Right" ng-hide="config.mode=='date'">
+    <div class="input-group date">
+        <input class="form-control" type="text" name="startDate" ng-attr-id="{{config.isDisabled?'':timeId}}" ng-model="timeStr" ng-disabled="config.isDisabled" readonly>
+      <i class="input-group-addon btn default iconfont clock" ng-attr-id="{{config.isDisabled?'':timeId + '-event'}}" ng-disabled="config.isDisabled"></i>
+    </div>
+  </div>
+</div>
