@@ -30,6 +30,22 @@ var app = angular.module('main', ['daypilot']).controller('DemoCtrl', ['$scope',
     //   {text:"Go to google.com", href: "http://www.google.com/?q={0}"},
     //   {text:"CallBack: Delete this event", command: "delete"},
     // ]),
+    // 改变长度时实时调用
+    onEventResizing: function(args) {
+      console.log('onEventResizing', args)
+      /* 为 false 时，禁止选择 */
+      // args.allowed = false;
+    },
+    // 事件长度被改变时执行
+    onEventResize: function(args) {
+      console.log('onEventResize', args)
+      // 阻止时间长度的修改
+      // args.preventDefault();
+    },
+    // 事件长度被改变后执行
+    onEventResized: function(args) {
+      console.log('onEventResized', args)
+    },
     // 事件被移动后执行
     onEventMoved: function (args) {
       $scope.dp.message("Event moved: " + args.e.text());
@@ -39,8 +55,31 @@ var app = angular.module('main', ['daypilot']).controller('DemoCtrl', ['$scope',
       $scope.selectedEvents = $scope.dp.multiselect.events();
       $scope.$apply();
     },
+    // 选择时实时调用
+    onTimeRangeSelecting: function(args) {
+      console.log('onTimeRangeSelecting', args);
+      args.cssClass = 'custom-css';
+      /* 为 false 时，禁止选择 */
+      // args.allowed = false;
+    },
+    onTimeRangeSelect: function(args) {
+      // args.start
+      // args.end
+      // args.resource
+      // args.preventDefault()
+      console.log('onTimeRangeSelect', args);
+      // 选择结束(松开鼠标左键)的时候，调用 onTimeRangeSelect() ，
+      // 之后会相继触发 onTimeRangeSelecting -> onTimeRangeSelected 。
+      /* 调用 args.preventDefault() 后，则不会触发。*/
+      // args.preventDefault();
+    },
     // 选择时间区间后执行
     onTimeRangeSelected: function(args) {
+      // args.start
+      // args.end
+      // args.resource
+      // 把时间转换为本地时间: args.start.toDateLocal()
+      console.log('onTimeRangeSelected', args);
       let {start, end, resource} = args;
       $scope.currentSelectedEvent = {start, end, resource};
       // $scope.add();

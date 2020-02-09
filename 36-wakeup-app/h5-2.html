@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>加入会议</title>
+  <style>
+    html, body, div, p, form, label, ul, li, dl, dt, dd, ol, img, button, b, em, strong, small, h1, h2, h3, h4, h5, h6, a {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      list-style: none;
+      font-style: normal;
+      text-decoration: none;
+      color: #000;
+      box-sizing: border-box;
+    }
+    html, body {
+      height: 100%;
+      width: 100%;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 16px;
+      background: #fafafa;
+      overflow: hidden;
+    }
+    .logo {
+      margin-bottom: 20px;
+    }
+    p {
+      line-height: 34px;
+    }
+    .btns {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+    .btns a {
+      padding: 6px 15px;
+      background: #338bf8;
+      color: #fff;
+      border-radius: 4px;
+    }
+    .modal {
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      padding: 10px;
+      text-align: center;
+      background: rgba(0, 0, 0, .6);
+    }
+    .modal .modal-content {
+      padding: 10px;
+      border-radius: 10px;
+      background: #fafafa;
+    }
+    .modal li {
+      margin-bottom: 10px;
+    }
+    .modal::after {
+      content: '';
+      position: absolute;
+      top: 4px;
+      right: 25px;
+      margin-left: -6px;
+      width: 0;
+      height: 0;
+      border-top: none;
+      border-bottom: 6px solid #fff;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+    }
+  </style>
+</head>
+<body>
+  <!-- 唤醒APP内容 -->
+  <div class="content">
+    <img class="logo" src="./logo.png" alt="" style="width: 100px;">
+    <p>如果您看到浏览器的提示，请点击“打开”</p>
+    <p>如果您未安装软件，请点击“安装”</p>
+    <div class="btns">
+      <a href="appcanaaabw10010://?url=">打开APP</a>
+      <a href="https://app.sinochem.com/test.html">安装</a>
+    </div>
+  </div>
+  <!-- 未识别浏览器版本时显示的内容 -->
+  <div class="modal" style="display: none;">
+    <div class="modal-content">
+      <p>当前APP不支持跳转，请尝试以下两种方法：</p>
+      <ul>
+        <li>1. 点击右上角...使用默认浏览器打开</li>
+        <li>
+          2. 复制下方地址，手动在浏览器中打开:<br>
+          <span id="link"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <script>
+    window.onload = function() {
+      var userAgent = window.navigator.userAgent;
+      var isAndroid = /Android/.test(userAgent);
+      var isIOS = /(?:i(?:Phone|P(?:o|a)d))/.test(userAgent);
+      var currentUrl, url, downloadUrl, btnsArr, modalDom, linkDom;
+      if (isAndroid) {
+        url = 'appcanaaabw10010://?url=1';
+        downloadUrl = 'https://app.sinochem.com/test.html#1';
+      } else if (isIOS) {
+        url = 'appcanaaabw10010://?url=2';
+        downloadUrl = 'https://app.sinochem.com/test.html#2'
+      } else {
+        alert('未知浏览器');
+        currentUrl = window.location;
+        modalDom = document.querySelector('.modal');
+        linkDom = document.querySelector('#link');
+        linkDom.innerHTML = currentUrl;
+        modalDom.style = '';
+      }
+      btnsArr = document.querySelectorAll('.btns a');
+      btnsArr[0].href = url;
+      btnsArr[1].href = downloadUrl;
+      // 尝试唤醒APP
+      window.location = url;
+    };
+  </script>
+</body>
+</html>
