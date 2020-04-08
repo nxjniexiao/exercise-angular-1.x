@@ -2,6 +2,13 @@ var app = angular.module('main', ['daypilot']).controller('DemoCtrl', ['$scope',
   $scope.resourceIndex = 0;
   $timeout(function () {
     $scope.config.resources = [
+      {name: '培训会议室', id: 'AA', expanded: true, children: [
+        {name: "培训会议室1", id: "AA1"},
+        {name: "培训会议室2", id: "AA2"},
+        {name: "培训会议室3", id: "AA3"},
+        {name: "培训会议室4", id: "AA4"},
+        {name: "培训会议室5", id: "AA5"}
+      ]},
       {name: "Room A", id: "A"},
       {name: "Room B", id: "B"},
       {name: "Room C", id: "C"},
@@ -18,7 +25,8 @@ var app = angular.module('main', ['daypilot']).controller('DemoCtrl', ['$scope',
       {groupBy: "Cell", format: "d"}
     ],
     allowEventOverlap: false,
-    // treeEnabled: true,
+    treeEnabled: true, // 开启树形
+    treePreventParentUsage: true, // 阻止父节点的使用
     eventClickHandling: "Select",
     // // 鼠标右键菜单
     // contextMenu: new DayPilot.Menu([

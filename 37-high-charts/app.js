@@ -46,6 +46,9 @@ $('#my-charts').highcharts({
       }
     }
   },
+  legend: {
+    enabled: false
+  },
   tooltip: {
     // enabled: false,
     formatter: function() {

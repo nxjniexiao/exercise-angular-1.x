@@ -46,6 +46,13 @@
   <ul>
     <li ng-repeat="item in selectedArray1" ng-click="unselect1($index)"><a href="#">{{item.name}}</a></li>
   </ul>
+  <!-- 大数据 Tree -->
+  <z-tree
+  tree-data="bigArrayList"
+  selected-arr="selectedArray2"
+  on-change-fn="onChangeFnc(selectedArr)"
+>
+</z-tree>
 </div>
 <!-- JavaScript 库 -->
 <script src="../lib/jquery.js"></script>
@@ -53,6 +60,7 @@
 <script src="../lib/ztree/3.5.40/js/jquery.ztree.core.js"></script>
 <script src="../lib/ztree/3.5.40/js/jquery.ztree.excheck.js"></script>
 <!-- 组件 -->
+<script src="treeDataMaker.js"></script>
 <script src="data.js"></script>
 <script src="./my-app.js"></script>
 <script src="./ztree-directive.js"></script>

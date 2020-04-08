@@ -4,6 +4,7 @@ angular.module('myApp').controller('MyController', ['$rootScope', '$scope', '$ti
 
   $timeout(function () {
     $scope.ArrayList = $scope.treedata1;
+    $scope.bigArrayList = dataMaker(70000);
   }, 500);
 
   $timeout(function () {
@@ -14,6 +15,7 @@ angular.module('myApp').controller('MyController', ['$rootScope', '$scope', '$ti
     $scope.selectedArray1 = [
       {"name": "研发部", "id": 151},
     ];
+    $scope.selectedArray2 = [];
   }, 1000);
 
   $scope.onChangeFnc = function (selectedArr) {
