@@ -91,4 +91,12 @@ angular.module('myApp').controller('MyController', ['$rootScope', '$scope', '$ti
   $scope.unselect = function(arr, index) {
     arr.splice(index, 1);
   }
+  $scope.lazyUrlFn = function(node) {
+    console.log(node);
+    return '/json?operation=get_node';
+  }
+  $scope.onLazyLoadFn = function(res) {
+    console.log(res);
+    return res;
+  }
 }]);

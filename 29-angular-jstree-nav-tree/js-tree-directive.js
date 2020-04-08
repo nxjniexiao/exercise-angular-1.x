@@ -3,9 +3,12 @@
  * @param {Array} treeData - 树形数组。
  * @param {Array} selectedArr - 已选项数组。
  * @param {Function} onChangeFn - 已选项发生改变时的回调函数，第一参数为当前已选项数组。
+ * @param {Function} lazyUrlFn - 懒加载时请求的url地址的创建函数。
+ * @param {Function} onLazyLoadFn - 处理懒加载响应数据的函数。
  * @param {Object} [config] - 配置对象。
  * @param {boolean} [config.hasCheckbox] - 是否有选框，默认为 false。
  * @param {boolean} [config.hasSearchBox] - 是否有搜索框，默认为 false。
+ * @param {boolean} [config.lazy] - 是否为懒加载，默认为 false。
  * */
 angular.module('myApp')
   .directive('jsTree', ['$timeout', function ($timeout) {
@@ -13,9 +16,11 @@ angular.module('myApp')
       templateUrl: 'js-tree.template.html',
       restrict: 'E',
       scope: {
-        treeData: '=',
+        treeData: '=?',
         selectedArr: '=',
         onChangeFn: '&',
+        lazyUrlFn: '&',
+        onLazyLoadFn: '&',
         config: '=?'
       },
       link: function (scope, element, attrs) {
@@ -89,10 +94,7 @@ angular.module('myApp')
         function initOpts() {
           var config = scope.config;
           var opts = {
-            core: {
-              data: scope.treeData,
-              multiple: false
-            },
+            core: {},
             plugins: ['conditionalselect'],
             conditionalselect: function (node, event) {
               isExternalChange = false; //非外部改变已选项
@@ -108,6 +110,20 @@ angular.module('myApp')
               return true;
             }
           };
+          var core = opts.core;
+          if (config.lazy) {
+            // 懒加载
+            core.data = {};
+            core.data.url = function(node) {
+              return scope.lazyUrlFn({node: node});
+            }
+            core.data.data = function(res) {
+              return scope.onLazyLoadFn({res: res});
+            };
+          } else {
+            // 一次性数据
+            core.data = scope.treeData
+          }
           // 有多选框
           if (config.hasCheckbox) {
             opts.core.multiple = true;

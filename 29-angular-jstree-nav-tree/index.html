@@ -9,7 +9,7 @@
 </head>
 
 <body ng-app="myApp" ng-controller="MyController">
-  <div>
+  <!-- <div>
     <button ng-click="changeData()">切换数据源</button>
     <button ng-click="changeSelected()">切换已选项</button>
     <button ng-click="$apply()">apply</button>
@@ -39,6 +39,16 @@
     <ul>
       <li ng-repeat="item in selectedArray2" ng-click="unselect(selectedArray2, $index)"><a href="#">{{item.text}}</a></li>
     </ul>
+  </div> -->
+  <!-- 懒加载 -->
+  <div>
+    <js-tree
+      lazy-url-fn="lazyUrlFn(node)"
+      on-lazy-load-fn="onLazyLoadFn(res)"
+      on-change-fn="onChangeFnc(selectedArr)"
+      selected-arr="selectedArray2"
+      config="{lazy: true}"
+    ></js-tree>
   </div>
   <!-- JavaScript 库 -->
   <script src="../lib/jquery.js"></script>
