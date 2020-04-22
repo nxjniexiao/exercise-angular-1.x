@@ -1,0 +1,1 @@
+require('./tiny-server/src');

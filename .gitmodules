@@ -1,0 +1,3 @@
+[submodule "tiny-server"]
+	path = tiny-server
+	url = https://github.com/nxjniexiao/tiny-server.git
